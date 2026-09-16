@@ -1,0 +1,5216 @@
+{
+  "test_user": [],
+  "user_afcdb1ac": [
+    {
+      "id": "bdf0882c-c5c4-4083-b30e-ed6beef9fffb",
+      "user_id": "user_afcdb1ac",
+      "concern": "最近脱发好严重，帮我制定个健康计划",
+      "title": "🌿 头发养护小计划",
+      "goal": "减少脱发，让头发更健康",
+      "status": "completed",
+      "created_at": "2026-06-01T07:57:35.067371+00:00",
+      "updated_at": "2026-06-01T07:57:35.264381+00:00",
+      "context_snapshot": {
+        "persona_id": "default",
+        "routine_summary": {
+          "status": "data_insufficient",
+          "message": "还需要更多交互数据才能建立作息模型"
+        },
+        "profile_notes": ""
+      },
+      "categories": [
+        {
+          "name": "饮食调理",
+          "icon": "🥗",
+          "items": [
+            {
+              "item_id": "b5e83620-b3e9-4db7-ae9e-172e4a03e181",
+              "time_slot": "早餐",
+              "action": "吃个水煮蛋或豆浆",
+              "duration": null,
+              "frequency": "每天",
+              "reasoning": "蛋白质是头发的主要成分",
+              "status": "done",
+              "completed_count": 1,
+              "last_completed": "2026-06-01T07:57:35.196757+00:00"
+            },
+            {
+              "item_id": "c67a34ac-a39d-4c5d-b5fc-610c31a03425",
+              "time_slot": "午餐",
+              "action": "加份菠菜或红肉",
+              "duration": null,
+              "frequency": "每天",
+              "reasoning": "铁和锌能改善毛囊营养",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            },
+            {
+              "item_id": "05751ba3-f7b9-446a-ad9e-9eec98802dc0",
+              "time_slot": "下午加餐",
+              "action": "来一小把坚果",
+              "duration": null,
+              "frequency": "每天",
+              "reasoning": "维生素E和硒护发抗氧",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            }
+          ]
+        },
+        {
+          "name": "压力管理",
+          "icon": "🧘",
+          "items": [
+            {
+              "item_id": "2b438a79-fb05-47e7-8e57-4d847aef8668",
+              "time_slot": "下午犯困时",
+              "action": "闭眼深呼吸3分钟",
+              "duration": "3分钟",
+              "frequency": "每周5次",
+              "reasoning": "减压能减少皮质醇导致的脱发",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            }
+          ]
+        },
+        {
+          "name": "日常护理",
+          "icon": "🌿",
+          "items": [
+            {
+              "item_id": "47b150fd-74c9-4e58-ba16-8c55eda6101b",
+              "time_slot": "晚间洗头前",
+              "action": "用指腹按摩头皮5分钟",
+              "duration": "5分钟",
+              "frequency": "隔天",
+              "reasoning": "促进头皮血液循环",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            },
+            {
+              "item_id": "3edceed2-6b10-49f5-b32a-2701be1a8e9c",
+              "time_slot": "睡前",
+              "action": "换丝绸枕套试试",
+              "duration": null,
+              "frequency": "每晚",
+              "reasoning": "减少摩擦断发",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            }
+          ]
+        },
+        {
+          "name": "睡眠优化",
+          "icon": "🛌",
+          "items": [
+            {
+              "item_id": "d434dbf6-a70c-442e-b740-aa2615460efc",
+              "time_slot": "晚上",
+              "action": "23点前放下手机",
+              "duration": null,
+              "frequency": "每天",
+              "reasoning": "熬夜影响激素和修复",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            }
+          ]
+        }
+      ],
+      "version": 1
+    }
+  ],
+  "user_8c0beeef": [
+    {
+      "id": "d679dc4b-3841-4514-adee-e56fa4295b3e",
+      "user_id": "user_8c0beeef",
+      "concern": "最近脱发好严重，帮我制定个健康计划",
+      "title": "📋 健康计划",
+      "goal": "改善最近脱发好严重，帮我制定个健康计划，逐步养成健康习惯",
+      "status": "active",
+      "created_at": "2026-06-01T07:58:27.453687+00:00",
+      "updated_at": "2026-06-01T07:58:27.453713+00:00",
+      "context_snapshot": {
+        "persona_id": "default",
+        "routine_summary": {
+          "status": "data_insufficient",
+          "message": "还需要更多交互数据才能建立作息模型"
+        },
+        "profile_notes": ""
+      },
+      "categories": [
+        {
+          "name": "饮食调理",
+          "icon": "🥗",
+          "items": [
+            {
+              "item_id": "230a2728-17a3-40be-9b89-492d711f800e",
+              "time_slot": "早餐",
+              "action": "均衡饮食，多吃蔬菜水果",
+              "duration": null,
+              "frequency": "每天",
+              "reasoning": "均衡饮食是健康的基础",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            },
+            {
+              "item_id": "9e0da0e1-fb4c-482e-92fa-203cf3081447",
+              "time_slot": "午餐",
+              "action": "保证蛋白质摄入",
+              "duration": null,
+              "frequency": "每天",
+              "reasoning": "蛋白质是身体修复的重要原料",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            }
+          ]
+        },
+        {
+          "name": "运动建议",
+          "icon": "🏃",
+          "items": [
+            {
+              "item_id": "955aa39e-1df9-487a-8700-00dab078b2d3",
+              "time_slot": "傍晚",
+              "action": "适度有氧运动",
+              "duration": "30分钟",
+              "frequency": "每周3-4次",
+              "reasoning": "规律运动有助于改善整体健康状况",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            }
+          ]
+        },
+        {
+          "name": "睡眠优化",
+          "icon": "🛌",
+          "items": [
+            {
+              "item_id": "7f9e9243-eb28-4d73-b05f-6f02d129e5fc",
+              "time_slot": "睡前",
+              "action": "减少屏幕时间，保持规律作息",
+              "duration": null,
+              "frequency": "每天",
+              "reasoning": "良好睡眠是身体修复的关键",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            }
+          ]
+        }
+      ],
+      "version": 1
+    }
+  ],
+  "user_f8e231b3": [
+    {
+      "id": "d575c472-86de-48da-b03d-894b8cdbc72a",
+      "user_id": "user_f8e231b3",
+      "concern": "最近脱发好严重，帮我制定个健康计划",
+      "title": "📋 健康计划",
+      "goal": "改善最近脱发好严重，帮我制定个健康计划，逐步养成健康习惯",
+      "status": "active",
+      "created_at": "2026-06-01T07:59:18.634999+00:00",
+      "updated_at": "2026-06-01T07:59:18.635013+00:00",
+      "context_snapshot": {
+        "persona_id": "default",
+        "routine_summary": {
+          "status": "data_insufficient",
+          "message": "还需要更多交互数据才能建立作息模型"
+        },
+        "profile_notes": ""
+      },
+      "categories": [
+        {
+          "name": "饮食调理",
+          "icon": "🥗",
+          "items": [
+            {
+              "item_id": "cdb0bade-4dbe-48eb-86a6-1e75d4436775",
+              "time_slot": "早餐",
+              "action": "均衡饮食，多吃蔬菜水果",
+              "duration": null,
+              "frequency": "每天",
+              "reasoning": "均衡饮食是健康的基础",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            },
+            {
+              "item_id": "cae46372-f8b7-4b69-a69d-cdb8e7fd831f",
+              "time_slot": "午餐",
+              "action": "保证蛋白质摄入",
+              "duration": null,
+              "frequency": "每天",
+              "reasoning": "蛋白质是身体修复的重要原料",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            }
+          ]
+        },
+        {
+          "name": "运动建议",
+          "icon": "🏃",
+          "items": [
+            {
+              "item_id": "dbefa24f-a811-485c-8f9d-63f89cc6a1ae",
+              "time_slot": "傍晚",
+              "action": "适度有氧运动",
+              "duration": "30分钟",
+              "frequency": "每周3-4次",
+              "reasoning": "规律运动有助于改善整体健康状况",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            }
+          ]
+        },
+        {
+          "name": "睡眠优化",
+          "icon": "🛌",
+          "items": [
+            {
+              "item_id": "c5445b46-cfa4-47fa-9995-6f2014381eb3",
+              "time_slot": "睡前",
+              "action": "减少屏幕时间，保持规律作息",
+              "duration": null,
+              "frequency": "每天",
+              "reasoning": "良好睡眠是身体修复的关键",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            }
+          ]
+        }
+      ],
+      "version": 1
+    }
+  ],
+  "user_b17bbf60": [
+    {
+      "id": "181aa26a-8f76-4f2d-9d18-fc5084d8795d",
+      "user_id": "user_b17bbf60",
+      "concern": "最近脱发好严重，帮我制定个健康计划",
+      "title": "📋 健康计划",
+      "goal": "改善最近脱发好严重，帮我制定个健康计划，逐步养成健康习惯",
+      "status": "active",
+      "created_at": "2026-06-01T07:59:50.921063+00:00",
+      "updated_at": "2026-06-01T07:59:50.921081+00:00",
+      "context_snapshot": {
+        "persona_id": "default",
+        "routine_summary": {
+          "status": "data_insufficient",
+          "message": "还需要更多交互数据才能建立作息模型"
+        },
+        "profile_notes": ""
+      },
+      "categories": [
+        {
+          "name": "饮食调理",
+          "icon": "🥗",
+          "items": [
+            {
+              "item_id": "4bb2fe8d-a01b-4128-9b68-ffb3bce0dc97",
+              "time_slot": "早餐",
+              "action": "均衡饮食，多吃蔬菜水果",
+              "duration": null,
+              "frequency": "每天",
+              "reasoning": "均衡饮食是健康的基础",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            },
+            {
+              "item_id": "902b6aea-5650-4831-9d4d-4717762c2f0a",
+              "time_slot": "午餐",
+              "action": "保证蛋白质摄入",
+              "duration": null,
+              "frequency": "每天",
+              "reasoning": "蛋白质是身体修复的重要原料",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            }
+          ]
+        },
+        {
+          "name": "运动建议",
+          "icon": "🏃",
+          "items": [
+            {
+              "item_id": "307f07d2-9795-4d73-9e09-a3d202de83f4",
+              "time_slot": "傍晚",
+              "action": "适度有氧运动",
+              "duration": "30分钟",
+              "frequency": "每周3-4次",
+              "reasoning": "规律运动有助于改善整体健康状况",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            }
+          ]
+        },
+        {
+          "name": "睡眠优化",
+          "icon": "🛌",
+          "items": [
+            {
+              "item_id": "c2874f00-eaf2-4fd1-a3eb-52d68e7ba0b2",
+              "time_slot": "睡前",
+              "action": "减少屏幕时间，保持规律作息",
+              "duration": null,
+              "frequency": "每天",
+              "reasoning": "良好睡眠是身体修复的关键",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            }
+          ]
+        }
+      ],
+      "version": 1
+    }
+  ],
+  "user_8021f679": [
+    {
+      "id": "b2c3fa85-c33a-4055-ba10-7e3350b6ce9d",
+      "user_id": "user_8021f679",
+      "concern": "最近脱发好严重",
+      "title": "🌿 头发养护计划",
+      "goal": "从吃、睡、动、减压入手，稳住发际线不焦虑",
+      "status": "active",
+      "created_at": "2026-06-01T08:00:21.571153+00:00",
+      "updated_at": "2026-06-01T08:00:21.571167+00:00",
+      "context_snapshot": {
+        "persona_id": "default",
+        "routine_summary": {
+          "status": "data_insufficient",
+          "message": "还需要更多交互数据才能建立作息模型"
+        },
+        "profile_notes": ""
+      },
+      "categories": [
+        {
+          "name": "饮食调理",
+          "icon": "🥗",
+          "items": [
+            {
+              "item_id": "e6cd1194-1b4c-4a22-bc7f-7db6424f0893",
+              "time_slot": "晚餐",
+              "action": "加一份深绿色蔬菜（比如菠菜或西兰花）",
+              "duration": null,
+              "frequency": "每天",
+              "reasoning": "铁和叶酸能改善头皮供血，减少掉发",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            },
+            {
+              "item_id": "453b18dd-fe10-4897-8a6e-a93b306f0765",
+              "time_slot": "下午16:00",
+              "action": "抓一把坚果当零食（核桃、杏仁）",
+              "duration": null,
+              "frequency": "每天",
+              "reasoning": "锌和维生素E是头发合成的必需营养",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            }
+          ]
+        },
+        {
+          "name": "运动建议",
+          "icon": "🏃",
+          "items": [
+            {
+              "item_id": "91f1e45f-8b6f-428e-84c4-46dc87388a83",
+              "time_slot": "下午16:30",
+              "action": "站起来走5分钟，顺便拉伸一下肩颈",
+              "duration": "5分钟",
+              "frequency": "每天",
+              "reasoning": "久坐让头皮紧绷，轻微活动能促进血液循环",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            },
+            {
+              "item_id": "1b8434b7-e3c6-4615-9659-93ebda53dba2",
+              "time_slot": "下班后",
+              "action": "快走或爬楼梯10分钟",
+              "duration": "10分钟",
+              "frequency": "每天",
+              "reasoning": "适度有氧运动降低压力皮质醇，减少应激性脱发",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            }
+          ]
+        },
+        {
+          "name": "睡眠优化",
+          "icon": "🛌",
+          "items": [
+            {
+              "item_id": "9a98c2ae-1dc4-436a-99af-94cd70f22b73",
+              "time_slot": "睡前1小时",
+              "action": "放下手机，听点轻音乐或播客",
+              "duration": "30分钟",
+              "frequency": "每天",
+              "reasoning": "蓝光抑制褪黑素，影响毛囊夜间修复",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            },
+            {
+              "item_id": "a1751ccc-31e8-455c-a40b-40452a0dc325",
+              "time_slot": "22:00",
+              "action": "把卧室温度调低一点，盖薄被",
+              "duration": null,
+              "frequency": "每天",
+              "reasoning": "稍凉的环境帮助更快入睡，深度睡眠更养头发",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            }
+          ]
+        },
+        {
+          "name": "压力管理",
+          "icon": "🧘",
+          "items": [
+            {
+              "item_id": "c25e1a53-4fe5-451f-a4df-ddbf52c1e849",
+              "time_slot": "下班前",
+              "action": "对着窗户深呼吸3次，慢慢吐气",
+              "duration": "1分钟",
+              "frequency": "每天",
+              "reasoning": "即时舒缓交感神经，减少因压力引起的头发休止期脱落",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            }
+          ]
+        },
+        {
+          "name": "日常习惯",
+          "icon": "✍️",
+          "items": [
+            {
+              "item_id": "b5cf946f-85ee-445e-97a4-0910bf64bd94",
+              "time_slot": "洗澡时",
+              "action": "别用指甲抓头皮，用指腹轻轻按摩",
+              "duration": null,
+              "frequency": "每天",
+              "reasoning": "暴力抓挠会损伤毛囊，温柔按摩反而促循环",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            },
+            {
+              "item_id": "8cadf2c3-7267-476d-9d54-74260c10a20b",
+              "time_slot": "早上起床后",
+              "action": "喝一杯温水，小口慢慢喝",
+              "duration": null,
+              "frequency": "每天",
+              "reasoning": "身体缺水会影响头皮油脂平衡，加重掉发",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            }
+          ]
+        }
+      ],
+      "version": 1
+    }
+  ],
+  "user_e770efb3": [
+    {
+      "id": "8e0e6c1a-81bb-4e03-8689-f45c35192196",
+      "user_id": "user_e770efb3",
+      "concern": "最近脱发好严重",
+      "title": "🌿 头发养护计划",
+      "goal": "帮你把头发留住，从今天下午开始～",
+      "status": "active",
+      "created_at": "2026-06-01T08:01:06.796670+00:00",
+      "updated_at": "2026-06-01T08:01:06.796684+00:00",
+      "context_snapshot": {
+        "persona_id": "default",
+        "routine_summary": {
+          "status": "data_insufficient",
+          "message": "还需要更多交互数据才能建立作息模型"
+        },
+        "profile_notes": ""
+      },
+      "categories": [
+        {
+          "name": "饮食调理",
+          "icon": "🥗",
+          "items": [
+            {
+              "item_id": "ca31dca6-b568-4c67-950c-a98d6e56f209",
+              "time_slot": "下午加餐（16:00）",
+              "action": "吃一小把核桃或一个水煮蛋",
+              "duration": null,
+              "frequency": "每天",
+              "reasoning": "富含锌和蛋白质，是头发最爱的原料",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            },
+            {
+              "item_id": "735f4942-57dc-4667-b22f-89a30d1fe002",
+              "time_slot": "明天早餐",
+              "action": "来个水煮蛋加一杯无糖豆浆",
+              "duration": null,
+              "frequency": "每天",
+              "reasoning": "鸡蛋补蛋白，豆浆里的大豆异黄酮还能调节雄激素",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            }
+          ]
+        },
+        {
+          "name": "压力管理",
+          "icon": "🧘",
+          "items": [
+            {
+              "item_id": "2620068d-9b09-4d82-b173-06c5eefb882f",
+              "time_slot": "现在（16:00）",
+              "action": "站起来伸个懒腰，闭眼深呼吸5次",
+              "duration": "2分钟",
+              "frequency": "每小时一次",
+              "reasoning": "皮质醇升高会直接抑制毛囊，放松一下就能喘口气",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            }
+          ]
+        },
+        {
+          "name": "日常习惯",
+          "icon": "✍️",
+          "items": [
+            {
+              "item_id": "2ca0c474-f363-45d7-a71f-c5b566bbc071",
+              "time_slot": "今晚洗头时",
+              "action": "用指腹轻轻按摩头皮3～5分钟",
+              "duration": "5分钟",
+              "frequency": "每次洗头",
+              "reasoning": "促进头皮血液循环，毛囊吃饱了氧气才长头发",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            },
+            {
+              "item_id": "52693d13-4107-4638-8f8b-0eccbc944e2b",
+              "time_slot": "今晚",
+              "action": "换成温和的氨基酸洗发水，别用控油太猛的",
+              "duration": null,
+              "frequency": "隔天洗头",
+              "reasoning": "过度清洁破坏头皮屏障，掉得更多",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            }
+          ]
+        },
+        {
+          "name": "睡眠优化",
+          "icon": "🛌",
+          "items": [
+            {
+              "item_id": "296ef31f-a43b-4297-bfde-34df23973c3b",
+              "time_slot": "今晚睡前",
+              "action": "放下手机，23点前躺平",
+              "duration": null,
+              "frequency": "每天",
+              "reasoning": "睡眠不足让毛囊提前退休，早点睡是最便宜的护发素",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            }
+          ]
+        }
+      ],
+      "version": 1
+    }
+  ],
+  "user_33929709": [
+    {
+      "id": "2086333a-2f2d-44ce-b9a7-34ae9e894d61",
+      "user_id": "user_33929709",
+      "concern": "最近脱发好严重，帮我制定个健康计划",
+      "title": "📋 健康计划",
+      "goal": "改善最近脱发好严重，帮我制定个健康计划，逐步养成健康习惯",
+      "status": "completed",
+      "created_at": "2026-06-01T08:02:10.929867+00:00",
+      "updated_at": "2026-06-01T08:02:28.523660+00:00",
+      "context_snapshot": {
+        "persona_id": "default",
+        "routine_summary": {
+          "status": "data_insufficient",
+          "message": "还需要更多交互数据才能建立作息模型"
+        },
+        "profile_notes": ""
+      },
+      "categories": [
+        {
+          "name": "饮食调理",
+          "icon": "🥗",
+          "items": [
+            {
+              "item_id": "f41bbdd8-420e-4806-9e4c-f232e0f00932",
+              "time_slot": "早餐",
+              "action": "均衡饮食，多吃蔬菜水果",
+              "duration": null,
+              "frequency": "每天",
+              "reasoning": "均衡饮食是健康的基础",
+              "status": "done",
+              "completed_count": 1,
+              "last_completed": "2026-06-01T08:02:23.003306+00:00"
+            },
+            {
+              "item_id": "5099e033-697d-4889-89b2-fc9537b01b55",
+              "time_slot": "午餐",
+              "action": "保证蛋白质摄入",
+              "duration": null,
+              "frequency": "每天",
+              "reasoning": "蛋白质是身体修复的重要原料",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            }
+          ]
+        },
+        {
+          "name": "运动建议",
+          "icon": "🏃",
+          "items": [
+            {
+              "item_id": "d53f266d-dda0-4f99-aebb-af15bce5c499",
+              "time_slot": "傍晚",
+              "action": "适度有氧运动",
+              "duration": "30分钟",
+              "frequency": "每周3-4次",
+              "reasoning": "规律运动有助于改善整体健康状况",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            }
+          ]
+        },
+        {
+          "name": "睡眠优化",
+          "icon": "🛌",
+          "items": [
+            {
+              "item_id": "43c784d3-2a40-41be-b059-16bccb3976bf",
+              "time_slot": "睡前",
+              "action": "减少屏幕时间，保持规律作息",
+              "duration": null,
+              "frequency": "每天",
+              "reasoning": "良好睡眠是身体修复的关键",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            }
+          ]
+        }
+      ],
+      "version": 1
+    },
+    {
+      "id": "54e576fa-1400-43a2-988c-39ec67b77f96",
+      "user_id": "user_33929709",
+      "concern": "总是失眠，帮我制定睡眠改善计划",
+      "title": "🌙 今晚好眠计划",
+      "goal": "帮你慢慢找回自然睡眠节奏，今晚就能用起来",
+      "status": "active",
+      "created_at": "2026-06-01T08:02:21.789874+00:00",
+      "updated_at": "2026-06-01T08:02:21.789889+00:00",
+      "context_snapshot": {
+        "persona_id": "default",
+        "routine_summary": {
+          "status": "data_insufficient",
+          "message": "还需要更多交互数据才能建立作息模型"
+        },
+        "profile_notes": ""
+      },
+      "categories": [
+        {
+          "name": "饮食调理",
+          "icon": "🥗",
+          "items": [
+            {
+              "item_id": "bfb39afd-58fd-4d1a-8c43-8781abe3220d",
+              "time_slot": "晚餐",
+              "action": "晚餐别吃太撑，七分饱就好，少点辛辣油腻",
+              "duration": null,
+              "frequency": "每天",
+              "reasoning": "消化负担轻了，身体更容易进入休息模式",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            },
+            {
+              "item_id": "33384626-dec3-4011-b6f0-bbe73716f71c",
+              "time_slot": "睡前1小时",
+              "action": "喝一小杯温牛奶或洋甘菊茶",
+              "duration": null,
+              "frequency": "每天",
+              "reasoning": "色氨酸和甘氨酸有助于放松神经，促进睡意",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            }
+          ]
+        },
+        {
+          "name": "运动建议",
+          "icon": "🏃",
+          "items": [
+            {
+              "item_id": "19d31d30-5cc1-4f57-95c5-122b16192f07",
+              "time_slot": "下午（现在就可以）",
+              "action": "伸个懒腰，站起来慢走5分钟，活动下肩颈",
+              "duration": "5分钟",
+              "frequency": "今天",
+              "reasoning": "久坐犯困时小动一下，避免傍晚昏沉影响夜间睡眠",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            },
+            {
+              "item_id": "aad032d7-6f72-4a40-8679-f26f4d9b0e49",
+              "time_slot": "傍晚",
+              "action": "晚饭后散步15~20分钟，别跑别跳",
+              "duration": "15-20分钟",
+              "frequency": "每天",
+              "reasoning": "轻度有氧能调节生物钟，但太剧烈反而兴奋",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            }
+          ]
+        },
+        {
+          "name": "睡眠优化",
+          "icon": "🛌",
+          "items": [
+            {
+              "item_id": "bf960b75-0467-4875-9252-90673912408c",
+              "time_slot": "睡前30分钟",
+              "action": "把手机、电脑扔一边，看看纸质书或听点白噪音",
+              "duration": "30分钟",
+              "frequency": "每天",
+              "reasoning": "蓝光抑制褪黑素，纸质书或白噪音帮大脑慢慢断电",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            },
+            {
+              "item_id": "ae3c9e0f-b1d7-4521-b5c6-90076f8ae2b0",
+              "time_slot": "睡觉时",
+              "action": "卧室保持黑暗、安静，温度略低一点（18-22℃）",
+              "duration": null,
+              "frequency": "每天",
+              "reasoning": "暗环境和凉爽温度是褪黑素分泌的最佳搭档",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            }
+          ]
+        },
+        {
+          "name": "压力管理",
+          "icon": "🧘",
+          "items": [
+            {
+              "item_id": "1ae6803d-b2dc-406a-ab92-64f64c5920f4",
+              "time_slot": "睡前10分钟",
+              "action": "做几个缓慢深呼吸，吸气4秒、呼气6秒",
+              "duration": "3-5分钟",
+              "frequency": "每天",
+              "reasoning": "延长呼气能激活副交感，降低心率，赶走焦虑",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            }
+          ]
+        }
+      ],
+      "version": 1
+    }
+  ],
+  "crud_test": [],
+  "user_1959ae7a": [
+    {
+      "id": "81a60bf3-90fa-45eb-a117-f2417631de4e",
+      "user_id": "user_1959ae7a",
+      "concern": "最近脱发好严重，帮我制定个健康计划",
+      "title": "健康计划",
+      "goal": "改善健康状态",
+      "status": "active",
+      "created_at": "2026-06-01T12:22:54.302572+00:00",
+      "updated_at": "2026-06-02T11:16:46.384553+00:00",
+      "context_snapshot": {
+        "persona_id": "default",
+        "routine_summary": {
+          "status": "active",
+          "data_points": {
+            "sleep": 3,
+            "exercise": 0,
+            "mood": 2,
+            "energy": 4,
+            "total_messages": 55
+          },
+          "patterns": {
+            "avg_sleep_quality": 1.5,
+            "avg_sleep_duration": 8.0,
+            "sleep_data_points": 3,
+            "avg_mood": 3.0,
+            "mood_data_points": 2,
+            "avg_energy": 2.0,
+            "energy_data_points": 4,
+            "avg_interaction_hour": 9.0,
+            "interaction_count": 55
+          },
+          "confidence": "low"
+        },
+        "profile_notes": "用户在写论文，常熬夜（十二点多睡），导致早上起床困难、晚饭后犯困、干活没动力；身处广州，湿气重，头发状态不稳定（时油时干），头上长痘，按揉膻中穴有痛感。"
+      },
+      "version": 1,
+      "reasoning_tree": {
+        "id": "45e3e7f7-69cd-40b8-a205-98ae70a7bdbd",
+        "label": "最近脱发好严重，帮我制定个健康计划",
+        "description": "针对「最近脱发好严重，帮我制定个健康计划」的健康推理",
+        "emoji": "🎯",
+        "depth": 0,
+        "parent_id": null,
+        "children": [
+          {
+            "id": "67ce6fb6-9fff-4375-bc5e-ba45037a07f6",
+            "label": "激素因素",
+            "description": "雄激素水平、5α-还原酶活性及内分泌波动影响毛囊周期，是雄激素性脱发的主要驱动因素",
+            "emoji": "🧬",
+            "depth": 1,
+            "parent_id": "45e3e7f7-69cd-40b8-a205-98ae70a7bdbd",
+            "children": [],
+            "expanded": false,
+            "expandable": true,
+            "is_actionable": false,
+            "action_text": null,
+            "time_slot": null,
+            "frequency": null,
+            "duration": null,
+            "reasoning": null,
+            "status": "pending",
+            "completed_count": 0,
+            "last_completed": null,
+            "created_at": ""
+          },
+          {
+            "id": "4629e77a-1571-4be5-8d1e-cfb49ce8d4f0",
+            "label": "营养因素",
+            "description": "铁、锌、维生素D、蛋白质等关键营养素摄入不足或吸收障碍可直接干扰毛发生长周期",
+            "emoji": "🍽️",
+            "depth": 1,
+            "parent_id": "45e3e7f7-69cd-40b8-a205-98ae70a7bdbd",
+            "children": [
+              {
+                "id": "8e0307a6-def8-4033-a78a-e3b0bb2d791b",
+                "label": "铁元素缺乏",
+                "description": "铁是红细胞生成和能量代谢的关键元素，缺铁可能导致贫血、发质脆弱易断，影响毛发生长",
+                "emoji": "🔩",
+                "depth": 2,
+                "parent_id": "4629e77a-1571-4be5-8d1e-cfb49ce8d4f0",
+                "children": [],
+                "expanded": false,
+                "expandable": true,
+                "is_actionable": false,
+                "action_text": null,
+                "time_slot": null,
+                "frequency": null,
+                "duration": null,
+                "reasoning": null,
+                "status": "pending",
+                "completed_count": 0,
+                "last_completed": null,
+                "created_at": "2026-06-01T12:27:53.737673+00:00"
+              },
+              {
+                "id": "d490236b-4114-4818-b835-95d1949f82c4",
+                "label": "锌元素缺乏",
+                "description": "锌参与蛋白质合成和细胞分裂，缺锌可直接影响毛囊活性，导致脱发",
+                "emoji": "⚡",
+                "depth": 2,
+                "parent_id": "4629e77a-1571-4be5-8d1e-cfb49ce8d4f0",
+                "children": [
+                  {
+                    "id": "a1667115-7100-4abd-9250-fcda8d85ecaa",
+                    "label": "增加富锌食物摄入",
+                    "description": "锌的主要食物来源包括贝类（牡蛎、蛤蜊）、红肉（牛肉、羊肉）、动物肝脏、坚果和种子（南瓜籽、芝麻）。用户当前能量低、头发状态不稳定，增加这些食物有助于补锌。",
+                    "emoji": "🥩",
+                    "depth": 3,
+                    "parent_id": "d490236b-4114-4818-b835-95d1949f82c4",
+                    "children": [],
+                    "expanded": false,
+                    "expandable": false,
+                    "is_actionable": true,
+                    "action_text": "晚餐时安排一份红肉（如瘦牛肉100g）或每周食用2-3次贝类（如牡蛎3-4个），搭配富含维生素C的蔬菜（如甜椒）促进吸收。",
+                    "time_slot": "晚餐",
+                    "frequency": "每天晚餐包含富锌食物，每周至少5次",
+                    "duration": "持续4周观察脱发改善",
+                    "reasoning": null,
+                    "status": "pending",
+                    "completed_count": 0,
+                    "last_completed": null,
+                    "created_at": "2026-06-01T12:29:14.686560+00:00"
+                  },
+                  {
+                    "id": "fcdada67-2b26-4477-8e14-2526e1165498",
+                    "label": "补充锌补充剂",
+                    "description": "若饮食调整不足或吸收障碍明显，可考虑补充剂。用户作息不规律、压力大（写论文），锌需求量可能增加。",
+                    "emoji": "💊",
+                    "depth": 3,
+                    "parent_id": "d490236b-4114-4818-b835-95d1949f82c4",
+                    "children": [],
+                    "expanded": false,
+                    "expandable": false,
+                    "is_actionable": true,
+                    "action_text": "选用螯合锌（如吡啶甲酸锌）或葡萄糖酸锌，每日15-20mg元素锌，晚餐后服用以减少胃部刺激。避免与高钙、高铁补充剂同时服用（间隔2小时）。",
+                    "time_slot": "晚餐后",
+                    "frequency": "每天一次",
+                    "duration": "持续8周，之后根据改善情况调整",
+                    "reasoning": null,
+                    "status": "pending",
+                    "completed_count": 0,
+                    "last_completed": null,
+                    "created_at": "2026-06-01T12:29:14.686580+00:00"
+                  },
+                  {
+                    "id": "82b6cdb9-dbf6-435d-a788-486a1c2ad993",
+                    "label": "减少植酸抑制锌吸收",
+                    "description": "全谷物、豆类、坚果中的植酸会结合锌形成不溶性复合物，降低吸收率。用户身处广州，饮食可能包含较多米饭、豆制品。",
+                    "emoji": "🌾",
+                    "depth": 3,
+                    "parent_id": "d490236b-4114-4818-b835-95d1949f82c4",
+                    "children": [],
+                    "expanded": false,
+                    "expandable": false,
+                    "is_actionable": true,
+                    "action_text": "晚餐的主食选择精白米面而非全谷物；若食用豆类（如豆腐、豆浆），提前浸泡12小时并弃去浸泡水，或搭配维生素C丰富的食物（如奇异果、番茄）。",
+                    "time_slot": "晚餐",
+                    "frequency": "每天执行浸泡或搭配",
+                    "duration": "持续改善吸收",
+                    "reasoning": null,
+                    "status": "pending",
+                    "completed_count": 0,
+                    "last_completed": null,
+                    "created_at": "2026-06-01T12:29:14.686587+00:00"
+                  },
+                  {
+                    "id": "d57d072d-75f7-4188-bef7-b96d589e2fcf",
+                    "label": "改善肠道吸收环境",
+                    "description": "湿气重、熬夜可能导致肠道菌群失调、消化功能下降，影响锌等矿物质吸收。用户膻中穴痛、头上长痘，提示可能有湿热或脾胃虚弱。",
+                    "emoji": "🧘",
+                    "depth": 3,
+                    "parent_id": "d490236b-4114-4818-b835-95d1949f82c4",
+                    "children": [],
+                    "expanded": false,
+                    "expandable": false,
+                    "is_actionable": true,
+                    "action_text": "晚餐前喝一杯温的陈皮水（3g陈皮泡水）或茯苓薏米水（茯苓10g、薏米15g煮水），帮助祛湿健脾胃；每天晚餐后补充益生菌（如双歧杆菌乳杆菌复合制剂，含100亿CFU）。",
+                    "time_slot": "晚餐前及晚餐后",
+                    "frequency": "每天一次",
+                    "duration": "持续2周调整，之后根据消化状态维持",
+                    "reasoning": null,
+                    "status": "pending",
+                    "completed_count": 0,
+                    "last_completed": null,
+                    "created_at": "2026-06-01T12:29:14.686593+00:00"
+                  }
+                ],
+                "expanded": true,
+                "expandable": true,
+                "is_actionable": false,
+                "action_text": null,
+                "time_slot": null,
+                "frequency": null,
+                "duration": null,
+                "reasoning": null,
+                "status": "pending",
+                "completed_count": 0,
+                "last_completed": null,
+                "created_at": "2026-06-01T12:27:53.737699+00:00"
+              },
+              {
+                "id": "dba34c61-4f6d-4f8f-821e-a03ee4499d7b",
+                "label": "维生素D缺乏",
+                "description": "维生素D受体的表达与毛囊周期相关，缺乏维生素D可能抑制毛囊生长",
+                "emoji": "☀️",
+                "depth": 2,
+                "parent_id": "4629e77a-1571-4be5-8d1e-cfb49ce8d4f0",
+                "children": [
+                  {
+                    "id": "6ddf89e7-f8b1-43e3-9361-ed86fa86506f",
+                    "label": "增加日照",
+                    "description": "利用广州充足的日照，每天在上午10点至下午3点间暴露面部和手臂皮肤15-30分钟，促进皮肤合成维生素D。需避免晒伤，可先短时间适应。",
+                    "emoji": "☀️",
+                    "depth": 3,
+                    "parent_id": "dba34c61-4f6d-4f8f-821e-a03ee4499d7b",
+                    "children": [],
+                    "expanded": false,
+                    "expandable": false,
+                    "is_actionable": true,
+                    "action_text": "每天上午10点至下午3点之间，选择太阳不猛烈时段（如上午10-11点或下午4-5点），暴露面部和前臂皮肤15-30分钟，不涂防晒霜（短时间）。周末可延长至30分钟。",
+                    "time_slot": "白天",
+                    "frequency": "每天",
+                    "duration": "15-30分钟",
+                    "reasoning": null,
+                    "status": "pending",
+                    "completed_count": 1,
+                    "last_completed": "2026-06-02T11:16:44.687951+00:00",
+                    "created_at": "2026-06-01T12:28:16.834608+00:00"
+                  },
+                  {
+                    "id": "de0727b6-3114-4dec-9d76-4719a47d0d28",
+                    "label": "摄入富含维生素D食物",
+                    "description": "通过饮食补充维生素D，选择三文鱼、鲭鱼、蛋黄、动物肝脏、强化牛奶等食物。因用户熬夜可能影响消化吸收，建议选择易消化方式。",
+                    "emoji": "🥗",
+                    "depth": 3,
+                    "parent_id": "dba34c61-4f6d-4f8f-821e-a03ee4499d7b",
+                    "children": [],
+                    "expanded": false,
+                    "expandable": false,
+                    "is_actionable": true,
+                    "action_text": "每周摄入3次富含维生素D的食物：每次可选三文鱼100g或蛋黄2个或猪肝50g。晚餐时搭配脂肪食物（如坚果）以促进吸收。",
+                    "time_slot": "晚餐",
+                    "frequency": "每周3次",
+                    "duration": "持续实施",
+                    "reasoning": null,
+                    "status": "pending",
+                    "completed_count": 0,
+                    "last_completed": null,
+                    "created_at": "2026-06-01T12:28:16.834636+00:00"
+                  },
+                  {
+                    "id": "92f4a484-f6fb-4be9-bf2a-ced1cd0bbcab",
+                    "label": "维生素D补充剂",
+                    "description": "若日照和饮食不足以改善，可考虑口服维生素D补充剂。推荐每日1000-2000 IU，因用户常熬夜且能量低，选择随餐服用。",
+                    "emoji": "💊",
+                    "depth": 3,
+                    "parent_id": "dba34c61-4f6d-4f8f-821e-a03ee4499d7b",
+                    "children": [],
+                    "expanded": false,
+                    "expandable": false,
+                    "is_actionable": true,
+                    "action_text": "购买维生素D3补充剂（每粒400-1000 IU），每日晚餐后服用2粒（总量1000-2000 IU），连续1个月后评估。注意选择正规品牌。",
+                    "time_slot": "晚餐后",
+                    "frequency": "每天",
+                    "duration": "1个月",
+                    "reasoning": null,
+                    "status": "pending",
+                    "completed_count": 0,
+                    "last_completed": null,
+                    "created_at": "2026-06-01T12:28:16.834646+00:00"
+                  }
+                ],
+                "expanded": true,
+                "expandable": true,
+                "is_actionable": false,
+                "action_text": null,
+                "time_slot": null,
+                "frequency": null,
+                "duration": null,
+                "reasoning": null,
+                "status": "pending",
+                "completed_count": 0,
+                "last_completed": null,
+                "created_at": "2026-06-01T12:27:53.737710+00:00"
+              },
+              {
+                "id": "59f560b6-573f-4266-b3c2-92ed91bee6a3",
+                "label": "蛋白质摄入不足",
+                "description": "蛋白质是毛发的主要原料，缺乏蛋白质直接导致发丝细弱、生长缓慢",
+                "emoji": "🥩",
+                "depth": 2,
+                "parent_id": "4629e77a-1571-4be5-8d1e-cfb49ce8d4f0",
+                "children": [],
+                "expanded": false,
+                "expandable": true,
+                "is_actionable": false,
+                "action_text": null,
+                "time_slot": null,
+                "frequency": null,
+                "duration": null,
+                "reasoning": null,
+                "status": "pending",
+                "completed_count": 0,
+                "last_completed": null,
+                "created_at": "2026-06-01T12:27:53.737718+00:00"
+              }
+            ],
+            "expanded": true,
+            "expandable": true,
+            "is_actionable": false,
+            "action_text": null,
+            "time_slot": null,
+            "frequency": null,
+            "duration": null,
+            "reasoning": null,
+            "status": "pending",
+            "completed_count": 0,
+            "last_completed": null,
+            "created_at": ""
+          },
+          {
+            "id": "38f451ca-66cc-42c8-8974-510f1c10f339",
+            "label": "作息节律",
+            "description": "长期熬夜与昼夜节律紊乱通过升高皮质醇、抑制褪黑素分泌等通路加剧脱发",
+            "emoji": "🌙",
+            "depth": 1,
+            "parent_id": "45e3e7f7-69cd-40b8-a205-98ae70a7bdbd",
+            "children": [],
+            "expanded": false,
+            "expandable": true,
+            "is_actionable": false,
+            "action_text": null,
+            "time_slot": null,
+            "frequency": null,
+            "duration": null,
+            "reasoning": null,
+            "status": "pending",
+            "completed_count": 0,
+            "last_completed": null,
+            "created_at": ""
+          },
+          {
+            "id": "d7bddcfc-6a6e-43a0-9f42-7b12b1581c92",
+            "label": "心理压力",
+            "description": "慢性压力刺激皮质醇持续释放，可诱发或加重休止期脱发，影响毛囊健康",
+            "emoji": "🧠",
+            "depth": 1,
+            "parent_id": "45e3e7f7-69cd-40b8-a205-98ae70a7bdbd",
+            "children": [
+              {
+                "id": "a22fee92-8193-45ec-a866-380898aa82d5",
+                "label": "皮质醇分泌节律紊乱",
+                "description": "慢性压力导致皮质醇持续高分泌，扰乱正常昼夜节律，抑制毛囊生长期，加速休止期脱发。",
+                "emoji": "🧠",
+                "depth": 2,
+                "parent_id": "d7bddcfc-6a6e-43a0-9f42-7b12b1581c92",
+                "children": [],
+                "expanded": false,
+                "expandable": true,
+                "is_actionable": false,
+                "action_text": null,
+                "time_slot": null,
+                "frequency": null,
+                "duration": null,
+                "reasoning": null,
+                "status": "pending",
+                "completed_count": 0,
+                "last_completed": null,
+                "created_at": "2026-06-01T12:27:40.337219+00:00"
+              },
+              {
+                "id": "d2246e40-cd6e-44ce-9cd5-5a493a8e5e30",
+                "label": "头皮微循环障碍",
+                "description": "压力诱导交感神经兴奋，引起头皮血管收缩，毛囊供血供氧不足，影响毛母细胞分裂。",
+                "emoji": "🩸",
+                "depth": 2,
+                "parent_id": "d7bddcfc-6a6e-43a0-9f42-7b12b1581c92",
+                "children": [],
+                "expanded": false,
+                "expandable": true,
+                "is_actionable": false,
+                "action_text": null,
+                "time_slot": null,
+                "frequency": null,
+                "duration": null,
+                "reasoning": null,
+                "status": "pending",
+                "completed_count": 0,
+                "last_completed": null,
+                "created_at": "2026-06-01T12:27:40.337241+00:00"
+              },
+              {
+                "id": "911300c9-a192-4a76-a61e-b25ad49e4be7",
+                "label": "5-羟色胺水平下降",
+                "description": "长期压力消耗5-HT，情绪低落与睡眠质量差进一步加重，间接影响毛囊免疫微环境。",
+                "emoji": "😞",
+                "depth": 2,
+                "parent_id": "d7bddcfc-6a6e-43a0-9f42-7b12b1581c92",
+                "children": [],
+                "expanded": false,
+                "expandable": true,
+                "is_actionable": false,
+                "action_text": null,
+                "time_slot": null,
+                "frequency": null,
+                "duration": null,
+                "reasoning": null,
+                "status": "pending",
+                "completed_count": 0,
+                "last_completed": null,
+                "created_at": "2026-06-01T12:27:40.337252+00:00"
+              }
+            ],
+            "expanded": true,
+            "expandable": true,
+            "is_actionable": false,
+            "action_text": null,
+            "time_slot": null,
+            "frequency": null,
+            "duration": null,
+            "reasoning": null,
+            "status": "pending",
+            "completed_count": 0,
+            "last_completed": null,
+            "created_at": ""
+          },
+          {
+            "id": "9a2146bc-d52a-4703-8294-6dfb185c4420",
+            "label": "头皮环境",
+            "description": "高湿度、油脂分泌失衡、微生物过度繁殖等头皮微环境紊乱直接损害毛囊功能",
+            "emoji": "💆",
+            "depth": 1,
+            "parent_id": "45e3e7f7-69cd-40b8-a205-98ae70a7bdbd",
+            "children": [],
+            "expanded": false,
+            "expandable": true,
+            "is_actionable": false,
+            "action_text": null,
+            "time_slot": null,
+            "frequency": null,
+            "duration": null,
+            "reasoning": null,
+            "status": "pending",
+            "completed_count": 0,
+            "last_completed": null,
+            "created_at": ""
+          }
+        ],
+        "expanded": true,
+        "expandable": true,
+        "is_actionable": false,
+        "action_text": null,
+        "time_slot": null,
+        "frequency": null,
+        "duration": null,
+        "reasoning": null,
+        "status": "pending",
+        "completed_count": 0,
+        "last_completed": null,
+        "created_at": ""
+      }
+    }
+  ],
+  "user_815ee654": [
+    {
+      "id": "3841b3f7-d07f-423e-80e7-00ecb2365a2c",
+      "user_id": "user_815ee654",
+      "concern": "最近脱发好严重，帮我制定个健康计划",
+      "title": "🌿 头发养护计划",
+      "goal": "每天做几件小事，让头发慢慢回到你身边～",
+      "status": "active",
+      "created_at": "2026-06-01T08:13:41.077732+00:00",
+      "updated_at": "2026-06-01T08:13:41.077747+00:00",
+      "context_snapshot": {
+        "persona_id": "default",
+        "routine_summary": {
+          "status": "data_insufficient",
+          "message": "还需要更多交互数据才能建立作息模型"
+        },
+        "profile_notes": ""
+      },
+      "categories": [
+        {
+          "name": "饮食调理",
+          "icon": "🥗",
+          "items": [
+            {
+              "item_id": "374a21d3-d4f0-47b5-89df-cd49f4ba5021",
+              "time_slot": "早餐",
+              "action": "吃一颗水煮蛋加一小把坚果",
+              "duration": "5分钟",
+              "frequency": "每天",
+              "reasoning": "蛋白质和锌是头发的主要建材，缺了它们头发容易掉。",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            },
+            {
+              "item_id": "91383464-c70c-4b4d-9c1d-fd4f5fe122e0",
+              "time_slot": "午餐",
+              "action": "多吃绿叶菜和豆制品，比如菠菜炒豆腐",
+              "duration": "10分钟",
+              "frequency": "每天",
+              "reasoning": "铁和维生素B族能改善头皮血液循环，减少掉发。",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            },
+            {
+              "item_id": "caa80705-f29d-4278-8877-2d9a96fad0b3",
+              "time_slot": "下午加餐",
+              "action": "来根香蕉或一杯无糖酸奶",
+              "duration": "3分钟",
+              "frequency": "每天",
+              "reasoning": "补充钾和益生菌，平衡激素稳定毛囊环境。",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            }
+          ]
+        },
+        {
+          "name": "运动建议",
+          "icon": "🏃",
+          "items": [
+            {
+              "item_id": "18d35abe-7436-4c5d-ade2-3095dc0b8b40",
+              "time_slot": "下午16:00-17:00",
+              "action": "做10分钟头部按摩+5分钟肩颈拉伸",
+              "duration": "15分钟",
+              "frequency": "每天",
+              "reasoning": "放松头皮和颈椎，促进头部供血，毛囊吃饱了才不掉。",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            }
+          ]
+        },
+        {
+          "name": "睡眠优化",
+          "icon": "🛌",
+          "items": [
+            {
+              "item_id": "5776d972-d48b-4d70-8e7a-591a0b3482a7",
+              "time_slot": "晚上23:00前",
+              "action": "放下手机，戴眼罩或调暗灯光",
+              "duration": "整夜",
+              "frequency": "每天",
+              "reasoning": "褪黑素在黑暗里分泌最多，能保护毛囊免受压力损伤。",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            }
+          ]
+        },
+        {
+          "name": "压力管理",
+          "icon": "🧘",
+          "items": [
+            {
+              "item_id": "400dc85b-a995-43d8-ad48-10e4377ea9cf",
+              "time_slot": "工作间隙下午",
+              "action": "起来倒杯水，深呼吸3次再坐下",
+              "duration": "2分钟",
+              "frequency": "每天3次",
+              "reasoning": "压力会让皮质醇升高，打断头发正常生长周期。",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            }
+          ]
+        },
+        {
+          "name": "日常护理",
+          "icon": "🌿",
+          "items": [
+            {
+              "item_id": "09f39ceb-1325-43fb-8882-c766d161a5a7",
+              "time_slot": "晚上洗澡",
+              "action": "用指腹按摩头皮2分钟，别用指甲抓",
+              "duration": "2分钟",
+              "frequency": "每天",
+              "reasoning": "温和刺激毛囊，还能清理多余油脂，减少堵塞。",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            },
+            {
+              "item_id": "144b3fcc-493c-4595-b3b1-cd9edd10269b",
+              "time_slot": "洗完头发",
+              "action": "用宽齿梳从发尾往上梳顺，别硬扯",
+              "duration": "3分钟",
+              "frequency": "每天",
+              "reasoning": "减少物理拉扯导致的额外掉发。",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            }
+          ]
+        }
+      ],
+      "version": 1
+    }
+  ],
+  "user_74e9dcc5": [
+    {
+      "id": "24c7e81e-f0a3-4ab4-bece-ceeae67dff6f",
+      "user_id": "user_74e9dcc5",
+      "concern": "最近脱发好严重，帮我制定个健康计划",
+      "title": "🌿 养发小计划",
+      "goal": "从日常细节入手，慢慢养回浓密头发",
+      "status": "active",
+      "created_at": "2026-06-01T08:15:11.806820+00:00",
+      "updated_at": "2026-06-01T08:15:11.806834+00:00",
+      "context_snapshot": {
+        "persona_id": "default",
+        "routine_summary": {
+          "status": "data_insufficient",
+          "message": "还需要更多交互数据才能建立作息模型"
+        },
+        "profile_notes": ""
+      },
+      "categories": [
+        {
+          "name": "饮食调理",
+          "icon": "🥗",
+          "items": [
+            {
+              "item_id": "3d2df651-1c04-4bb5-865d-03124cc6a539",
+              "time_slot": "早餐",
+              "action": "吃一个水煮蛋加一小把核桃",
+              "duration": "5分钟",
+              "frequency": "每天",
+              "reasoning": "优质蛋白和Omega-3是头发原料",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            },
+            {
+              "item_id": "1934cf5a-870a-4b88-a67d-e85b01fe93c2",
+              "time_slot": "午餐",
+              "action": "搭配一份深绿色蔬菜和豆制品",
+              "duration": "10分钟",
+              "frequency": "每天",
+              "reasoning": "补充铁和锌，防毛囊营养不良",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            }
+          ]
+        },
+        {
+          "name": "日常习惯",
+          "icon": "✍️",
+          "items": [
+            {
+              "item_id": "a1f5c023-a9fe-434a-be02-7ab501004040",
+              "time_slot": "下午",
+              "action": "站起来活动5分钟，顺便梳梳头",
+              "duration": "5分钟",
+              "frequency": "每天1次",
+              "reasoning": "促进头皮血液循环，减少压力荷尔蒙",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            },
+            {
+              "item_id": "a0433fd8-e7fb-4272-895a-90c999f5dff6",
+              "time_slot": "晚上",
+              "action": "用指腹轻柔按摩头皮2分钟",
+              "duration": "2分钟",
+              "frequency": "每天",
+              "reasoning": "放松头皮，改善毛囊供血",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            }
+          ]
+        },
+        {
+          "name": "睡眠优化",
+          "icon": "🛌",
+          "items": [
+            {
+              "item_id": "b8f20aff-761b-4739-a5dc-80d9c2f4039a",
+              "time_slot": "睡前",
+              "action": "把手机放客厅，11点前躺平",
+              "duration": "null",
+              "frequency": "每天",
+              "reasoning": "熬夜影响激素平衡，加重脱发",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            }
+          ]
+        },
+        {
+          "name": "护理调理",
+          "icon": "🌿",
+          "items": [
+            {
+              "item_id": "bf2d6759-c50d-4aa2-a56b-ddb7255c685a",
+              "time_slot": "洗头时",
+              "action": "水温别太烫，用温和洗发水",
+              "duration": "null",
+              "frequency": "隔天",
+              "reasoning": "过热和刺激成分会损伤毛囊",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            }
+          ]
+        },
+        {
+          "name": "压力管理",
+          "icon": "🧘",
+          "items": [
+            {
+              "item_id": "05ec53d2-8028-443e-a073-123b7022b6c1",
+              "time_slot": "下午犯困时",
+              "action": "闭眼深呼吸1分钟，别硬扛",
+              "duration": "1分钟",
+              "frequency": "每天2-3次",
+              "reasoning": "减压能降低皮质醇，减少掉发",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            }
+          ]
+        }
+      ],
+      "version": 1
+    }
+  ],
+  "user_aa307595": [
+    {
+      "id": "e5e20313-8ead-4c58-82e4-61d07c54639e",
+      "user_id": "user_aa307595",
+      "concern": "最近脱发好严重，帮我制定个健康计划",
+      "title": "🌿 头皮加油计划",
+      "goal": "减少脱发，让发量稳中有升",
+      "status": "active",
+      "created_at": "2026-06-01T08:16:21.855473+00:00",
+      "updated_at": "2026-06-01T08:16:21.855490+00:00",
+      "context_snapshot": {
+        "persona_id": "default",
+        "routine_summary": {
+          "status": "active",
+          "data_points": {
+            "sleep": 1,
+            "exercise": 1,
+            "mood": 0,
+            "energy": 0,
+            "total_messages": 3
+          },
+          "patterns": {
+            "exercise_count": 1,
+            "primary_exercise_type": "步行",
+            "avg_interaction_hour": 8.0,
+            "interaction_count": 3
+          },
+          "confidence": "very_low"
+        },
+        "profile_notes": ""
+      },
+      "categories": [
+        {
+          "name": "饮食调理",
+          "icon": "🥗",
+          "items": [
+            {
+              "item_id": "2644fe9b-d59b-44ce-8677-6c0ea0ee87cf",
+              "time_slot": "早餐后",
+              "action": "吃一把核桃或杏仁当零食",
+              "duration": "5分钟",
+              "frequency": "每天",
+              "reasoning": "坚果富含锌和硒，是毛囊生长的关键微量元素",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            },
+            {
+              "item_id": "55e2fef3-69be-4e5a-8901-4d29411c7ca9",
+              "time_slot": "午餐",
+              "action": "多吃菠菜、西兰花这类深绿色蔬菜",
+              "duration": null,
+              "frequency": "每周至少5天",
+              "reasoning": "叶酸和铁能改善头皮供血，减少休止期脱发",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            }
+          ]
+        },
+        {
+          "name": "运动建议",
+          "icon": "🏃",
+          "items": [
+            {
+              "item_id": "e289386d-a9de-4e76-a428-9b11a335d878",
+              "time_slot": "早8点步行后",
+              "action": "加1分钟倒立或头低脚高靠墙（小心别摔）",
+              "duration": "1分钟",
+              "frequency": "每天",
+              "reasoning": "增加头部血液供应，毛囊营养更足",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            }
+          ]
+        },
+        {
+          "name": "日常习惯",
+          "icon": "✍️",
+          "items": [
+            {
+              "item_id": "d7744314-f031-4fcb-8d7d-7e33b35c32ee",
+              "time_slot": "睡前半小时",
+              "action": "用木梳轻柔梳头100下，从前往后",
+              "duration": "5分钟",
+              "frequency": "每天",
+              "reasoning": "刺激头皮血液循环，还能缓解一天的紧张感",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            },
+            {
+              "item_id": "563db3fe-e5bf-4f5b-ad1e-609e06612e96",
+              "time_slot": "洗头时",
+              "action": "水温控制在40度以下，别用指甲抓",
+              "duration": null,
+              "frequency": "隔天/每天",
+              "reasoning": "过热和抓挠会损伤毛囊，温水+指腹按摩更友好",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            }
+          ]
+        },
+        {
+          "name": "压力管理",
+          "icon": "🧘",
+          "items": [
+            {
+              "item_id": "f02a8eaa-b6f4-4bee-9a17-d41d98bd44f0",
+              "time_slot": "下午4点犯困时",
+              "action": "站起来扭扭脖子，闭眼深呼吸5次",
+              "duration": "2分钟",
+              "frequency": "每天下午",
+              "reasoning": "压力会升高皮质醇，是脱发的隐形推手，快速放松能刹车",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            }
+          ]
+        }
+      ],
+      "version": 1
+    }
+  ],
+  "user_86da0482": [
+    {
+      "id": "023e1ba3-4480-44c8-8525-9d906cb5f00d",
+      "user_id": "user_86da0482",
+      "concern": "最近脱发好严重，帮我制定个健康计划",
+      "title": "🌿 头发养护计划",
+      "goal": "稳住发际线，让它慢慢长回来",
+      "status": "active",
+      "created_at": "2026-06-01T08:23:35.736336+00:00",
+      "updated_at": "2026-06-01T08:23:40.410843+00:00",
+      "context_snapshot": {
+        "persona_id": "default",
+        "routine_summary": {
+          "status": "data_insufficient",
+          "message": "还需要更多交互数据才能建立作息模型"
+        },
+        "profile_notes": ""
+      },
+      "categories": [
+        {
+          "name": "饮食调理",
+          "icon": "🥗",
+          "items": [
+            {
+              "item_id": "ece9f9de-d19e-4e7f-b590-2343661f3074",
+              "time_slot": "早餐",
+              "action": "吃两个煮鸡蛋或一小把核桃",
+              "duration": null,
+              "frequency": "每天",
+              "reasoning": "蛋白质和Omega-3是头发主要原料，补充点小营养～",
+              "status": "done",
+              "completed_count": 1,
+              "last_completed": "2026-06-01T08:23:40.410835+00:00"
+            },
+            {
+              "item_id": "2f6980df-f53b-4f91-b0ad-c54c5cf98b80",
+              "time_slot": "午餐",
+              "action": "加一份红肉或豆腐，配半碗菠菜",
+              "duration": null,
+              "frequency": "每天",
+              "reasoning": "铁和锌能预防缺铁性脱发，菠菜里的维生素C还能助吸收",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            }
+          ]
+        },
+        {
+          "name": "运动建议",
+          "icon": "🏃",
+          "items": [
+            {
+              "item_id": "943e3d41-ff7a-43a4-80c5-0bce12e82ae4",
+              "time_slot": "下午犯困时（现在这个点）",
+              "action": "楼下快走10分钟，顺便晒晒太阳",
+              "duration": "10分钟",
+              "frequency": "每天",
+              "reasoning": "促进头皮血液循环，顺便赶走下午的瞌睡虫",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            }
+          ]
+        },
+        {
+          "name": "睡眠优化",
+          "icon": "🛌",
+          "items": [
+            {
+              "item_id": "eb0a8520-c5c4-4cbd-812b-ed8f3ee0762d",
+              "time_slot": "睡前1小时",
+              "action": "关掉手机，用温水泡脚15分钟",
+              "duration": "15分钟",
+              "frequency": "每天",
+              "reasoning": "降低皮质醇，头发在夜间长得最快，别让压力偷走它们",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            }
+          ]
+        },
+        {
+          "name": "压力管理",
+          "icon": "🧘",
+          "items": [
+            {
+              "item_id": "afb7eed8-18a2-4987-ae7e-d6f2bbb4c708",
+              "time_slot": "任何焦虑时刻",
+              "action": "深呼吸3次——吸气4秒，憋气4秒，呼气6秒",
+              "duration": "1分钟",
+              "frequency": "感觉累时就做",
+              "reasoning": "压力会让毛囊提前退休，深呼吸能一键降温",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            }
+          ]
+        },
+        {
+          "name": "日常习惯",
+          "icon": "✍️",
+          "items": [
+            {
+              "item_id": "8c502886-1e31-493c-b8e6-6da62433c158",
+              "time_slot": "洗头前",
+              "action": "用指腹按摩头皮2分钟，别用指甲抓",
+              "duration": "2分钟",
+              "frequency": "每次洗头",
+              "reasoning": "温柔唤醒毛囊，比暴力抓挠温柔多了",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            },
+            {
+              "item_id": "39f80249-654b-4880-b259-bb194a44caf9",
+              "time_slot": "吹头发时",
+              "action": "吹风机离头皮15cm以上，用温风档",
+              "duration": null,
+              "frequency": "每次洗头后",
+              "reasoning": "高温会烫伤毛鳞片，头发会气哭的",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            }
+          ]
+        },
+        {
+          "name": "头皮护理",
+          "icon": "🌿",
+          "items": [
+            {
+              "item_id": "3963e2c5-604e-4702-b400-50cfa5b4f841",
+              "time_slot": "本周内",
+              "action": "买瓶含咖啡因或酮康唑的温和洗发水",
+              "duration": null,
+              "frequency": "隔天用",
+              "reasoning": "成分能抑制二氢睾酮，减少雄激素性脱发",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            }
+          ]
+        }
+      ],
+      "version": 1
+    }
+  ],
+  "user_d6aa79d5": [
+    {
+      "id": "5e0fa191-f977-478e-9e68-eb66d3c58123",
+      "user_id": "user_d6aa79d5",
+      "concern": "最近脱发好严重，帮我制定个健康计划",
+      "title": "🌿 头发养护计划",
+      "goal": "减少脱发，养出强韧发质",
+      "status": "active",
+      "created_at": "2026-06-01T08:31:59.428781+00:00",
+      "updated_at": "2026-06-01T08:31:59.428799+00:00",
+      "context_snapshot": {
+        "persona_id": "default",
+        "routine_summary": {
+          "status": "data_insufficient",
+          "message": "还需要更多交互数据才能建立作息模型"
+        },
+        "profile_notes": ""
+      },
+      "categories": [
+        {
+          "name": "饮食调理",
+          "icon": "🥗",
+          "items": [
+            {
+              "item_id": "20ed5c0d-42e4-4e17-8d11-e3b120679aec",
+              "time_slot": "早餐",
+              "action": "加一小把黑芝麻或核桃，配牛奶吃",
+              "duration": null,
+              "frequency": "每天",
+              "reasoning": "黑芝麻和核桃富含维生素E和锌，能促进头皮血液循环",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            },
+            {
+              "item_id": "59dc587a-9215-40fb-9460-26baf5f95316",
+              "time_slot": "午餐",
+              "action": "保证有蛋白质：鸡蛋、鱼或豆腐，加一份深绿色蔬菜",
+              "duration": null,
+              "frequency": "每天",
+              "reasoning": "头发就是蛋白质做的，缺蛋白容易掉发",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            },
+            {
+              "item_id": "0501357c-17b1-4040-9136-c3dccdec8af2",
+              "time_slot": "下午加餐",
+              "action": "来颗橙子或猕猴桃，补充维C",
+              "duration": null,
+              "frequency": "每天",
+              "reasoning": "维C帮助铁吸收，铁不足也会脱发哦",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            }
+          ]
+        },
+        {
+          "name": "日常护理",
+          "icon": "🌿",
+          "items": [
+            {
+              "item_id": "7b714b4d-3e40-4dcb-ac5b-3ae5f5ad5503",
+              "time_slot": "洗头时",
+              "action": "用指腹轻轻按摩头皮3分钟，别用指甲抓",
+              "duration": "3分钟",
+              "frequency": "隔天",
+              "reasoning": "温和按摩促进头皮血供，指甲抓反而伤毛囊",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            },
+            {
+              "item_id": "338ab8e8-5c7d-4ca6-90ab-8838a538a7f2",
+              "time_slot": "吹头发",
+              "action": "吹风机离远点，用中温或冷风吹干",
+              "duration": null,
+              "frequency": "每天",
+              "reasoning": "高温会损伤发丝，冷风减少断裂",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            }
+          ]
+        },
+        {
+          "name": "压力管理",
+          "icon": "🧘",
+          "items": [
+            {
+              "item_id": "df392cbd-a9b2-4931-a922-b4084d8f10f0",
+              "time_slot": "下午犯困时",
+              "action": "站起来伸个懒腰，闭眼深呼吸5次",
+              "duration": "1分钟",
+              "frequency": "每天",
+              "reasoning": "压力大会让毛囊提前进入休止期，深呼吸能快速降压",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            }
+          ]
+        },
+        {
+          "name": "睡眠优化",
+          "icon": "🛌",
+          "items": [
+            {
+              "item_id": "0ff7c0db-ec78-472b-9971-fd7702e038eb",
+              "time_slot": "睡前1小时",
+              "action": "放下手机，看看纸质书或听点轻音乐",
+              "duration": "30分钟",
+              "frequency": "每天",
+              "reasoning": "蓝光干扰褪黑素，睡眠不足会加剧脱发",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            }
+          ]
+        }
+      ],
+      "version": 1
+    }
+  ],
+  "user_af62deb3": [
+    {
+      "id": "028ffd25-a40e-42ea-a843-f9819e98c508",
+      "user_id": "user_af62deb3",
+      "concern": "最近脱发好严重，帮我制定个健康计划",
+      "title": "🌿 头发养护计划",
+      "goal": "通过饮食和生活习惯改善脱发，让头发更浓密",
+      "status": "active",
+      "created_at": "2026-06-01T08:32:32.512021+00:00",
+      "updated_at": "2026-06-01T08:32:34.166358+00:00",
+      "context_snapshot": {
+        "persona_id": "default",
+        "routine_summary": {
+          "status": "data_insufficient",
+          "message": "还需要更多交互数据才能建立作息模型"
+        },
+        "profile_notes": ""
+      },
+      "categories": [
+        {
+          "name": "饮食调理",
+          "icon": "🥗",
+          "items": [
+            {
+              "item_id": "0ffa05e7-b14d-473d-84da-c4661b6b1206",
+              "time_slot": "早餐",
+              "action": "吃个水煮蛋，喝杯豆浆或牛奶",
+              "duration": null,
+              "frequency": "每天",
+              "reasoning": "鸡蛋富含生物素，豆浆/牛奶有优质蛋白，都是头发的小营养包",
+              "status": "done",
+              "completed_count": 1,
+              "last_completed": "2026-06-01T08:32:34.166350+00:00"
+            },
+            {
+              "item_id": "0a96c204-aea6-4005-9c1d-0281d68d491a",
+              "time_slot": "午餐",
+              "action": "多夹几筷子菠菜或瘦肉",
+              "duration": null,
+              "frequency": "每天",
+              "reasoning": "菠菜补铁，瘦肉补锌，缺这俩容易掉头发",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            },
+            {
+              "item_id": "bf3ee6f1-ee78-407e-96ae-b1a13d3714ed",
+              "time_slot": "下午加餐",
+              "action": "抓一小把核桃或杏仁当零食",
+              "duration": "5分钟",
+              "frequency": "每天",
+              "reasoning": "坚果里的维生素E和欧米伽3能给毛囊加加油",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            }
+          ]
+        },
+        {
+          "name": "压力管理",
+          "icon": "🧘",
+          "items": [
+            {
+              "item_id": "0fe6fb8e-b33f-4c04-b816-87efa57cc602",
+              "time_slot": "下午犯困时",
+              "action": "站起来伸个懒腰，深呼吸5次",
+              "duration": "2分钟",
+              "frequency": "每天2-3次",
+              "reasoning": "压力大会让头发提前退休，深呼吸能帮你冷静下来",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            }
+          ]
+        },
+        {
+          "name": "睡眠优化",
+          "icon": "🛌",
+          "items": [
+            {
+              "item_id": "e46b85e8-1bd4-4559-9f93-7de54ebaa38c",
+              "time_slot": "睡前30分钟",
+              "action": "放下手机，用温水泡脚10分钟",
+              "duration": "10分钟",
+              "frequency": "每天",
+              "reasoning": "泡脚助眠，深度睡眠时毛囊修复最积极",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            }
+          ]
+        },
+        {
+          "name": "日常护理",
+          "icon": "🌿",
+          "items": [
+            {
+              "item_id": "b8f30384-6ccd-40b8-97b9-48f45f17cda8",
+              "time_slot": "洗头前",
+              "action": "用指腹轻轻按揉头皮3分钟，别用指甲抓",
+              "duration": "3分钟",
+              "frequency": "隔天",
+              "reasoning": "促进头皮血液循环，比猛抓温柔多了，毛囊会感谢你",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            },
+            {
+              "item_id": "ce50b03e-c4ee-426e-b978-4e5965e3e98b",
+              "time_slot": "洗完头",
+              "action": "用毛巾轻轻吸水，别使劲搓",
+              "duration": null,
+              "frequency": "每次洗头",
+              "reasoning": "揉搓容易扯断湿发，轻按就能保护脆弱发丝",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            }
+          ]
+        }
+      ],
+      "version": 1
+    }
+  ],
+  "user_93541e6a": [
+    {
+      "id": "b427cc8d-afd6-4b8f-a0f4-140d60538304",
+      "user_id": "user_93541e6a",
+      "concern": "最近脱发好严重，帮我制定个健康计划",
+      "title": "🌿 秀发养护计划",
+      "goal": "通过饮食、作息、护理和压力管理的综合调整，减少脱发并促进头发健康生长。",
+      "status": "active",
+      "created_at": "2026-06-01T08:39:24.966747+00:00",
+      "updated_at": "2026-06-01T08:39:24.966764+00:00",
+      "context_snapshot": {
+        "persona_id": "default",
+        "routine_summary": {
+          "status": "active",
+          "data_points": {
+            "sleep": 0,
+            "exercise": 0,
+            "mood": 0,
+            "energy": 0,
+            "total_messages": 3
+          },
+          "patterns": {
+            "avg_interaction_hour": 8.0,
+            "interaction_count": 3
+          },
+          "confidence": "very_low"
+        },
+        "profile_notes": ""
+      },
+      "categories": [
+        {
+          "name": "🥗 饮食调理",
+          "icon": "🥗",
+          "items": [
+            {
+              "item_id": "2d4bb1c6-1f6c-4aff-a23d-0d5aa1258b5e",
+              "time_slot": "早餐",
+              "action": "吃1个鸡蛋 + 1小把核桃或杏仁",
+              "duration": null,
+              "frequency": "每天",
+              "reasoning": "鸡蛋提供优质蛋白和生物素，坚果富含锌和维生素E，都是头发生长必需的营养素。",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            },
+            {
+              "item_id": "29367336-2d48-4e4b-9209-939313943333",
+              "time_slot": "午餐",
+              "action": "确保摄入一份深绿色蔬菜（如菠菜、西兰花）和一份豆制品或瘦肉",
+              "duration": null,
+              "frequency": "每天",
+              "reasoning": "菠菜富含铁和叶酸，缺铁是脱发常见原因；豆制品提供植物蛋白和异黄酮，有助于调节激素。",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            },
+            {
+              "item_id": "96537897-820a-4df9-a3ec-c250a8c04c2d",
+              "time_slot": "下午加餐",
+              "action": "吃1个橙子或1个猕猴桃",
+              "duration": null,
+              "frequency": "每天",
+              "reasoning": "维生素C促进铁吸收，并帮助胶原蛋白合成，强化发根。",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            }
+          ]
+        },
+        {
+          "name": "✍️ 日常习惯",
+          "icon": "✍️",
+          "items": [
+            {
+              "item_id": "b9bea9ba-59fe-4266-b0d3-0a4fd6afbdf9",
+              "time_slot": "起床后",
+              "action": "用宽齿木梳从前向后梳理头发50下",
+              "duration": "2分钟",
+              "frequency": "每天",
+              "reasoning": "轻柔梳理可促进头皮血液循环，减少脱发，避免拉扯。",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            },
+            {
+              "item_id": "9640dd67-e7a7-40b8-b48a-ffe3ee7ad622",
+              "time_slot": "洗发时",
+              "action": "使用温和无硅油的洗发水，水温不超过40℃，指腹按摩头皮2分钟",
+              "duration": "2分钟",
+              "frequency": "隔天或每周3次",
+              "reasoning": "过热的水和化学刺激会损伤毛囊，温和按摩可放松头皮并改善微循环。",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            },
+            {
+              "item_id": "a18227bb-6096-4c3a-9f53-98a69311bcd8",
+              "time_slot": "睡前",
+              "action": "用手指指腹从发际线向后按压头皮5分钟",
+              "duration": "5分钟",
+              "frequency": "每天",
+              "reasoning": "睡前头皮按摩可缓解压力、促进局部血液流动，有助于毛囊健康。",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            }
+          ]
+        },
+        {
+          "name": "🧘 压力管理",
+          "icon": "🧘",
+          "items": [
+            {
+              "item_id": "942eed0c-780c-456f-aaeb-d383e576e2e2",
+              "time_slot": "下午16:00-17:00",
+              "action": "站起来活动5分钟，做2次深呼吸（吸气4秒，呼气6秒）",
+              "duration": "5分钟",
+              "frequency": "每天",
+              "reasoning": "工作日下午容易犯困和累积压力，短时活动加呼吸练习可降低皮质醇，皮质醇过高会加速脱发。",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            },
+            {
+              "item_id": "106d9ece-6759-414a-be3a-2af071fa7d62",
+              "time_slot": "晚上",
+              "action": "用手机设置“勿扰模式”，提前1小时放下手机",
+              "duration": null,
+              "frequency": "每天",
+              "reasoning": "蓝光抑制褪黑素、影响睡眠，而睡眠不足是脱发诱因之一。",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            }
+          ]
+        },
+        {
+          "name": "🛌 睡眠优化",
+          "icon": "🛌",
+          "items": [
+            {
+              "item_id": "4769cd4c-c1d3-46a4-9aba-5b421261cc99",
+              "time_slot": "睡前30分钟",
+              "action": "喝一小杯温牛奶或洋甘菊茶",
+              "duration": null,
+              "frequency": "每天",
+              "reasoning": "温牛奶含色氨酸，洋甘菊有镇静作用，帮助更快入睡，深度睡眠时毛囊修复效率最高。",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            }
+          ]
+        }
+      ],
+      "version": 1
+    }
+  ],
+  "user_2bbe2e18": [
+    {
+      "id": "d683f3f6-d2b3-4d29-b670-f3ab9d38897e",
+      "user_id": "user_2bbe2e18",
+      "concern": "最近脱发好严重，帮我制定个健康计划",
+      "title": "🌿 头发养护计划",
+      "goal": "通过调整饮食、优化日常习惯和减轻压力，改善脱发问题，促进头发生长。",
+      "status": "active",
+      "created_at": "2026-06-01T08:41:51.344315+00:00",
+      "updated_at": "2026-06-01T08:41:51.344334+00:00",
+      "context_snapshot": {
+        "persona_id": "default",
+        "routine_summary": {
+          "status": "data_insufficient",
+          "message": "还需要更多交互数据才能建立作息模型"
+        },
+        "profile_notes": ""
+      },
+      "categories": [
+        {
+          "name": "饮食调理",
+          "icon": "🥗",
+          "items": [
+            {
+              "item_id": "f7958f8c-a015-4821-9250-98f60b026e35",
+              "time_slot": "早餐（8:00）",
+              "action": "吃 2 个水煮蛋 + 1 小碗即食燕麦片 + 100ml 无糖豆浆",
+              "duration": "15分钟",
+              "frequency": "每天",
+              "reasoning": "鸡蛋富含生物素和蛋白质，豆浆提供植物雌激素和铁，均是头发生长关键营养素",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            },
+            {
+              "item_id": "0524225a-dd26-427d-9d2e-cacad7a4c9f6",
+              "time_slot": "午餐（12:30）",
+              "action": "加一份掌心大小的清炒菠菜或西兰花，搭配巴掌大小的一块瘦肉或豆腐",
+              "duration": "20分钟",
+              "frequency": "每天",
+              "reasoning": "菠菜和西兰花富含维生素C、铁和抗氧化剂，有助于头皮血液循环和毛囊健康",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            }
+          ]
+        },
+        {
+          "name": "日常习惯",
+          "icon": "✍️",
+          "items": [
+            {
+              "item_id": "ccb0d4d7-f6e1-4d7c-9abd-701dfda303e4",
+              "time_slot": "下午（16:00）",
+              "action": "站起来走动2分钟，用指腹从前额到后脑轻柔按摩头皮1分钟",
+              "duration": "3分钟",
+              "frequency": "每天下午工作间隙",
+              "reasoning": "按摩增加头皮血流量，放松紧张的头皮，减少因压力导致的脱发",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            }
+          ]
+        },
+        {
+          "name": "睡眠优化",
+          "icon": "🛌",
+          "items": [
+            {
+              "item_id": "56850b35-858a-4a6b-8a73-f6e700a34c38",
+              "time_slot": "睡前（22:30）",
+              "action": "把手机放到客厅充电，用传统闹钟；用温热水泡脚10分钟",
+              "duration": "10分钟",
+              "frequency": "每天",
+              "reasoning": "减少蓝光刺激褪黑素分泌，泡脚促进全身血液循环，帮助入睡，降低皮质醇水平",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            }
+          ]
+        },
+        {
+          "name": "压力管理",
+          "icon": "🧘",
+          "items": [
+            {
+              "item_id": "002afc7a-5367-4d5a-b400-2e94cd2e491b",
+              "time_slot": "睡前泡脚时",
+              "action": "做3次深呼吸：吸气4秒，屏气4秒，呼气6秒",
+              "duration": "2分钟",
+              "frequency": "每天",
+              "reasoning": "深呼吸激活副交感神经，降低压力激素，减少因压力导致的脱发",
+              "status": "pending",
+              "completed_count": 0,
+              "last_completed": null
+            }
+          ]
+        }
+      ],
+      "version": 1
+    }
+  ],
+  "user_b1a28f04": [
+    {
+      "id": "41845928-52ca-4607-a2a2-810137ccda13",
+      "user_id": "user_b1a28f04",
+      "concern": "最近脱发严重",
+      "title": "健康计划",
+      "goal": "改善最近脱发严重",
+      "status": "active",
+      "created_at": "2026-06-01T09:48:23.071583+00:00",
+      "updated_at": "2026-06-01T09:48:27.853447+00:00",
+      "context_snapshot": {
+        "persona_id": "default",
+        "routine_summary": {
+          "status": "data_insufficient",
+          "message": "还需要更多交互数据才能建立作息模型"
+        },
+        "profile_notes": ""
+      },
+      "version": 1,
+      "reasoning_tree": {
+        "id": "cc3f2e1d-3558-48b6-8639-3395ec4e74d7",
+        "label": "最近脱发严重",
+        "description": "针对「最近脱发严重」的健康推理",
+        "emoji": "🎯",
+        "depth": 0,
+        "parent_id": null,
+        "children": [
+          {
+            "id": "b84bca84-4041-44f4-bc08-4a4f9bc585e4",
+            "label": "压力与情绪波动",
+            "description": "长期或近期高压力导致皮质醇升高，影响毛囊生长周期，可能引起休止期脱发。",
+            "emoji": "😰",
+            "depth": 1,
+            "parent_id": "cc3f2e1d-3558-48b6-8639-3395ec4e74d7",
+            "children": [
+              {
+                "id": "42a6c20b-a464-4987-9e0d-510a54accab6",
+                "label": "压力导致睡眠质量下降",
+                "description": "高压力使人入睡困难、睡眠浅，影响生长激素分泌和毛囊修复，加剧脱发",
+                "emoji": "😴",
+                "depth": 2,
+                "parent_id": "b84bca84-4041-44f4-bc08-4a4f9bc585e4",
+                "children": [],
+                "expanded": false,
+                "expandable": false,
+                "is_actionable": true,
+                "action_text": "每晚11点前躺床，进行5分钟腹式呼吸（吸气4秒，呼气6秒）",
+                "time_slot": "晚上",
+                "frequency": "每天",
+                "duration": "5分钟",
+                "reasoning": null,
+                "status": "pending",
+                "completed_count": 0,
+                "last_completed": null,
+                "created_at": "2026-06-01T09:48:27.853398+00:00"
+              },
+              {
+                "id": "ff9dc22b-4353-4072-a099-cbaf84b9fd6c",
+                "label": "压力引发暴食或节食",
+                "description": "压力下易出现情绪性进食（高糖高油）或食欲下降，导致微量元素缺乏（铁、锌、维生素B），影响毛发生长",
+                "emoji": "🍔",
+                "depth": 2,
+                "parent_id": "b84bca84-4041-44f4-bc08-4a4f9bc585e4",
+                "children": [],
+                "expanded": false,
+                "expandable": false,
+                "is_actionable": true,
+                "action_text": "每天午餐增加1份深绿色蔬菜（如200g菠菜）和1个鸡蛋，替代高糖零食",
+                "time_slot": "中午",
+                "frequency": "每天",
+                "duration": "10分钟（准备）",
+                "reasoning": null,
+                "status": "pending",
+                "completed_count": 0,
+                "last_completed": null,
+                "created_at": "2026-06-01T09:48:27.853430+00:00"
+              },
+              {
+                "id": "4361af53-08f9-4d9d-831f-5a1c512e106c",
+                "label": "头皮炎症与皮质醇协同",
+                "description": "皮质醇升高会抑制免疫，使头皮对马拉色菌等更敏感，引发脂溢性皮炎，加速脱发",
+                "emoji": "🧴",
+                "depth": 2,
+                "parent_id": "b84bca84-4041-44f4-bc08-4a4f9bc585e4",
+                "children": [],
+                "expanded": false,
+                "expandable": false,
+                "is_actionable": true,
+                "action_text": "每周2次用含1%酮康唑的洗发水洗头，每次按摩头皮3分钟",
+                "time_slot": "晚上（洗澡时）",
+                "frequency": "每周2次",
+                "duration": "3分钟",
+                "reasoning": null,
+                "status": "pending",
+                "completed_count": 0,
+                "last_completed": null,
+                "created_at": "2026-06-01T09:48:27.853442+00:00"
+              }
+            ],
+            "expanded": true,
+            "expandable": true,
+            "is_actionable": false,
+            "action_text": null,
+            "time_slot": null,
+            "frequency": null,
+            "duration": null,
+            "reasoning": null,
+            "status": "pending",
+            "completed_count": 0,
+            "last_completed": null,
+            "created_at": ""
+          },
+          {
+            "id": "4b61633f-4cc1-4522-a642-062a083caefc",
+            "label": "营养缺乏",
+            "description": "铁、锌、维生素D、B族维生素或蛋白质摄入不足会直接削弱毛囊健康，导致脱发。",
+            "emoji": "🥦",
+            "depth": 1,
+            "parent_id": "cc3f2e1d-3558-48b6-8639-3395ec4e74d7",
+            "children": [],
+            "expanded": false,
+            "expandable": true,
+            "is_actionable": false,
+            "action_text": null,
+            "time_slot": null,
+            "frequency": null,
+            "duration": null,
+            "reasoning": null,
+            "status": "pending",
+            "completed_count": 0,
+            "last_completed": null,
+            "created_at": ""
+          },
+          {
+            "id": "a0c075d9-9f15-4619-ac06-8fe959f2c523",
+            "label": "睡眠质量下降",
+            "description": "睡眠不足或规律紊乱干扰夜间激素修复，影响毛囊血液供应和生长因子分泌。",
+            "emoji": "💤",
+            "depth": 1,
+            "parent_id": "cc3f2e1d-3558-48b6-8639-3395ec4e74d7",
+            "children": [],
+            "expanded": false,
+            "expandable": true,
+            "is_actionable": false,
+            "action_text": null,
+            "time_slot": null,
+            "frequency": null,
+            "duration": null,
+            "reasoning": null,
+            "status": "pending",
+            "completed_count": 0,
+            "last_completed": null,
+            "created_at": ""
+          },
+          {
+            "id": "e19a6a33-0eeb-4c1f-b15d-40a8a0462b9d",
+            "label": "激素水平变化",
+            "description": "雄激素水平升高（如二氢睾酮）或甲状腺功能异常均可加速毛囊萎缩或休止期脱发。",
+            "emoji": "🧬",
+            "depth": 1,
+            "parent_id": "cc3f2e1d-3558-48b6-8639-3395ec4e74d7",
+            "children": [],
+            "expanded": false,
+            "expandable": true,
+            "is_actionable": false,
+            "action_text": null,
+            "time_slot": null,
+            "frequency": null,
+            "duration": null,
+            "reasoning": null,
+            "status": "pending",
+            "completed_count": 0,
+            "last_completed": null,
+            "created_at": ""
+          },
+          {
+            "id": "ea0c2820-179d-4272-8d25-cf5c0b955ff0",
+            "label": "头皮健康问题",
+            "description": "脂溢性皮炎、真菌感染或毛囊炎会引起局部炎症，破坏毛囊环境，导致脱落。",
+            "emoji": "🦠",
+            "depth": 1,
+            "parent_id": "cc3f2e1d-3558-48b6-8639-3395ec4e74d7",
+            "children": [],
+            "expanded": false,
+            "expandable": true,
+            "is_actionable": false,
+            "action_text": null,
+            "time_slot": null,
+            "frequency": null,
+            "duration": null,
+            "reasoning": null,
+            "status": "pending",
+            "completed_count": 0,
+            "last_completed": null,
+            "created_at": ""
+          },
+          {
+            "id": "7c957a48-f74f-43d1-8981-3587bd9cacb9",
+            "label": "遗传易感性",
+            "description": "雄激素性脱发具有遗传倾向，毛囊对雄激素敏感，逐渐微小化直至脱落。",
+            "emoji": "🧬",
+            "depth": 1,
+            "parent_id": "cc3f2e1d-3558-48b6-8639-3395ec4e74d7",
+            "children": [],
+            "expanded": false,
+            "expandable": true,
+            "is_actionable": false,
+            "action_text": null,
+            "time_slot": null,
+            "frequency": null,
+            "duration": null,
+            "reasoning": null,
+            "status": "pending",
+            "completed_count": 0,
+            "last_completed": null,
+            "created_at": ""
+          }
+        ],
+        "expanded": true,
+        "expandable": true,
+        "is_actionable": false,
+        "action_text": null,
+        "time_slot": null,
+        "frequency": null,
+        "duration": null,
+        "reasoning": null,
+        "status": "pending",
+        "completed_count": 0,
+        "last_completed": null,
+        "created_at": ""
+      }
+    }
+  ],
+  "user_e41dde39": [
+    {
+      "id": "1c34b61d-1ff7-4cc2-bcce-23eb2aa09f6e",
+      "user_id": "user_e41dde39",
+      "concern": "脱发",
+      "title": "健康计划",
+      "goal": "改善脱发",
+      "status": "active",
+      "created_at": "2026-06-01T10:19:49.932709+00:00",
+      "updated_at": "2026-06-01T10:19:58.215000+00:00",
+      "context_snapshot": {
+        "persona_id": "default",
+        "routine_summary": {
+          "status": "data_insufficient",
+          "message": "还需要更多交互数据才能建立作息模型"
+        },
+        "profile_notes": ""
+      },
+      "version": 1,
+      "reasoning_tree": {
+        "id": "cd209c92-d3ac-45cd-8d19-10a755b28222",
+        "label": "脱发",
+        "description": "针对「脱发」的健康推理",
+        "emoji": "🎯",
+        "depth": 0,
+        "parent_id": null,
+        "children": [
+          {
+            "id": "2fa3abc4-4add-4100-a2c8-6a60f6ef04a8",
+            "label": "遗传因素",
+            "description": "家族中有脱发史，可能导致雄激素性脱发，这是最常见的脱发类型。",
+            "emoji": "🧬",
+            "depth": 1,
+            "parent_id": "cd209c92-d3ac-45cd-8d19-10a755b28222",
+            "children": [
+              {
+                "id": "84d644df-8af6-4401-befc-30d58074fd67",
+                "label": "二氢睾酮攻击毛囊",
+                "description": "遗传因素导致毛囊对雄激素敏感，雄激素在5α-还原酶作用下转化为二氢睾酮（DHT），DHT攻击毛囊使毛囊萎缩",
+                "emoji": "🧬",
+                "depth": 2,
+                "parent_id": "2fa3abc4-4add-4100-a2c8-6a60f6ef04a8",
+                "children": [],
+                "expanded": false,
+                "expandable": true,
+                "is_actionable": false,
+                "action_text": null,
+                "time_slot": null,
+                "frequency": null,
+                "duration": null,
+                "reasoning": null,
+                "status": "pending",
+                "completed_count": 0,
+                "last_completed": null,
+                "created_at": "2026-06-01T10:19:58.214967+00:00"
+              },
+              {
+                "id": "5c00b99d-3f30-469c-8628-2b91b5f0b3ff",
+                "label": "5α-还原酶活性增强",
+                "description": "遗传因素导致体内5α-还原酶活性较高，促使更多雄激素转化为DHT，加剧脱发",
+                "emoji": "⚡",
+                "depth": 2,
+                "parent_id": "2fa3abc4-4add-4100-a2c8-6a60f6ef04a8",
+                "children": [],
+                "expanded": false,
+                "expandable": true,
+                "is_actionable": false,
+                "action_text": null,
+                "time_slot": null,
+                "frequency": null,
+                "duration": null,
+                "reasoning": null,
+                "status": "pending",
+                "completed_count": 0,
+                "last_completed": null,
+                "created_at": "2026-06-01T10:19:58.214990+00:00"
+              },
+              {
+                "id": "f96e165d-d7e6-412a-9944-91633c79fbe7",
+                "label": "每天早餐嚼30克南瓜籽",
+                "description": "南瓜籽富含锌和植物甾醇，有助于抑制5α-还原酶活性，减少DHT生成，改善雄激素性脱发",
+                "emoji": "🎃",
+                "depth": 2,
+                "parent_id": "2fa3abc4-4add-4100-a2c8-6a60f6ef04a8",
+                "children": [],
+                "expanded": false,
+                "expandable": false,
+                "is_actionable": true,
+                "action_text": "每天早餐后嚼30克生南瓜籽",
+                "time_slot": "早餐",
+                "frequency": "每天",
+                "duration": "长期持续",
+                "reasoning": null,
+                "status": "pending",
+                "completed_count": 0,
+                "last_completed": null,
+                "created_at": "2026-06-01T10:19:58.214997+00:00"
+              }
+            ],
+            "expanded": true,
+            "expandable": true,
+            "is_actionable": false,
+            "action_text": null,
+            "time_slot": null,
+            "frequency": null,
+            "duration": null,
+            "reasoning": null,
+            "status": "pending",
+            "completed_count": 0,
+            "last_completed": null,
+            "created_at": ""
+          }
+        ],
+        "expanded": true,
+        "expandable": true,
+        "is_actionable": false,
+        "action_text": null,
+        "time_slot": null,
+        "frequency": null,
+        "duration": null,
+        "reasoning": null,
+        "status": "pending",
+        "completed_count": 0,
+        "last_completed": null,
+        "created_at": ""
+      }
+    }
+  ],
+  "test_user_48596011": [
+    {
+      "id": "4c1a4346-1b2e-4f0d-93e0-19f8a7056a33",
+      "user_id": "test_user_48596011",
+      "concern": "最近脱发严重",
+      "title": "健康计划",
+      "goal": "改善脱发",
+      "status": "active",
+      "created_at": "2026-06-01T10:20:41.359865+00:00",
+      "updated_at": "2026-06-01T10:20:41.380940+00:00",
+      "context_snapshot": {
+        "routine_summary": "睡眠7小时",
+        "profile_notes": "程序员"
+      },
+      "version": 1,
+      "reasoning_tree": {
+        "id": "346ef6c7-2939-4a9d-b5c3-4503394fd0ab",
+        "label": "最近脱发严重",
+        "description": "针对脱发的健康推理",
+        "emoji": "🎯",
+        "depth": 0,
+        "parent_id": null,
+        "children": [
+          {
+            "id": "4794c353-af52-4a66-9a03-5fe5dd844ec3",
+            "label": "激素水平变化",
+            "description": "雄激素影响毛囊",
+            "emoji": "🧬",
+            "depth": 1,
+            "parent_id": "346ef6c7-2939-4a9d-b5c3-4503394fd0ab",
+            "children": [
+              {
+                "id": "9a216158-adf6-4b23-b42d-c4fff7164ecf",
+                "label": "DHT攻击毛囊",
+                "description": "DHT使毛囊微小化",
+                "emoji": "🔬",
+                "depth": 2,
+                "parent_id": "4794c353-af52-4a66-9a03-5fe5dd844ec3",
+                "children": [],
+                "expanded": false,
+                "expandable": true,
+                "is_actionable": false,
+                "action_text": null,
+                "time_slot": null,
+                "frequency": null,
+                "duration": null,
+                "reasoning": null,
+                "status": "pending",
+                "completed_count": 0,
+                "last_completed": null,
+                "created_at": "2026-06-01T10:20:41.380908+00:00"
+              },
+              {
+                "id": "afb645fc-c662-4669-bade-5952b6b04c15",
+                "label": "补充生物素",
+                "description": "补充生物素改善发质",
+                "emoji": "💊",
+                "depth": 2,
+                "parent_id": "4794c353-af52-4a66-9a03-5fe5dd844ec3",
+                "children": [],
+                "expanded": false,
+                "expandable": true,
+                "is_actionable": true,
+                "action_text": "每天早餐后服生物素5000mcg",
+                "time_slot": "早餐后",
+                "frequency": "每天",
+                "duration": "3个月",
+                "reasoning": null,
+                "status": "pending",
+                "completed_count": 0,
+                "last_completed": null,
+                "created_at": "2026-06-01T10:20:41.380933+00:00"
+              }
+            ],
+            "expanded": true,
+            "expandable": true,
+            "is_actionable": false,
+            "action_text": null,
+            "time_slot": null,
+            "frequency": null,
+            "duration": null,
+            "reasoning": null,
+            "status": "pending",
+            "completed_count": 0,
+            "last_completed": null,
+            "created_at": ""
+          },
+          {
+            "id": "39a0d69b-cda8-4582-9df7-e89e98d83363",
+            "label": "营养缺乏",
+            "description": "缺铁和蛋白质",
+            "emoji": "🥩",
+            "depth": 1,
+            "parent_id": "346ef6c7-2939-4a9d-b5c3-4503394fd0ab",
+            "children": [],
+            "expanded": false,
+            "expandable": false,
+            "is_actionable": true,
+            "action_text": "每天早餐吃一勺黑芝麻核桃粉",
+            "time_slot": "早餐",
+            "frequency": "每天",
+            "duration": "持续",
+            "reasoning": null,
+            "status": "pending",
+            "completed_count": 0,
+            "last_completed": null,
+            "created_at": ""
+          }
+        ],
+        "expanded": true,
+        "expandable": true,
+        "is_actionable": false,
+        "action_text": null,
+        "time_slot": null,
+        "frequency": null,
+        "duration": null,
+        "reasoning": null,
+        "status": "pending",
+        "completed_count": 0,
+        "last_completed": null,
+        "created_at": ""
+      }
+    }
+  ],
+  "test_user_e2e": [
+    {
+      "id": "1c3ed9b1-947e-4b63-b84e-1a9639da39e2",
+      "user_id": "test_user_e2e",
+      "concern": "脱发",
+      "title": "脱发改善计划",
+      "goal": "改善脱发状况",
+      "status": "active",
+      "created_at": "2026-06-01T10:22:10.433527+00:00",
+      "updated_at": "2026-06-01T10:22:10.433543+00:00",
+      "context_snapshot": {},
+      "version": 1,
+      "reasoning_tree": {
+        "id": "root",
+        "label": "脱发问题分析",
+        "description": "脱发问题的系统性分析",
+        "emoji": "🧬",
+        "depth": 0,
+        "parent_id": null,
+        "children": [
+          {
+            "id": "c1",
+            "label": "遗传因素",
+            "description": "家族遗传导致的脱发倾向",
+            "emoji": "🧬",
+            "depth": 1,
+            "parent_id": "root",
+            "children": [
+              {
+                "id": "l1",
+                "label": "保证每天7-8小时睡眠",
+                "description": "充足睡眠有助于头发生长",
+                "emoji": "😴",
+                "depth": 2,
+                "parent_id": "c1",
+                "children": [],
+                "expanded": false,
+                "expandable": true,
+                "is_actionable": true,
+                "action_text": "保证每天7-8小时睡眠",
+                "time_slot": "night",
+                "frequency": "每天",
+                "duration": "长期",
+                "reasoning": null,
+                "status": "pending",
+                "completed_count": 0,
+                "last_completed": null,
+                "created_at": ""
+              }
+            ],
+            "expanded": false,
+            "expandable": true,
+            "is_actionable": false,
+            "action_text": null,
+            "time_slot": null,
+            "frequency": null,
+            "duration": null,
+            "reasoning": null,
+            "status": "pending",
+            "completed_count": 0,
+            "last_completed": null,
+            "created_at": ""
+          },
+          {
+            "id": "c2",
+            "label": "生活习惯",
+            "description": "不良生活习惯影响",
+            "emoji": "🏠",
+            "depth": 1,
+            "parent_id": "root",
+            "children": [],
+            "expanded": false,
+            "expandable": true,
+            "is_actionable": false,
+            "action_text": null,
+            "time_slot": null,
+            "frequency": null,
+            "duration": null,
+            "reasoning": null,
+            "status": "pending",
+            "completed_count": 0,
+            "last_completed": null,
+            "created_at": ""
+          }
+        ],
+        "expanded": false,
+        "expandable": true,
+        "is_actionable": false,
+        "action_text": null,
+        "time_slot": null,
+        "frequency": null,
+        "duration": null,
+        "reasoning": null,
+        "status": "pending",
+        "completed_count": 0,
+        "last_completed": null,
+        "created_at": ""
+      }
+    },
+    {
+      "id": "0a20a716-3a5b-4ba7-ad3b-908dbe3b7502",
+      "user_id": "test_user_e2e",
+      "concern": "脱发",
+      "title": "脱发改善计划",
+      "goal": "改善脱发状况",
+      "status": "active",
+      "created_at": "2026-06-01T10:22:22.252252+00:00",
+      "updated_at": "2026-06-01T10:22:22.275764+00:00",
+      "context_snapshot": {},
+      "version": 1,
+      "reasoning_tree": {
+        "id": "root",
+        "label": "脱发问题分析",
+        "description": "脱发问题的系统性分析",
+        "emoji": "🧬",
+        "depth": 0,
+        "parent_id": null,
+        "children": [
+          {
+            "id": "c1",
+            "label": "遗传因素",
+            "description": "家族遗传导致的脱发倾向",
+            "emoji": "🧬",
+            "depth": 1,
+            "parent_id": "root",
+            "children": [
+              {
+                "id": "l1",
+                "label": "保证每天7-8小时睡眠",
+                "description": "充足睡眠有助于头发生长",
+                "emoji": "😴",
+                "depth": 2,
+                "parent_id": "c1",
+                "children": [],
+                "expanded": false,
+                "expandable": true,
+                "is_actionable": true,
+                "action_text": "保证每天7-8小时睡眠",
+                "time_slot": "night",
+                "frequency": "每天",
+                "duration": "长期",
+                "reasoning": null,
+                "status": "pending",
+                "completed_count": 0,
+                "last_completed": null,
+                "created_at": ""
+              },
+              {
+                "id": "05b5274c-34f2-43f3-bc89-f30c81d856a6",
+                "label": "检查家族脱发史",
+                "description": "了解家族中是否有类似情况",
+                "emoji": "📋",
+                "depth": 2,
+                "parent_id": "c1",
+                "children": [],
+                "expanded": false,
+                "expandable": true,
+                "is_actionable": true,
+                "action_text": "检查家族脱发史",
+                "time_slot": "morning",
+                "frequency": "一次性",
+                "duration": "30分钟",
+                "reasoning": null,
+                "status": "pending",
+                "completed_count": 0,
+                "last_completed": null,
+                "created_at": "2026-06-01T10:22:22.275746+00:00"
+              }
+            ],
+            "expanded": true,
+            "expandable": true,
+            "is_actionable": false,
+            "action_text": null,
+            "time_slot": null,
+            "frequency": null,
+            "duration": null,
+            "reasoning": null,
+            "status": "pending",
+            "completed_count": 0,
+            "last_completed": null,
+            "created_at": ""
+          },
+          {
+            "id": "c2",
+            "label": "生活习惯",
+            "description": "不良生活习惯影响",
+            "emoji": "🏠",
+            "depth": 1,
+            "parent_id": "root",
+            "children": [],
+            "expanded": false,
+            "expandable": true,
+            "is_actionable": false,
+            "action_text": null,
+            "time_slot": null,
+            "frequency": null,
+            "duration": null,
+            "reasoning": null,
+            "status": "pending",
+            "completed_count": 0,
+            "last_completed": null,
+            "created_at": ""
+          }
+        ],
+        "expanded": false,
+        "expandable": true,
+        "is_actionable": false,
+        "action_text": null,
+        "time_slot": null,
+        "frequency": null,
+        "duration": null,
+        "reasoning": null,
+        "status": "pending",
+        "completed_count": 0,
+        "last_completed": null,
+        "created_at": ""
+      }
+    },
+    {
+      "id": "d90016af-818a-4892-9888-971bba837bb0",
+      "user_id": "test_user_e2e",
+      "concern": "脱发",
+      "title": "脱发改善计划",
+      "goal": "改善脱发状况",
+      "status": "active",
+      "created_at": "2026-06-01T10:22:32.331594+00:00",
+      "updated_at": "2026-06-01T10:22:32.342987+00:00",
+      "context_snapshot": {},
+      "version": 1,
+      "reasoning_tree": {
+        "id": "root",
+        "label": "脱发问题分析",
+        "description": "脱发问题的系统性分析",
+        "emoji": "🧬",
+        "depth": 0,
+        "parent_id": null,
+        "children": [
+          {
+            "id": "c1",
+            "label": "遗传因素",
+            "description": "家族遗传导致的脱发倾向",
+            "emoji": "🧬",
+            "depth": 1,
+            "parent_id": "root",
+            "children": [
+              {
+                "id": "l1",
+                "label": "保证每天7-8小时睡眠",
+                "description": "充足睡眠有助于头发生长",
+                "emoji": "😴",
+                "depth": 2,
+                "parent_id": "c1",
+                "children": [],
+                "expanded": false,
+                "expandable": true,
+                "is_actionable": true,
+                "action_text": "保证每天7-8小时睡眠",
+                "time_slot": "night",
+                "frequency": "每天",
+                "duration": "长期",
+                "reasoning": null,
+                "status": "pending",
+                "completed_count": 0,
+                "last_completed": null,
+                "created_at": ""
+              },
+              {
+                "id": "9424af68-ac34-493e-8f11-d5d75dbc9ba3",
+                "label": "检查家族脱发史",
+                "description": "了解家族中是否有类似情况",
+                "emoji": "📋",
+                "depth": 2,
+                "parent_id": "c1",
+                "children": [],
+                "expanded": false,
+                "expandable": true,
+                "is_actionable": true,
+                "action_text": "检查家族脱发史",
+                "time_slot": "morning",
+                "frequency": "一次性",
+                "duration": "30分钟",
+                "reasoning": null,
+                "status": "pending",
+                "completed_count": 0,
+                "last_completed": null,
+                "created_at": "2026-06-01T10:22:32.342973+00:00"
+              }
+            ],
+            "expanded": true,
+            "expandable": true,
+            "is_actionable": false,
+            "action_text": null,
+            "time_slot": null,
+            "frequency": null,
+            "duration": null,
+            "reasoning": null,
+            "status": "pending",
+            "completed_count": 0,
+            "last_completed": null,
+            "created_at": ""
+          },
+          {
+            "id": "c2",
+            "label": "生活习惯",
+            "description": "不良生活习惯影响",
+            "emoji": "🏠",
+            "depth": 1,
+            "parent_id": "root",
+            "children": [],
+            "expanded": false,
+            "expandable": true,
+            "is_actionable": false,
+            "action_text": null,
+            "time_slot": null,
+            "frequency": null,
+            "duration": null,
+            "reasoning": null,
+            "status": "pending",
+            "completed_count": 0,
+            "last_completed": null,
+            "created_at": ""
+          }
+        ],
+        "expanded": false,
+        "expandable": true,
+        "is_actionable": false,
+        "action_text": null,
+        "time_slot": null,
+        "frequency": null,
+        "duration": null,
+        "reasoning": null,
+        "status": "pending",
+        "completed_count": 0,
+        "last_completed": null,
+        "created_at": ""
+      }
+    },
+    {
+      "id": "08ea8f0a-521d-4497-bf8d-5ea446d2dcf1",
+      "user_id": "test_user_e2e",
+      "concern": "脱发",
+      "title": "脱发改善计划",
+      "goal": "改善脱发状况",
+      "status": "active",
+      "created_at": "2026-06-01T10:22:41.562159+00:00",
+      "updated_at": "2026-06-01T10:22:41.596688+00:00",
+      "context_snapshot": {},
+      "version": 1,
+      "reasoning_tree": {
+        "id": "root",
+        "label": "脱发问题分析",
+        "description": "",
+        "emoji": "🧬",
+        "depth": 0,
+        "parent_id": null,
+        "children": [
+          {
+            "id": "c1",
+            "label": "遗传因素",
+            "description": "",
+            "emoji": "🧬",
+            "depth": 1,
+            "parent_id": "root",
+            "children": [
+              {
+                "id": "l1",
+                "label": "保证每天7-8小时睡眠",
+                "description": "",
+                "emoji": "😴",
+                "depth": 2,
+                "parent_id": "c1",
+                "children": [],
+                "expanded": false,
+                "expandable": true,
+                "is_actionable": true,
+                "action_text": "保证每天7-8小时睡眠",
+                "time_slot": "night",
+                "frequency": "每天",
+                "duration": "长期",
+                "reasoning": null,
+                "status": "completed",
+                "completed_count": 0,
+                "last_completed": null,
+                "created_at": ""
+              },
+              {
+                "id": "404373bd-15fa-4839-82a1-ba2c4066b93e",
+                "label": "检查家族脱发史",
+                "description": "",
+                "emoji": "📋",
+                "depth": 2,
+                "parent_id": "c1",
+                "children": [],
+                "expanded": false,
+                "expandable": true,
+                "is_actionable": true,
+                "action_text": "检查家族脱发史",
+                "time_slot": "morning",
+                "frequency": "一次性",
+                "duration": "30分钟",
+                "reasoning": null,
+                "status": "pending",
+                "completed_count": 0,
+                "last_completed": null,
+                "created_at": "2026-06-01T10:22:41.576789+00:00"
+              }
+            ],
+            "expanded": true,
+            "expandable": true,
+            "is_actionable": false,
+            "action_text": null,
+            "time_slot": null,
+            "frequency": null,
+            "duration": null,
+            "reasoning": null,
+            "status": "pending",
+            "completed_count": 0,
+            "last_completed": null,
+            "created_at": ""
+          },
+          {
+            "id": "c2",
+            "label": "生活习惯",
+            "description": "",
+            "emoji": "🏠",
+            "depth": 1,
+            "parent_id": "root",
+            "children": [],
+            "expanded": false,
+            "expandable": true,
+            "is_actionable": false,
+            "action_text": null,
+            "time_slot": null,
+            "frequency": null,
+            "duration": null,
+            "reasoning": null,
+            "status": "pending",
+            "completed_count": 0,
+            "last_completed": null,
+            "created_at": ""
+          }
+        ],
+        "expanded": false,
+        "expandable": true,
+        "is_actionable": false,
+        "action_text": null,
+        "time_slot": null,
+        "frequency": null,
+        "duration": null,
+        "reasoning": null,
+        "status": "pending",
+        "completed_count": 0,
+        "last_completed": null,
+        "created_at": ""
+      }
+    }
+  ],
+  "user_ad1f0f11": [
+    {
+      "id": "8c47a0ca-b446-4abd-91fc-8e7d67246b8a",
+      "user_id": "user_ad1f0f11",
+      "concern": "最近脱发严重，想改善",
+      "title": "健康计划",
+      "goal": "改善最近脱发严重，想改善",
+      "status": "active",
+      "created_at": "2026-06-01T10:57:02.826101+00:00",
+      "updated_at": "2026-06-01T10:59:50.290853+00:00",
+      "context_snapshot": {
+        "persona_id": "default",
+        "routine_summary": {
+          "status": "data_insufficient",
+          "message": "还需要更多交互数据才能建立作息模型"
+        },
+        "profile_notes": ""
+      },
+      "version": 1,
+      "reasoning_tree": {
+        "id": "2d0d0fe5-67e0-4a17-8b8e-25893e47a1e9",
+        "label": "最近脱发严重，想改善",
+        "description": "针对「最近脱发严重，想改善」的健康推理",
+        "emoji": "🎯",
+        "depth": 0,
+        "parent_id": null,
+        "children": [
+          {
+            "id": "78e0e047-9c76-4714-b942-6c361d8171e7",
+            "label": "激素水平波动",
+            "description": "雄激素如二氢睾酮（DHT）升高会缩短毛囊生长期，是男性型脱发的主要原因，女性也可能受激素波动影响",
+            "emoji": "🧬",
+            "depth": 1,
+            "parent_id": "2d0d0fe5-67e0-4a17-8b8e-25893e47a1e9",
+            "children": [
+              {
+                "id": "b031ee46-0e56-474f-b1bf-ea20b15b2148",
+                "label": "5α-还原酶活性过高",
+                "description": "5α-还原酶将睾酮转化为活性更强的二氢睾酮（DHT），DHT直接攻击毛囊，是男性型脱发的核心机制之一。",
+                "emoji": "🧬",
+                "depth": 2,
+                "parent_id": "78e0e047-9c76-4714-b942-6c361d8171e7",
+                "children": [],
+                "expanded": false,
+                "expandable": true,
+                "is_actionable": false,
+                "action_text": null,
+                "time_slot": null,
+                "frequency": null,
+                "duration": null,
+                "reasoning": null,
+                "status": "pending",
+                "completed_count": 0,
+                "last_completed": null,
+                "created_at": "2026-06-01T10:59:50.290804+00:00"
+              },
+              {
+                "id": "df69d280-7748-44f2-a5f8-658b2ad24710",
+                "label": "雌激素水平下降",
+                "description": "雌激素对毛囊有保护作用，更年期或内分泌紊乱导致雌激素降低，削弱抗雄激素能力，加速毛囊微型化。",
+                "emoji": "🩸",
+                "depth": 2,
+                "parent_id": "78e0e047-9c76-4714-b942-6c361d8171e7",
+                "children": [],
+                "expanded": false,
+                "expandable": true,
+                "is_actionable": false,
+                "action_text": null,
+                "time_slot": null,
+                "frequency": null,
+                "duration": null,
+                "reasoning": null,
+                "status": "pending",
+                "completed_count": 0,
+                "last_completed": null,
+                "created_at": "2026-06-01T10:59:50.290833+00:00"
+              },
+              {
+                "id": "2c44bcc0-0385-482c-b171-646138b2a017",
+                "label": "每天午餐后服锌和维生素B6补充剂",
+                "description": "锌可通过抑制5α-还原酶活性减少DHT生成，维生素B6辅助平衡激素代谢，两者协同降低雄激素对毛囊的负面影响。",
+                "emoji": "💊",
+                "depth": 2,
+                "parent_id": "78e0e047-9c76-4714-b942-6c361d8171e7",
+                "children": [],
+                "expanded": false,
+                "expandable": false,
+                "is_actionable": true,
+                "action_text": "每天午餐后服用一片含15mg锌和50mg维生素B6的补充剂",
+                "time_slot": "午餐后",
+                "frequency": "每天",
+                "duration": "3个月",
+                "reasoning": null,
+                "status": "pending",
+                "completed_count": 0,
+                "last_completed": null,
+                "created_at": "2026-06-01T10:59:50.290847+00:00"
+              }
+            ],
+            "expanded": true,
+            "expandable": true,
+            "is_actionable": false,
+            "action_text": null,
+            "time_slot": null,
+            "frequency": null,
+            "duration": null,
+            "reasoning": null,
+            "status": "pending",
+            "completed_count": 0,
+            "last_completed": null,
+            "created_at": ""
+          },
+          {
+            "id": "8bc5e8cb-455c-4aff-8ed4-826316500a9f",
+            "label": "营养摄入不足",
+            "description": "缺乏铁、锌、生物素、蛋白质等关键营养素会导致毛囊无法获得足够养分，加速脱发",
+            "emoji": "🥗",
+            "depth": 1,
+            "parent_id": "2d0d0fe5-67e0-4a17-8b8e-25893e47a1e9",
+            "children": [],
+            "expanded": false,
+            "expandable": true,
+            "is_actionable": false,
+            "action_text": null,
+            "time_slot": null,
+            "frequency": null,
+            "duration": null,
+            "reasoning": null,
+            "status": "pending",
+            "completed_count": 0,
+            "last_completed": null,
+            "created_at": ""
+          },
+          {
+            "id": "32e2d790-6ca2-4982-ba2c-b6b1bf9be50a",
+            "label": "慢性压力与睡眠紊乱",
+            "description": "长期压力升高皮质醇，扰乱毛囊周期；睡眠不足影响生长激素分泌，削弱头发修复能力",
+            "emoji": "😰",
+            "depth": 1,
+            "parent_id": "2d0d0fe5-67e0-4a17-8b8e-25893e47a1e9",
+            "children": [],
+            "expanded": false,
+            "expandable": true,
+            "is_actionable": false,
+            "action_text": null,
+            "time_slot": null,
+            "frequency": null,
+            "duration": null,
+            "reasoning": null,
+            "status": "pending",
+            "completed_count": 0,
+            "last_completed": null,
+            "created_at": ""
+          },
+          {
+            "id": "cc156131-49c9-4934-9ac8-ba906f6cb128",
+            "label": "头皮与毛囊微环境失衡",
+            "description": "头皮油脂过多、炎症或真菌感染会堵塞毛囊，阻碍头发生长，需观察头皮是否有瘙痒或皮屑",
+            "emoji": "🧴",
+            "depth": 1,
+            "parent_id": "2d0d0fe5-67e0-4a17-8b8e-25893e47a1e9",
+            "children": [],
+            "expanded": false,
+            "expandable": true,
+            "is_actionable": false,
+            "action_text": null,
+            "time_slot": null,
+            "frequency": null,
+            "duration": null,
+            "reasoning": null,
+            "status": "pending",
+            "completed_count": 0,
+            "last_completed": null,
+            "created_at": ""
+          },
+          {
+            "id": "8f90fbf6-4827-45b0-9ff4-b8b0f790f3a9",
+            "label": "遗传易感性",
+            "description": "家族中有脱发史（尤其父母）会显著增加雄激素性脱发风险，属于不可逆的生物学基础",
+            "emoji": "🧬",
+            "depth": 1,
+            "parent_id": "2d0d0fe5-67e0-4a17-8b8e-25893e47a1e9",
+            "children": [],
+            "expanded": false,
+            "expandable": true,
+            "is_actionable": false,
+            "action_text": null,
+            "time_slot": null,
+            "frequency": null,
+            "duration": null,
+            "reasoning": null,
+            "status": "pending",
+            "completed_count": 0,
+            "last_completed": null,
+            "created_at": ""
+          },
+          {
+            "id": "add4e560-cb2d-4936-bd11-f8c33a025dd3",
+            "label": "调整今晚睡眠时间",
+            "description": "鉴于当前是傍晚，立刻规划早睡有助于改善因睡眠不足导致的脱发，同时为后续习惯调整建立参考",
+            "emoji": "🌙",
+            "depth": 1,
+            "parent_id": "2d0d0fe5-67e0-4a17-8b8e-25893e47a1e9",
+            "children": [],
+            "expanded": false,
+            "expandable": false,
+            "is_actionable": true,
+            "action_text": "今晚22:00前上床睡觉，保证7-8小时连续睡眠",
+            "time_slot": "睡前",
+            "frequency": "今晚开始，建议长期坚持",
+            "duration": "持续",
+            "reasoning": null,
+            "status": "pending",
+            "completed_count": 0,
+            "last_completed": null,
+            "created_at": ""
+          }
+        ],
+        "expanded": true,
+        "expandable": true,
+        "is_actionable": false,
+        "action_text": null,
+        "time_slot": null,
+        "frequency": null,
+        "duration": null,
+        "reasoning": null,
+        "status": "pending",
+        "completed_count": 0,
+        "last_completed": null,
+        "created_at": ""
+      }
+    }
+  ],
+  "user_40afdc73": [
+    {
+      "id": "9cd67ff2-53e2-4d98-90e0-536a0be2bf3f",
+      "user_id": "user_40afdc73",
+      "concern": "最近脱发",
+      "title": "健康计划",
+      "goal": "改善最近脱发",
+      "status": "active",
+      "created_at": "2026-06-01T11:03:52.985272+00:00",
+      "updated_at": "2026-06-01T11:03:52.985285+00:00",
+      "context_snapshot": {
+        "persona_id": "default",
+        "routine_summary": {
+          "status": "data_insufficient",
+          "message": "还需要更多交互数据才能建立作息模型"
+        },
+        "profile_notes": ""
+      },
+      "version": 1,
+      "reasoning_tree": {
+        "id": "4d125346-d12c-48c9-a73d-6bc53249bb1e",
+        "label": "最近脱发",
+        "description": "针对「最近脱发」的健康推理",
+        "emoji": "🎯",
+        "depth": 0,
+        "parent_id": null,
+        "children": [
+          {
+            "id": "9b8f9602-63a5-4c6f-9473-5c7071c8cbed",
+            "label": "激素水平与遗传因素",
+            "description": "雄激素性脱发（脂溢性脱发）是最常见类型，与遗传和激素变化密切相关，通常在特定年龄开始出现",
+            "emoji": "🧬",
+            "depth": 1,
+            "parent_id": "4d125346-d12c-48c9-a73d-6bc53249bb1e",
+            "children": [],
+            "expanded": false,
+            "expandable": true,
+            "is_actionable": false,
+            "action_text": null,
+            "time_slot": null,
+            "frequency": null,
+            "duration": null,
+            "reasoning": null,
+            "status": "pending",
+            "completed_count": 0,
+            "last_completed": null,
+            "created_at": ""
+          },
+          {
+            "id": "702fc2d4-0d3a-4fd5-a302-1e4bfd84d9a3",
+            "label": "营养缺乏（铁/锌/蛋白质）",
+            "description": "缺铁、缺锌或蛋白质摄入不足会直接影响毛囊细胞分裂和角蛋白合成，导致休止期脱发",
+            "emoji": "🥩",
+            "depth": 1,
+            "parent_id": "4d125346-d12c-48c9-a73d-6bc53249bb1e",
+            "children": [],
+            "expanded": false,
+            "expandable": false,
+            "is_actionable": true,
+            "action_text": "每周3-4次晚餐摄入富含铁和锌的食物，如瘦红肉100g或贝类50g；每天早餐补充1个鸡蛋",
+            "time_slot": "早餐/晚餐",
+            "frequency": "每天/每周3-4次",
+            "duration": "持续至少3个月",
+            "reasoning": null,
+            "status": "pending",
+            "completed_count": 0,
+            "last_completed": null,
+            "created_at": ""
+          },
+          {
+            "id": "d904a7de-2ce0-420c-891c-e443c01cfc62",
+            "label": "精神压力与睡眠不足",
+            "description": "长期压力会使皮质醇升高，促使毛囊提前进入休止期；睡眠不足影响头皮微循环和修复",
+            "emoji": "😰",
+            "depth": 1,
+            "parent_id": "4d125346-d12c-48c9-a73d-6bc53249bb1e",
+            "children": [],
+            "expanded": false,
+            "expandable": true,
+            "is_actionable": false,
+            "action_text": null,
+            "time_slot": null,
+            "frequency": null,
+            "duration": null,
+            "reasoning": null,
+            "status": "pending",
+            "completed_count": 0,
+            "last_completed": null,
+            "created_at": ""
+          },
+          {
+            "id": "cb0d7c0a-6620-4cc1-8c7d-edcaa4dfd3aa",
+            "label": "不当洗护与头皮环境",
+            "description": "过度清洁或使用刺激性洗发水会破坏头皮屏障，导致炎症和脱发；真菌感染也常见",
+            "emoji": "🧴",
+            "depth": 1,
+            "parent_id": "4d125346-d12c-48c9-a73d-6bc53249bb1e",
+            "children": [],
+            "expanded": false,
+            "expandable": false,
+            "is_actionable": true,
+            "action_text": "每周使用2次温和含酮康唑或水杨酸的洗发水，交替使用普通洗发水；避免水温过高（37-40℃即可）",
+            "time_slot": "洗头时",
+            "frequency": "每周2次",
+            "duration": "持续2-3个月观察效果",
+            "reasoning": null,
+            "status": "pending",
+            "completed_count": 0,
+            "last_completed": null,
+            "created_at": ""
+          },
+          {
+            "id": "70985c82-9921-4ce6-b75b-5d9210bf12ee",
+            "label": "环境因素与季节变化",
+            "description": "紫外线、环境污染、季节交替（如夏秋之交）都可能诱发短暂脱发，但通常是可逆的",
+            "emoji": "🌍",
+            "depth": 1,
+            "parent_id": "4d125346-d12c-48c9-a73d-6bc53249bb1e",
+            "children": [],
+            "expanded": false,
+            "expandable": true,
+            "is_actionable": false,
+            "action_text": null,
+            "time_slot": null,
+            "frequency": null,
+            "duration": null,
+            "reasoning": null,
+            "status": "pending",
+            "completed_count": 0,
+            "last_completed": null,
+            "created_at": ""
+          }
+        ],
+        "expanded": true,
+        "expandable": true,
+        "is_actionable": false,
+        "action_text": null,
+        "time_slot": null,
+        "frequency": null,
+        "duration": null,
+        "reasoning": null,
+        "status": "pending",
+        "completed_count": 0,
+        "last_completed": null,
+        "created_at": ""
+      }
+    },
+    {
+      "id": "18dadd67-5994-4720-99ff-de01aea875d5",
+      "user_id": "user_40afdc73",
+      "concern": "最近脱发",
+      "title": "健康计划",
+      "goal": "改善最近脱发",
+      "status": "active",
+      "created_at": "2026-06-01T11:04:18.250507+00:00",
+      "updated_at": "2026-06-01T11:04:18.250525+00:00",
+      "context_snapshot": {
+        "persona_id": "default",
+        "routine_summary": {
+          "status": "data_insufficient",
+          "message": "还需要更多交互数据才能建立作息模型"
+        },
+        "profile_notes": ""
+      },
+      "version": 1,
+      "reasoning_tree": {
+        "id": "8dc9919a-eff1-465c-9db2-38dcd84b8c13",
+        "label": "最近脱发",
+        "description": "针对「最近脱发」的健康推理",
+        "emoji": "🎯",
+        "depth": 0,
+        "parent_id": null,
+        "children": [
+          {
+            "id": "e8388059-a858-42e6-87ff-8c8177b6a5b2",
+            "label": "激素水平变化",
+            "description": "雄激素水平波动会刺激皮脂分泌并影响毛囊周期，是常见的脱发原因，尤其与遗传倾向相关",
+            "emoji": "🧬",
+            "depth": 1,
+            "parent_id": "8dc9919a-eff1-465c-9db2-38dcd84b8c13",
+            "children": [],
+            "expanded": false,
+            "expandable": true,
+            "is_actionable": false,
+            "action_text": null,
+            "time_slot": null,
+            "frequency": null,
+            "duration": null,
+            "reasoning": null,
+            "status": "pending",
+            "completed_count": 0,
+            "last_completed": null,
+            "created_at": ""
+          },
+          {
+            "id": "139b17cb-4383-4fe2-aa6e-cbacebbaa688",
+            "label": "营养摄入不均",
+            "description": "缺乏铁、锌、生物素、维生素D等关键营养素会影响毛囊正常代谢和发丝强度",
+            "emoji": "🥗",
+            "depth": 1,
+            "parent_id": "8dc9919a-eff1-465c-9db2-38dcd84b8c13",
+            "children": [],
+            "expanded": false,
+            "expandable": true,
+            "is_actionable": false,
+            "action_text": null,
+            "time_slot": null,
+            "frequency": null,
+            "duration": null,
+            "reasoning": null,
+            "status": "pending",
+            "completed_count": 0,
+            "last_completed": null,
+            "created_at": ""
+          },
+          {
+            "id": "9b6f4c7a-aec0-455f-b2dd-978ff4edce69",
+            "label": "精神压力",
+            "description": "长期压力会升高皮质醇水平，导致毛囊提前进入休止期，引发休止期脱发",
+            "emoji": "😰",
+            "depth": 1,
+            "parent_id": "8dc9919a-eff1-465c-9db2-38dcd84b8c13",
+            "children": [],
+            "expanded": false,
+            "expandable": true,
+            "is_actionable": false,
+            "action_text": null,
+            "time_slot": null,
+            "frequency": null,
+            "duration": null,
+            "reasoning": null,
+            "status": "pending",
+            "completed_count": 0,
+            "last_completed": null,
+            "created_at": ""
+          },
+          {
+            "id": "11b8c5a6-c913-437e-b69c-e3058fd7dea0",
+            "label": "睡眠不足",
+            "description": "睡眠时长和节律紊乱会干扰生长激素分泌及头皮修复，加剧脱发",
+            "emoji": "🌙",
+            "depth": 1,
+            "parent_id": "8dc9919a-eff1-465c-9db2-38dcd84b8c13",
+            "children": [],
+            "expanded": false,
+            "expandable": true,
+            "is_actionable": false,
+            "action_text": null,
+            "time_slot": null,
+            "frequency": null,
+            "duration": null,
+            "reasoning": null,
+            "status": "pending",
+            "completed_count": 0,
+            "last_completed": null,
+            "created_at": ""
+          },
+          {
+            "id": "f3e29f03-99ab-44a2-aab0-077bb6af69f4",
+            "label": "洗发方式不当",
+            "description": "频繁洗头、水温过高、用指甲抓挠会损伤头皮屏障，加重脱发",
+            "emoji": "🚿",
+            "depth": 1,
+            "parent_id": "8dc9919a-eff1-465c-9db2-38dcd84b8c13",
+            "children": [],
+            "expanded": false,
+            "expandable": false,
+            "is_actionable": true,
+            "action_text": "每周洗头3-4次，用指腹轻揉头皮2分钟，水温不超过40℃",
+            "time_slot": "洗头时",
+            "frequency": "每周3-4次",
+            "duration": "每次2分钟",
+            "reasoning": null,
+            "status": "pending",
+            "completed_count": 0,
+            "last_completed": null,
+            "created_at": ""
+          },
+          {
+            "id": "87e5c1a8-79c8-4d00-af17-af3460c773f8",
+            "label": "物理损伤（热工具与紧发）",
+            "description": "吹风机高温直吹、频繁烫染、扎过紧的发髻/马尾会造成头发断裂和毛囊损伤",
+            "emoji": "🔥",
+            "depth": 1,
+            "parent_id": "8dc9919a-eff1-465c-9db2-38dcd84b8c13",
+            "children": [],
+            "expanded": false,
+            "expandable": false,
+            "is_actionable": true,
+            "action_text": "吹头发时使用低温档，距离头皮15厘米以上；避免紧扎马尾或发髻",
+            "time_slot": "洗吹头发及日常造型时",
+            "frequency": "每次",
+            "duration": "持续",
+            "reasoning": null,
+            "status": "pending",
+            "completed_count": 0,
+            "last_completed": null,
+            "created_at": ""
+          }
+        ],
+        "expanded": true,
+        "expandable": true,
+        "is_actionable": false,
+        "action_text": null,
+        "time_slot": null,
+        "frequency": null,
+        "duration": null,
+        "reasoning": null,
+        "status": "pending",
+        "completed_count": 0,
+        "last_completed": null,
+        "created_at": ""
+      }
+    }
+  ],
+  "user_cd49ab05": [
+    {
+      "id": "76957341-a359-4e2b-ba9b-84054c86daec",
+      "user_id": "user_cd49ab05",
+      "concern": "最近脱发",
+      "title": "健康计划",
+      "goal": "改善最近脱发",
+      "status": "active",
+      "created_at": "2026-06-01T11:21:17.882055+00:00",
+      "updated_at": "2026-06-01T11:21:33.450486+00:00",
+      "context_snapshot": {
+        "persona_id": "default",
+        "routine_summary": {
+          "status": "data_insufficient",
+          "message": "还需要更多交互数据才能建立作息模型"
+        },
+        "profile_notes": ""
+      },
+      "version": 1,
+      "reasoning_tree": {
+        "id": "acce65f0-ee24-4453-aaf5-da3c810b0cad",
+        "label": "最近脱发",
+        "description": "针对「最近脱发」的健康推理",
+        "emoji": "🎯",
+        "depth": 0,
+        "parent_id": null,
+        "children": [
+          {
+            "id": "68c22d9c-3261-4d5f-821f-1f913d8c60b0",
+            "label": "遗传与激素因素",
+            "description": "雄激素性脱发是最常见原因，由基因和激素水平共同作用，导致毛囊逐渐萎缩",
+            "emoji": "🧬",
+            "depth": 1,
+            "parent_id": "acce65f0-ee24-4453-aaf5-da3c810b0cad",
+            "children": [
+              {
+                "id": "fb97de05-5187-40f7-8f0d-d6e3ed613ae0",
+                "label": "雄激素敏感性基因变异",
+                "description": "特定基因（如AR基因CAG重复序列）使毛囊对二氢睾酮更敏感，加速毛囊微型化",
+                "emoji": "🧬",
+                "depth": 2,
+                "parent_id": "68c22d9c-3261-4d5f-821f-1f913d8c60b0",
+                "children": [],
+                "expanded": false,
+                "expandable": true,
+                "is_actionable": false,
+                "action_text": null,
+                "time_slot": null,
+                "frequency": null,
+                "duration": null,
+                "reasoning": null,
+                "status": "pending",
+                "completed_count": 0,
+                "last_completed": null,
+                "created_at": "2026-06-01T11:21:33.450434+00:00"
+              },
+              {
+                "id": "bba09506-e992-4905-8d03-ddb369ac859d",
+                "label": "5α-还原酶活性增强",
+                "description": "5α-还原酶将睾酮转化为更强效的二氢睾酮，直接导致毛囊萎缩",
+                "emoji": "⚗️",
+                "depth": 2,
+                "parent_id": "68c22d9c-3261-4d5f-821f-1f913d8c60b0",
+                "children": [],
+                "expanded": false,
+                "expandable": true,
+                "is_actionable": false,
+                "action_text": null,
+                "time_slot": null,
+                "frequency": null,
+                "duration": null,
+                "reasoning": null,
+                "status": "pending",
+                "completed_count": 0,
+                "last_completed": null,
+                "created_at": "2026-06-01T11:21:33.450465+00:00"
+              },
+              {
+                "id": "13f399b6-3908-451f-a756-44ca9e96d199",
+                "label": "喝绿茶抑制5α-还原酶",
+                "description": "绿茶中的表没食子儿茶素没食子酸酯（EGCG）可抑制5α-还原酶活性，降低二氢睾酮生成",
+                "emoji": "🍵",
+                "depth": 2,
+                "parent_id": "68c22d9c-3261-4d5f-821f-1f913d8c60b0",
+                "children": [],
+                "expanded": false,
+                "expandable": false,
+                "is_actionable": true,
+                "action_text": "每天午餐后喝2杯无糖绿茶（约400ml）",
+                "time_slot": "午餐后",
+                "frequency": "每天",
+                "duration": "长期",
+                "reasoning": null,
+                "status": "pending",
+                "completed_count": 0,
+                "last_completed": null,
+                "created_at": "2026-06-01T11:21:33.450481+00:00"
+              }
+            ],
+            "expanded": true,
+            "expandable": true,
+            "is_actionable": false,
+            "action_text": null,
+            "time_slot": null,
+            "frequency": null,
+            "duration": null,
+            "reasoning": null,
+            "status": "pending",
+            "completed_count": 0,
+            "last_completed": null,
+            "created_at": ""
+          },
+          {
+            "id": "dc56cd17-616a-4ccf-85b5-05283391f997",
+            "label": "营养缺乏",
+            "description": "缺铁、锌、生物素或蛋白质会影响毛发生长周期，需血液检测确认",
+            "emoji": "🥗",
+            "depth": 1,
+            "parent_id": "acce65f0-ee24-4453-aaf5-da3c810b0cad",
+            "children": [],
+            "expanded": false,
+            "expandable": true,
+            "is_actionable": false,
+            "action_text": null,
+            "time_slot": null,
+            "frequency": null,
+            "duration": null,
+            "reasoning": null,
+            "status": "pending",
+            "completed_count": 0,
+            "last_completed": null,
+            "created_at": ""
+          },
+          {
+            "id": "a8e42e0e-2bae-4675-940a-575157257fdd",
+            "label": "慢性压力与睡眠不足",
+            "description": "持续压力升高皮质醇，扰乱毛囊正常代谢，常伴随作息不规律",
+            "emoji": "😰",
+            "depth": 1,
+            "parent_id": "acce65f0-ee24-4453-aaf5-da3c810b0cad",
+            "children": [],
+            "expanded": false,
+            "expandable": true,
+            "is_actionable": false,
+            "action_text": null,
+            "time_slot": null,
+            "frequency": null,
+            "duration": null,
+            "reasoning": null,
+            "status": "pending",
+            "completed_count": 0,
+            "last_completed": null,
+            "created_at": ""
+          },
+          {
+            "id": "f07ec6d8-309d-4d6e-8168-9b42132d1236",
+            "label": "头皮健康问题",
+            "description": "脂溢性皮炎、真菌感染或过度清洁会破坏头皮屏障，导致炎症性脱发",
+            "emoji": "🔬",
+            "depth": 1,
+            "parent_id": "acce65f0-ee24-4453-aaf5-da3c810b0cad",
+            "children": [],
+            "expanded": false,
+            "expandable": true,
+            "is_actionable": false,
+            "action_text": null,
+            "time_slot": null,
+            "frequency": null,
+            "duration": null,
+            "reasoning": null,
+            "status": "pending",
+            "completed_count": 0,
+            "last_completed": null,
+            "created_at": ""
+          },
+          {
+            "id": "32b89dd4-fe37-4931-a2af-cd37f94eaca4",
+            "label": "不当洗发与护发习惯",
+            "description": "频繁烫染、过高水温、暴力梳头会损伤毛干和毛囊，可通过调整习惯改善",
+            "emoji": "🧴",
+            "depth": 1,
+            "parent_id": "acce65f0-ee24-4453-aaf5-da3c810b0cad",
+            "children": [],
+            "expanded": false,
+            "expandable": false,
+            "is_actionable": true,
+            "action_text": "每周洗头不超过3次，使用温和无硅油洗发水，水温37℃以下，减少烫染频率至每季度1次",
+            "time_slot": "晚上洗发",
+            "frequency": "每周2-3次",
+            "duration": "持续执行",
+            "reasoning": null,
+            "status": "pending",
+            "completed_count": 0,
+            "last_completed": null,
+            "created_at": ""
+          }
+        ],
+        "expanded": true,
+        "expandable": true,
+        "is_actionable": false,
+        "action_text": null,
+        "time_slot": null,
+        "frequency": null,
+        "duration": null,
+        "reasoning": null,
+        "status": "pending",
+        "completed_count": 0,
+        "last_completed": null,
+        "created_at": ""
+      }
+    }
+  ],
+  "user_aac0623a": [
+    {
+      "id": "4ad81a31-5b50-43e0-8eae-8da5389cdb4e",
+      "user_id": "user_aac0623a",
+      "concern": "脱发",
+      "title": "健康计划",
+      "goal": "改善脱发",
+      "status": "active",
+      "created_at": "2026-06-01T11:32:22.386681+00:00",
+      "updated_at": "2026-06-01T11:32:38.902379+00:00",
+      "context_snapshot": {
+        "persona_id": "default",
+        "routine_summary": {
+          "status": "data_insufficient",
+          "message": "还需要更多交互数据才能建立作息模型"
+        },
+        "profile_notes": ""
+      },
+      "version": 1,
+      "reasoning_tree": {
+        "id": "8a59a3f6-c922-48d0-bc6a-b9723eed0ab7",
+        "label": "脱发",
+        "description": "针对「脱发」的健康推理",
+        "emoji": "🎯",
+        "depth": 0,
+        "parent_id": null,
+        "children": [
+          {
+            "id": "34e022a7-a071-439d-b4a1-e1e40b7d0c9b",
+            "label": "激素水平变化",
+            "description": "雄激素水平异常可导致毛囊微小化，是雄激素性脱发的主要原因",
+            "emoji": "🧬",
+            "depth": 1,
+            "parent_id": "8a59a3f6-c922-48d0-bc6a-b9723eed0ab7",
+            "children": [
+              {
+                "id": "6debc824-62cb-4343-b0da-9036bda73d3d",
+                "label": "DHT水平升高",
+                "description": "5α-还原酶将睾酮转化为更强效的二氢睾酮(DHT)，直接攻击毛囊导致微小化",
+                "emoji": "🧪",
+                "depth": 2,
+                "parent_id": "34e022a7-a071-439d-b4a1-e1e40b7d0c9b",
+                "children": [],
+                "expanded": false,
+                "expandable": true,
+                "is_actionable": false,
+                "action_text": null,
+                "time_slot": null,
+                "frequency": null,
+                "duration": null,
+                "reasoning": null,
+                "status": "pending",
+                "completed_count": 0,
+                "last_completed": null,
+                "created_at": "2026-06-01T11:32:38.902338+00:00"
+              },
+              {
+                "id": "e0a4e4c7-33e1-4e49-a1e3-e9af2121629c",
+                "label": "雄激素受体过度敏感",
+                "description": "遗传因素导致毛囊雄激素受体对DHT的敏感性增加，即使DHT水平正常也易脱发",
+                "emoji": "🧬",
+                "depth": 2,
+                "parent_id": "34e022a7-a071-439d-b4a1-e1e40b7d0c9b",
+                "children": [],
+                "expanded": false,
+                "expandable": true,
+                "is_actionable": false,
+                "action_text": null,
+                "time_slot": null,
+                "frequency": null,
+                "duration": null,
+                "reasoning": null,
+                "status": "pending",
+                "completed_count": 0,
+                "last_completed": null,
+                "created_at": "2026-06-01T11:32:38.902361+00:00"
+              },
+              {
+                "id": "eb96a4df-dde7-47df-a68c-c72cecb5c055",
+                "label": "每日早餐后补充南瓜籽油",
+                "description": "南瓜籽油富含植物固醇，可抑制5α-还原酶活性，减少DHT生成",
+                "emoji": "🥜",
+                "depth": 2,
+                "parent_id": "34e022a7-a071-439d-b4a1-e1e40b7d0c9b",
+                "children": [],
+                "expanded": false,
+                "expandable": false,
+                "is_actionable": true,
+                "action_text": "每天早餐后服用一勺（约5ml）冷压南瓜籽油",
+                "time_slot": "早餐后",
+                "frequency": "每天",
+                "duration": "持续至少3个月",
+                "reasoning": null,
+                "status": "pending",
+                "completed_count": 0,
+                "last_completed": null,
+                "created_at": "2026-06-01T11:32:38.902368+00:00"
+              },
+              {
+                "id": "8c333563-5e80-43da-9786-763213c0860f",
+                "label": "晚餐减少高糖食物摄入",
+                "description": "高血糖和胰岛素水平上升会刺激雄激素合成，增加游离睾酮水平",
+                "emoji": "🍬",
+                "depth": 2,
+                "parent_id": "34e022a7-a071-439d-b4a1-e1e40b7d0c9b",
+                "children": [],
+                "expanded": false,
+                "expandable": false,
+                "is_actionable": true,
+                "action_text": "晚餐避免甜点、含糖饮料，每日添加糖摄入量控制在25克以内",
+                "time_slot": "晚餐",
+                "frequency": "每天",
+                "duration": "长期",
+                "reasoning": null,
+                "status": "pending",
+                "completed_count": 0,
+                "last_completed": null,
+                "created_at": "2026-06-01T11:32:38.902374+00:00"
+              }
+            ],
+            "expanded": true,
+            "expandable": true,
+            "is_actionable": false,
+            "action_text": null,
+            "time_slot": null,
+            "frequency": null,
+            "duration": null,
+            "reasoning": null,
+            "status": "pending",
+            "completed_count": 0,
+            "last_completed": null,
+            "created_at": ""
+          },
+          {
+            "id": "ecb3ba97-e64a-4e92-8167-c219641d6b08",
+            "label": "营养缺乏或失衡",
+            "description": "缺铁、锌、维生素D或蛋白质等会影响毛发生长周期",
+            "emoji": "🥗",
+            "depth": 1,
+            "parent_id": "8a59a3f6-c922-48d0-bc6a-b9723eed0ab7",
+            "children": [],
+            "expanded": false,
+            "expandable": true,
+            "is_actionable": false,
+            "action_text": null,
+            "time_slot": null,
+            "frequency": null,
+            "duration": null,
+            "reasoning": null,
+            "status": "pending",
+            "completed_count": 0,
+            "last_completed": null,
+            "created_at": ""
+          },
+          {
+            "id": "63043e0b-7bd3-44d3-9901-8417c92fee64",
+            "label": "慢性压力与睡眠不足",
+            "description": "长期压力升高皮质醇，扰乱毛囊休止期，可能加重脱发",
+            "emoji": "😰",
+            "depth": 1,
+            "parent_id": "8a59a3f6-c922-48d0-bc6a-b9723eed0ab7",
+            "children": [],
+            "expanded": false,
+            "expandable": true,
+            "is_actionable": false,
+            "action_text": null,
+            "time_slot": null,
+            "frequency": null,
+            "duration": null,
+            "reasoning": null,
+            "status": "pending",
+            "completed_count": 0,
+            "last_completed": null,
+            "created_at": ""
+          },
+          {
+            "id": "7b6b20b6-9faf-400e-bbfd-29085b43819a",
+            "label": "头皮炎症或真菌感染",
+            "description": "脂溢性皮炎、毛囊炎等会破坏头皮环境，直接导致脱发",
+            "emoji": "🔴",
+            "depth": 1,
+            "parent_id": "8a59a3f6-c922-48d0-bc6a-b9723eed0ab7",
+            "children": [],
+            "expanded": false,
+            "expandable": true,
+            "is_actionable": false,
+            "action_text": null,
+            "time_slot": null,
+            "frequency": null,
+            "duration": null,
+            "reasoning": null,
+            "status": "pending",
+            "completed_count": 0,
+            "last_completed": null,
+            "created_at": ""
+          },
+          {
+            "id": "fe10c058-e0ee-4f06-9108-672991411b87",
+            "label": "睡前梳头促进头皮血液循环",
+            "description": "每晚用木梳轻柔梳理头皮，可改善毛囊供血和营养输送",
+            "emoji": "🪥",
+            "depth": 1,
+            "parent_id": "8a59a3f6-c922-48d0-bc6a-b9723eed0ab7",
+            "children": [],
+            "expanded": false,
+            "expandable": false,
+            "is_actionable": true,
+            "action_text": "每晚睡前用宽齿木梳从前额梳到后颈，重复50次，约3分钟",
+            "time_slot": "睡前",
+            "frequency": "每天",
+            "duration": "3分钟",
+            "reasoning": null,
+            "status": "pending",
+            "completed_count": 0,
+            "last_completed": null,
+            "created_at": ""
+          }
+        ],
+        "expanded": true,
+        "expandable": true,
+        "is_actionable": false,
+        "action_text": null,
+        "time_slot": null,
+        "frequency": null,
+        "duration": null,
+        "reasoning": null,
+        "status": "pending",
+        "completed_count": 0,
+        "last_completed": null,
+        "created_at": ""
+      }
+    }
+  ],
+  "user_3f477710": [
+    {
+      "id": "10acb50b-6400-4e0a-84df-ea11d181a7cb",
+      "user_id": "user_3f477710",
+      "concern": "脱发",
+      "title": "健康计划",
+      "goal": "改善脱发",
+      "status": "active",
+      "created_at": "2026-06-01T11:35:41.373195+00:00",
+      "updated_at": "2026-06-01T11:35:53.661155+00:00",
+      "context_snapshot": {
+        "persona_id": "default",
+        "routine_summary": {
+          "status": "data_insufficient",
+          "message": "还需要更多交互数据才能建立作息模型"
+        },
+        "profile_notes": ""
+      },
+      "version": 1,
+      "reasoning_tree": {
+        "id": "15b071cf-c190-4a38-8c5a-af793e5aa48f",
+        "label": "脱发",
+        "description": "针对「脱发」的健康推理",
+        "emoji": "🎯",
+        "depth": 0,
+        "parent_id": null,
+        "children": [
+          {
+            "id": "49347c53-5583-4812-b5fc-e54c969985b9",
+            "label": "遗传与雄激素敏感性",
+            "description": "遗传背景导致毛囊对雄激素（如二氢睾酮）敏感，是雄激素性脱发最常见原因，需要进一步评估家族史和激素水平",
+            "emoji": "🧬",
+            "depth": 1,
+            "parent_id": "15b071cf-c190-4a38-8c5a-af793e5aa48f",
+            "children": [
+              {
+                "id": "6de83bc0-118b-402a-a8e8-af323f4d7feb",
+                "label": "绘制家族脱发图谱",
+                "description": "系统记录直系亲属脱发情况，评估遗传模式与风险等级",
+                "emoji": "🧬",
+                "depth": 2,
+                "parent_id": "49347c53-5583-4812-b5fc-e54c969985b9",
+                "children": [],
+                "expanded": false,
+                "expandable": false,
+                "is_actionable": true,
+                "action_text": "收集父亲、祖父、兄弟及母亲家族男性脱发信息，记录开始年龄、脱发区域和进展速度，绘制三代图谱",
+                "time_slot": "休闲时间",
+                "frequency": "一次性（完成后定期更新）",
+                "duration": "30分钟",
+                "reasoning": null,
+                "status": "pending",
+                "completed_count": 0,
+                "last_completed": null,
+                "created_at": "2026-06-01T11:35:53.661103+00:00"
+              },
+              {
+                "id": "c6ae7730-c73f-47a2-8ab5-f7d4f1c1fd5d",
+                "label": "晨起空腹检测血清二氢睾酮",
+                "description": "准确测量DHT水平，判断雄激素代谢异常程度，指导后续干预",
+                "emoji": "🩸",
+                "depth": 2,
+                "parent_id": "49347c53-5583-4812-b5fc-e54c969985b9",
+                "children": [],
+                "expanded": false,
+                "expandable": false,
+                "is_actionable": true,
+                "action_text": "早上空腹（禁食8-10小时）到医院抽血检查二氢睾酮(DHT)水平",
+                "time_slot": "早晨",
+                "frequency": "建议首次检测后遵医嘱复查",
+                "duration": "一次性检测（抽血5分钟）",
+                "reasoning": null,
+                "status": "pending",
+                "completed_count": 0,
+                "last_completed": null,
+                "created_at": "2026-06-01T11:35:53.661132+00:00"
+              },
+              {
+                "id": "68df0910-dbb8-49c4-a235-02b443b55e13",
+                "label": "咨询医生使用5α-还原酶抑制剂",
+                "description": "通过药物抑制5α-还原酶活性，直接降低DHT生成，改善毛囊微环境",
+                "emoji": "💊",
+                "depth": 2,
+                "parent_id": "49347c53-5583-4812-b5fc-e54c969985b9",
+                "children": [],
+                "expanded": false,
+                "expandable": false,
+                "is_actionable": true,
+                "action_text": "携带DHT检测报告和家族图谱，咨询皮肤科医生关于非那雄胺或度他雄胺的适用性及剂量",
+                "time_slot": "白天",
+                "frequency": "遵医嘱每日口服",
+                "duration": "长期（至少6个月评估效果）",
+                "reasoning": null,
+                "status": "pending",
+                "completed_count": 0,
+                "last_completed": null,
+                "created_at": "2026-06-01T11:35:53.661149+00:00"
+              }
+            ],
+            "expanded": true,
+            "expandable": true,
+            "is_actionable": false,
+            "action_text": null,
+            "time_slot": null,
+            "frequency": null,
+            "duration": null,
+            "reasoning": null,
+            "status": "pending",
+            "completed_count": 0,
+            "last_completed": null,
+            "created_at": ""
+          },
+          {
+            "id": "8b013f67-8b3b-456b-a870-26a9c54231d5",
+            "label": "营养元素缺乏",
+            "description": "缺铁、锌、维生素B族或蛋白质不足会影响毛囊细胞代谢和角蛋白合成，需要通过血液检测明确具体缺乏项",
+            "emoji": "🥗",
+            "depth": 1,
+            "parent_id": "15b071cf-c190-4a38-8c5a-af793e5aa48f",
+            "children": [],
+            "expanded": false,
+            "expandable": true,
+            "is_actionable": false,
+            "action_text": null,
+            "time_slot": null,
+            "frequency": null,
+            "duration": null,
+            "reasoning": null,
+            "status": "pending",
+            "completed_count": 0,
+            "last_completed": null,
+            "created_at": ""
+          },
+          {
+            "id": "1227f2cf-f44f-408b-ab0a-05c47b218a7d",
+            "label": "精神压力与睡眠不足",
+            "description": "持续压力升高皮质醇，导致毛囊提前进入休止期；睡眠不足影响生长激素和修复机制，需要评估压力源和睡眠时长",
+            "emoji": "😰",
+            "depth": 1,
+            "parent_id": "15b071cf-c190-4a38-8c5a-af793e5aa48f",
+            "children": [],
+            "expanded": false,
+            "expandable": true,
+            "is_actionable": false,
+            "action_text": null,
+            "time_slot": null,
+            "frequency": null,
+            "duration": null,
+            "reasoning": null,
+            "status": "pending",
+            "completed_count": 0,
+            "last_completed": null,
+            "created_at": ""
+          },
+          {
+            "id": "84664d2b-0e7c-4b9c-b646-53c9f7b1f38b",
+            "label": "头皮炎症与微生态失衡",
+            "description": "脂溢性皮炎、马拉色菌过度繁殖或细菌感染会破坏毛囊健康，需通过皮肤镜或真菌检查确诊",
+            "emoji": "🔬",
+            "depth": 1,
+            "parent_id": "15b071cf-c190-4a38-8c5a-af793e5aa48f",
+            "children": [],
+            "expanded": false,
+            "expandable": true,
+            "is_actionable": false,
+            "action_text": null,
+            "time_slot": null,
+            "frequency": null,
+            "duration": null,
+            "reasoning": null,
+            "status": "pending",
+            "completed_count": 0,
+            "last_completed": null,
+            "created_at": ""
+          },
+          {
+            "id": "795b4d55-7675-4480-b8ef-f3d7d9525c8e",
+            "label": "激素水平波动（甲状腺/性激素）",
+            "description": "甲状腺功能异常（甲亢/甲减）或多囊卵巢综合征等会导致脱发，需要内分泌科检查确认",
+            "emoji": "🩺",
+            "depth": 1,
+            "parent_id": "15b071cf-c190-4a38-8c5a-af793e5aa48f",
+            "children": [],
+            "expanded": false,
+            "expandable": true,
+            "is_actionable": false,
+            "action_text": null,
+            "time_slot": null,
+            "frequency": null,
+            "duration": null,
+            "reasoning": null,
+            "status": "pending",
+            "completed_count": 0,
+            "last_completed": null,
+            "created_at": ""
+          },
+          {
+            "id": "a95d687a-0212-4fb9-8cfe-a8f656855e68",
+            "label": "每日头皮按摩促进血液循环",
+            "description": "轻柔按摩头皮可以增加毛囊血氧供应，辅助缓解压力，改善营养输送",
+            "emoji": "💆‍♂️",
+            "depth": 1,
+            "parent_id": "15b071cf-c190-4a38-8c5a-af793e5aa48f",
+            "children": [],
+            "expanded": false,
+            "expandable": false,
+            "is_actionable": true,
+            "action_text": "每晚睡前用指腹从发际线向头顶画圈按摩头皮5分钟",
+            "time_slot": "睡前",
+            "frequency": "每天",
+            "duration": "5分钟",
+            "reasoning": null,
+            "status": "pending",
+            "completed_count": 0,
+            "last_completed": null,
+            "created_at": ""
+          }
+        ],
+        "expanded": true,
+        "expandable": true,
+        "is_actionable": false,
+        "action_text": null,
+        "time_slot": null,
+        "frequency": null,
+        "duration": null,
+        "reasoning": null,
+        "status": "pending",
+        "completed_count": 0,
+        "last_completed": null,
+        "created_at": ""
+      }
+    }
+  ],
+  "user_b8dbd1ee": [
+    {
+      "id": "c4ec7933-a7fe-42ae-b047-e6d30a1809e6",
+      "user_id": "user_b8dbd1ee",
+      "concern": "失眠",
+      "title": "健康计划",
+      "goal": "改善失眠",
+      "status": "active",
+      "created_at": "2026-06-01T11:36:46.326340+00:00",
+      "updated_at": "2026-06-01T11:36:55.026886+00:00",
+      "context_snapshot": {
+        "persona_id": "default",
+        "routine_summary": {
+          "status": "data_insufficient",
+          "message": "还需要更多交互数据才能建立作息模型"
+        },
+        "profile_notes": ""
+      },
+      "version": 1,
+      "reasoning_tree": {
+        "id": "83682bdc-46e0-4013-aa3b-6795a2ce79d5",
+        "label": "失眠",
+        "description": "针对「失眠」的健康推理",
+        "emoji": "🎯",
+        "depth": 0,
+        "parent_id": null,
+        "children": [
+          {
+            "id": "597ba7c4-59c4-47d9-983f-4b90a16bfe5b",
+            "label": "生物钟紊乱",
+            "description": "不规律的作息时间会破坏体内生物钟，导致入睡困难",
+            "emoji": "🕰️",
+            "depth": 1,
+            "parent_id": "83682bdc-46e0-4013-aa3b-6795a2ce79d5",
+            "children": [
+              {
+                "id": "f114aa0d-c306-4d67-8fc0-cb8fbd4ca61d",
+                "label": "坚持固定上床时间",
+                "description": "每天在同一时间上床睡觉可以帮助校准生物钟，减少入睡困难",
+                "emoji": "🛌",
+                "depth": 2,
+                "parent_id": "597ba7c4-59c4-47d9-983f-4b90a16bfe5b",
+                "children": [],
+                "expanded": false,
+                "expandable": false,
+                "is_actionable": true,
+                "action_text": "每晚22:30前上床睡觉，误差不超过15分钟",
+                "time_slot": "睡前",
+                "frequency": "每天",
+                "duration": "持续3周",
+                "reasoning": null,
+                "status": "pending",
+                "completed_count": 0,
+                "last_completed": null,
+                "created_at": "2026-06-01T11:36:55.026844+00:00"
+              },
+              {
+                "id": "2d8a33dc-d2ea-4c2b-9854-e3f9d628e9b1",
+                "label": "控制睡眠时长",
+                "description": "睡眠时间过短或过长都会扰乱生物节律，建议保持7-9小时",
+                "emoji": "⏰",
+                "depth": 2,
+                "parent_id": "597ba7c4-59c4-47d9-983f-4b90a16bfe5b",
+                "children": [],
+                "expanded": false,
+                "expandable": false,
+                "is_actionable": true,
+                "action_text": "设置闹钟确保卧床时间在7.5-8.5小时之间",
+                "time_slot": "睡眠前",
+                "frequency": "每天",
+                "duration": "长期",
+                "reasoning": null,
+                "status": "pending",
+                "completed_count": 0,
+                "last_completed": null,
+                "created_at": "2026-06-01T11:36:55.026868+00:00"
+              },
+              {
+                "id": "6b7493aa-370c-403c-99be-830ed0baa4b1",
+                "label": "限制午睡时长",
+                "description": "白天小睡过久或过晚会削弱夜间睡眠压力，干扰生物钟",
+                "emoji": "😴",
+                "depth": 2,
+                "parent_id": "597ba7c4-59c4-47d9-983f-4b90a16bfe5b",
+                "children": [],
+                "expanded": false,
+                "expandable": false,
+                "is_actionable": true,
+                "action_text": "午睡不超过30分钟，且必须在15:00前结束",
+                "time_slot": "午后",
+                "frequency": "工作日",
+                "duration": "持续",
+                "reasoning": null,
+                "status": "pending",
+                "completed_count": 0,
+                "last_completed": null,
+                "created_at": "2026-06-01T11:36:55.026876+00:00"
+              },
+              {
+                "id": "69fbfcbe-71ea-4d48-89cd-54ec70e797ad",
+                "label": "周末作息偏差",
+                "description": "周末晚睡晚起会导致社交时差，使周一更难入睡",
+                "emoji": "📅",
+                "depth": 2,
+                "parent_id": "597ba7c4-59c4-47d9-983f-4b90a16bfe5b",
+                "children": [],
+                "expanded": false,
+                "expandable": true,
+                "is_actionable": false,
+                "action_text": null,
+                "time_slot": null,
+                "frequency": null,
+                "duration": null,
+                "reasoning": null,
+                "status": "pending",
+                "completed_count": 0,
+                "last_completed": null,
+                "created_at": "2026-06-01T11:36:55.026882+00:00"
+              }
+            ],
+            "expanded": true,
+            "expandable": true,
+            "is_actionable": false,
+            "action_text": null,
+            "time_slot": null,
+            "frequency": null,
+            "duration": null,
+            "reasoning": null,
+            "status": "pending",
+            "completed_count": 0,
+            "last_completed": null,
+            "created_at": ""
+          },
+          {
+            "id": "474de355-c97f-494d-8d3c-58958fa658e6",
+            "label": "心理压力",
+            "description": "工作、生活或情绪上的压力会激活交感神经，抑制睡意",
+            "emoji": "🧠",
+            "depth": 1,
+            "parent_id": "83682bdc-46e0-4013-aa3b-6795a2ce79d5",
+            "children": [],
+            "expanded": false,
+            "expandable": true,
+            "is_actionable": false,
+            "action_text": null,
+            "time_slot": null,
+            "frequency": null,
+            "duration": null,
+            "reasoning": null,
+            "status": "pending",
+            "completed_count": 0,
+            "last_completed": null,
+            "created_at": ""
+          },
+          {
+            "id": "b11448e5-820f-4356-8716-b6317b748945",
+            "label": "卧室环境不适",
+            "description": "过亮的光线、噪音或不适的温度都会干扰睡眠启动",
+            "emoji": "🛏️",
+            "depth": 1,
+            "parent_id": "83682bdc-46e0-4013-aa3b-6795a2ce79d5",
+            "children": [],
+            "expanded": false,
+            "expandable": true,
+            "is_actionable": false,
+            "action_text": null,
+            "time_slot": null,
+            "frequency": null,
+            "duration": null,
+            "reasoning": null,
+            "status": "pending",
+            "completed_count": 0,
+            "last_completed": null,
+            "created_at": ""
+          },
+          {
+            "id": "ec669940-9bb4-4fc3-be54-d347b37b0606",
+            "label": "晚餐过晚或油腻",
+            "description": "睡前3小时内进食或吃高脂食物会增加消化负担，影响睡眠",
+            "emoji": "🍔",
+            "depth": 1,
+            "parent_id": "83682bdc-46e0-4013-aa3b-6795a2ce79d5",
+            "children": [],
+            "expanded": false,
+            "expandable": true,
+            "is_actionable": false,
+            "action_text": null,
+            "time_slot": null,
+            "frequency": null,
+            "duration": null,
+            "reasoning": null,
+            "status": "pending",
+            "completed_count": 0,
+            "last_completed": null,
+            "created_at": ""
+          },
+          {
+            "id": "9e111423-4077-4281-b136-fde461b248f6",
+            "label": "咖啡因摄入",
+            "description": "咖啡因的兴奋作用可持续6-8小时，下午和晚间摄入会直接导致失眠",
+            "emoji": "☕",
+            "depth": 1,
+            "parent_id": "83682bdc-46e0-4013-aa3b-6795a2ce79d5",
+            "children": [],
+            "expanded": false,
+            "expandable": false,
+            "is_actionable": true,
+            "action_text": "每天下午3点后避免饮用咖啡、浓茶或含咖啡因的饮料",
+            "time_slot": "下午3点后",
+            "frequency": "每天",
+            "duration": "持续",
+            "reasoning": null,
+            "status": "pending",
+            "completed_count": 0,
+            "last_completed": null,
+            "created_at": ""
+          },
+          {
+            "id": "cda7b5cd-e1cf-451f-9f2d-5399f2364813",
+            "label": "睡前蓝光暴露",
+            "description": "手机、电脑等电子屏幕发出的蓝光会抑制褪黑素分泌，推迟入睡",
+            "emoji": "📱",
+            "depth": 1,
+            "parent_id": "83682bdc-46e0-4013-aa3b-6795a2ce79d5",
+            "children": [],
+            "expanded": false,
+            "expandable": false,
+            "is_actionable": true,
+            "action_text": "睡前一小时关闭所有电子屏幕，改为阅读纸质书或听轻音乐",
+            "time_slot": "夜间",
+            "frequency": "每天",
+            "duration": "持续",
+            "reasoning": null,
+            "status": "pending",
+            "completed_count": 0,
+            "last_completed": null,
+            "created_at": ""
+          }
+        ],
+        "expanded": true,
+        "expandable": true,
+        "is_actionable": false,
+        "action_text": null,
+        "time_slot": null,
+        "frequency": null,
+        "duration": null,
+        "reasoning": null,
+        "status": "pending",
+        "completed_count": 0,
+        "last_completed": null,
+        "created_at": ""
+      }
+    }
+  ],
+  "user_9c19cf31": [
+    {
+      "id": "87ee512e-6f28-4381-bd4f-60cd3e2aa838",
+      "user_id": "user_9c19cf31",
+      "concern": "脱发",
+      "title": "健康计划",
+      "goal": "改善脱发",
+      "status": "active",
+      "created_at": "2026-06-01T11:47:58.843140+00:00",
+      "updated_at": "2026-06-01T11:48:12.474287+00:00",
+      "context_snapshot": {
+        "persona_id": "default",
+        "routine_summary": {
+          "status": "data_insufficient",
+          "message": "还需要更多交互数据才能建立作息模型"
+        },
+        "profile_notes": ""
+      },
+      "version": 1,
+      "reasoning_tree": {
+        "id": "7dfe55bb-466d-46d6-8fad-618aacc2711d",
+        "label": "脱发",
+        "description": "针对「脱发」的健康推理",
+        "emoji": "🎯",
+        "depth": 0,
+        "parent_id": null,
+        "children": [
+          {
+            "id": "757a3499-b5f2-43e7-b281-a17b6889c99f",
+            "label": "遗传与激素因素",
+            "description": "家族遗传是脱发最常见原因，雄激素性脱发（DHT）导致毛囊萎缩。",
+            "emoji": "🧬",
+            "depth": 1,
+            "parent_id": "7dfe55bb-466d-46d6-8fad-618aacc2711d",
+            "children": [
+              {
+                "id": "23c0a25c-6df1-4e90-a522-e670e10745df",
+                "label": "雄激素受体敏感性升高",
+                "description": "遗传决定的毛囊雄激素受体对DHT过度敏感，导致毛囊过早进入退行期并萎缩",
+                "emoji": "🧬",
+                "depth": 2,
+                "parent_id": "757a3499-b5f2-43e7-b281-a17b6889c99f",
+                "children": [],
+                "expanded": false,
+                "expandable": true,
+                "is_actionable": false,
+                "action_text": "",
+                "time_slot": "",
+                "frequency": "",
+                "duration": "",
+                "reasoning": null,
+                "status": "pending",
+                "completed_count": 0,
+                "last_completed": null,
+                "created_at": "2026-06-01T11:48:12.474253+00:00"
+              },
+              {
+                "id": "e324690b-d160-4cc4-9ddd-abe7b17ada55",
+                "label": "5α-还原酶活性增强",
+                "description": "5α-还原酶将睾酮转化为更强的DHT，遗传酶活性高会增加脱发风险",
+                "emoji": "⚗️",
+                "depth": 2,
+                "parent_id": "757a3499-b5f2-43e7-b281-a17b6889c99f",
+                "children": [],
+                "expanded": false,
+                "expandable": false,
+                "is_actionable": true,
+                "action_text": "每天早餐后口服1粒锯棕榈补充剂（标准提取物450mg）",
+                "time_slot": "早餐后",
+                "frequency": "每天",
+                "duration": "3个月",
+                "reasoning": null,
+                "status": "pending",
+                "completed_count": 0,
+                "last_completed": null,
+                "created_at": "2026-06-01T11:48:12.474275+00:00"
+              },
+              {
+                "id": "e91338a6-4f8b-410f-bbd6-16931f86d2c4",
+                "label": "芳香酶活性不足",
+                "description": "芳香酶可将雄激素转化为雌激素，活性不足时局部雄激素堆积，加速毛囊萎缩",
+                "emoji": "🧴",
+                "depth": 2,
+                "parent_id": "757a3499-b5f2-43e7-b281-a17b6889c99f",
+                "children": [],
+                "expanded": false,
+                "expandable": true,
+                "is_actionable": false,
+                "action_text": "",
+                "time_slot": "",
+                "frequency": "",
+                "duration": "",
+                "reasoning": null,
+                "status": "pending",
+                "completed_count": 0,
+                "last_completed": null,
+                "created_at": "2026-06-01T11:48:12.474284+00:00"
+              }
+            ],
+            "expanded": true,
+            "expandable": true,
+            "is_actionable": false,
+            "action_text": null,
+            "time_slot": null,
+            "frequency": null,
+            "duration": null,
+            "reasoning": null,
+            "status": "pending",
+            "completed_count": 0,
+            "last_completed": null,
+            "created_at": ""
+          },
+          {
+            "id": "4bed93aa-cb17-4287-9f8c-8adc6621019a",
+            "label": "营养缺乏",
+            "description": "缺铁、缺锌、缺维生素D或B族维生素会影响毛囊代谢，导致脱发。",
+            "emoji": "🥦",
+            "depth": 1,
+            "parent_id": "7dfe55bb-466d-46d6-8fad-618aacc2711d",
+            "children": [],
+            "expanded": false,
+            "expandable": true,
+            "is_actionable": false,
+            "action_text": null,
+            "time_slot": null,
+            "frequency": null,
+            "duration": null,
+            "reasoning": null,
+            "status": "pending",
+            "completed_count": 0,
+            "last_completed": null,
+            "created_at": ""
+          },
+          {
+            "id": "5893e7b6-e8f3-487f-9652-765e6f3c3e24",
+            "label": "压力与睡眠不足",
+            "description": "长期压力和睡眠不足会扰乱激素平衡（如皮质醇升高），诱发休止期脱发。",
+            "emoji": "😴",
+            "depth": 1,
+            "parent_id": "7dfe55bb-466d-46d6-8fad-618aacc2711d",
+            "children": [],
+            "expanded": false,
+            "expandable": true,
+            "is_actionable": false,
+            "action_text": null,
+            "time_slot": null,
+            "frequency": null,
+            "duration": null,
+            "reasoning": null,
+            "status": "pending",
+            "completed_count": 0,
+            "last_completed": null,
+            "created_at": ""
+          },
+          {
+            "id": "41eafc3e-ed6b-4d28-9bce-e29f3402ab0e",
+            "label": "头皮护理习惯不当",
+            "description": "过度清洁、使用刺激性洗发水或抓挠头皮会损伤毛囊和头皮屏障。",
+            "emoji": "🧴",
+            "depth": 1,
+            "parent_id": "7dfe55bb-466d-46d6-8fad-618aacc2711d",
+            "children": [],
+            "expanded": false,
+            "expandable": false,
+            "is_actionable": true,
+            "action_text": "每次洗头时用指腹按摩头皮2分钟，避免指甲抓挠；每周使用1次温和头皮去角质产品（如水杨酸或果酸配方）。",
+            "time_slot": "洗头时",
+            "frequency": "每次洗头",
+            "duration": "持续",
+            "reasoning": null,
+            "status": "pending",
+            "completed_count": 0,
+            "last_completed": null,
+            "created_at": ""
+          },
+          {
+            "id": "d0d14a30-4c2c-43ff-bf22-0b55cae8254b",
+            "label": "环境毒素暴露",
+            "description": "空气污染、水中重金属或某些化学物质（如染发剂）可能影响毛囊健康。",
+            "emoji": "🌍",
+            "depth": 1,
+            "parent_id": "7dfe55bb-466d-46d6-8fad-618aacc2711d",
+            "children": [],
+            "expanded": false,
+            "expandable": true,
+            "is_actionable": false,
+            "action_text": null,
+            "time_slot": null,
+            "frequency": null,
+            "duration": null,
+            "reasoning": null,
+            "status": "pending",
+            "completed_count": 0,
+            "last_completed": null,
+            "created_at": ""
+          }
+        ],
+        "expanded": true,
+        "expandable": true,
+        "is_actionable": false,
+        "action_text": null,
+        "time_slot": null,
+        "frequency": null,
+        "duration": null,
+        "reasoning": null,
+        "status": "pending",
+        "completed_count": 0,
+        "last_completed": null,
+        "created_at": ""
+      }
+    }
+  ],
+  "user_4dbcefe2": [
+    {
+      "id": "ddadf2f8-ec17-4b17-b21a-83e12a2324ce",
+      "user_id": "user_4dbcefe2",
+      "concern": "脱发",
+      "title": "健康计划",
+      "goal": "改善脱发",
+      "status": "active",
+      "created_at": "2026-06-01T12:07:29.877098+00:00",
+      "updated_at": "2026-06-01T12:07:34.752377+00:00",
+      "context_snapshot": {
+        "persona_id": "default",
+        "routine_summary": {
+          "status": "data_insufficient",
+          "message": "还需要更多交互数据才能建立作息模型"
+        },
+        "profile_notes": ""
+      },
+      "version": 1,
+      "reasoning_tree": {
+        "id": "7618df5b-b785-4d62-bd2c-22df19ec96f6",
+        "label": "脱发",
+        "description": "针对「脱发」的健康推理",
+        "emoji": "🎯",
+        "depth": 0,
+        "parent_id": null,
+        "children": [
+          {
+            "id": "d71622f7-ce6a-421c-a25e-f0430b8f2bf9",
+            "label": "遗传易感性",
+            "description": "雄激素性脱发主要由遗传基因决定，毛囊对雄激素敏感",
+            "emoji": "🧬",
+            "depth": 1,
+            "parent_id": "7618df5b-b785-4d62-bd2c-22df19ec96f6",
+            "children": [
+              {
+                "id": "adafeae4-1a3b-4304-ac9a-3c374f57a157",
+                "label": "雄激素受体敏感性增高",
+                "description": "遗传因素导致毛囊细胞中雄激素受体表达增多或亲和力增强，使得低水平雄激素即可触发毛囊小型化进程。",
+                "emoji": "🧬",
+                "depth": 2,
+                "parent_id": "d71622f7-ce6a-421c-a25e-f0430b8f2bf9",
+                "children": [],
+                "expanded": false,
+                "expandable": true,
+                "is_actionable": false,
+                "action_text": null,
+                "time_slot": null,
+                "frequency": null,
+                "duration": null,
+                "reasoning": null,
+                "status": "pending",
+                "completed_count": 0,
+                "last_completed": null,
+                "created_at": "2026-06-01T12:07:34.752344+00:00"
+              },
+              {
+                "id": "3468c144-2897-4cc2-bc37-d8d750354d0c",
+                "label": "5α-还原酶活性增强",
+                "description": "遗传变异使5α-还原酶（主要为Ⅱ型）活性升高，将更多睾酮转化为二氢睾酮（DHT），DHT与毛囊受体结合力更强，加速脱发。",
+                "emoji": "⚗️",
+                "depth": 2,
+                "parent_id": "d71622f7-ce6a-421c-a25e-f0430b8f2bf9",
+                "children": [],
+                "expanded": false,
+                "expandable": true,
+                "is_actionable": false,
+                "action_text": null,
+                "time_slot": null,
+                "frequency": null,
+                "duration": null,
+                "reasoning": null,
+                "status": "pending",
+                "completed_count": 0,
+                "last_completed": null,
+                "created_at": "2026-06-01T12:07:34.752365+00:00"
+              },
+              {
+                "id": "35f9f51e-abc4-44be-ab2f-9ab0165149bc",
+                "label": "毛囊细胞凋亡加速",
+                "description": "遗传易感性导致毛囊干细胞和毛乳头细胞对DHT诱导的凋亡信号更敏感，毛囊生长期缩短、休止期延长，逐渐微型化。",
+                "emoji": "🫧",
+                "depth": 2,
+                "parent_id": "d71622f7-ce6a-421c-a25e-f0430b8f2bf9",
+                "children": [],
+                "expanded": false,
+                "expandable": true,
+                "is_actionable": false,
+                "action_text": null,
+                "time_slot": null,
+                "frequency": null,
+                "duration": null,
+                "reasoning": null,
+                "status": "pending",
+                "completed_count": 0,
+                "last_completed": null,
+                "created_at": "2026-06-01T12:07:34.752373+00:00"
+              }
+            ],
+            "expanded": true,
+            "expandable": true,
+            "is_actionable": false,
+            "action_text": null,
+            "time_slot": null,
+            "frequency": null,
+            "duration": null,
+            "reasoning": null,
+            "status": "pending",
+            "completed_count": 0,
+            "last_completed": null,
+            "created_at": ""
+          },
+          {
+            "id": "70288151-21c5-453d-90ec-1d55f4f59c3d",
+            "label": "激素水平波动",
+            "description": "雄激素（二氢睾酮）水平升高会缩短毛发生长期",
+            "emoji": "⚖️",
+            "depth": 1,
+            "parent_id": "7618df5b-b785-4d62-bd2c-22df19ec96f6",
+            "children": [],
+            "expanded": false,
+            "expandable": true,
+            "is_actionable": false,
+            "action_text": null,
+            "time_slot": null,
+            "frequency": null,
+            "duration": null,
+            "reasoning": null,
+            "status": "pending",
+            "completed_count": 0,
+            "last_completed": null,
+            "created_at": ""
+          },
+          {
+            "id": "31758e66-ac63-4bd2-90fb-099f2b768af8",
+            "label": "关键营养素缺乏",
+            "description": "铁、锌、生物素及蛋白质不足会导致毛囊供能障碍",
+            "emoji": "🥗",
+            "depth": 1,
+            "parent_id": "7618df5b-b785-4d62-bd2c-22df19ec96f6",
+            "children": [],
+            "expanded": false,
+            "expandable": false,
+            "is_actionable": true,
+            "action_text": "每日午餐保证摄入一份深色绿叶蔬菜（如菠菜）和一小把坚果",
+            "time_slot": "午餐",
+            "frequency": "每天",
+            "duration": "持续",
+            "reasoning": null,
+            "status": "pending",
+            "completed_count": 0,
+            "last_completed": null,
+            "created_at": ""
+          },
+          {
+            "id": "b5a0a810-ca84-4cba-afb0-a096ffa2ff8f",
+            "label": "精神压力过大",
+            "description": "长期压力升高皮质醇，干扰毛囊生长周期，造成休止期脱发",
+            "emoji": "😰",
+            "depth": 1,
+            "parent_id": "7618df5b-b785-4d62-bd2c-22df19ec96f6",
+            "children": [],
+            "expanded": false,
+            "expandable": true,
+            "is_actionable": false,
+            "action_text": null,
+            "time_slot": null,
+            "frequency": null,
+            "duration": null,
+            "reasoning": null,
+            "status": "pending",
+            "completed_count": 0,
+            "last_completed": null,
+            "created_at": ""
+          },
+          {
+            "id": "5545fff5-04fe-4c69-a4b0-d7ddeeac8a5d",
+            "label": "不当护发习惯",
+            "description": "频繁烫染、高温吹发或梳头过猛会造成物理性损伤",
+            "emoji": "💇",
+            "depth": 1,
+            "parent_id": "7618df5b-b785-4d62-bd2c-22df19ec96f6",
+            "children": [],
+            "expanded": false,
+            "expandable": true,
+            "is_actionable": false,
+            "action_text": null,
+            "time_slot": null,
+            "frequency": null,
+            "duration": null,
+            "reasoning": null,
+            "status": "pending",
+            "completed_count": 0,
+            "last_completed": null,
+            "created_at": ""
+          }
+        ],
+        "expanded": true,
+        "expandable": true,
+        "is_actionable": false,
+        "action_text": null,
+        "time_slot": null,
+        "frequency": null,
+        "duration": null,
+        "reasoning": null,
+        "status": "pending",
+        "completed_count": 0,
+        "last_completed": null,
+        "created_at": ""
+      }
+    }
+  ]
+}

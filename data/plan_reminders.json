@@ -1,0 +1,36 @@
+{
+  "test_user": [],
+  "user_afcdb1ac": [
+    {
+      "id": "b9ff2a35-7abe-4b2d-b1d8-e2e5e8dc0f30",
+      "plan_id": "bdf0882c-c5c4-4083-b30e-ed6beef9fffb",
+      "user_id": "user_afcdb1ac",
+      "trigger_type": "time",
+      "time_spec": "15:00",
+      "days_of_week": null,
+      "message_template": "该跑步啦！",
+      "is_active": true,
+      "last_triggered": null,
+      "adaptive": true,
+      "created_at": "2026-06-01T07:57:35.221977+00:00"
+    }
+  ],
+  "user_33929709": [
+    {
+      "id": "b2cb76db-a32c-45a6-aaa1-d244a293ee7c",
+      "plan_id": "2086333a-2f2d-44ce-b9a7-34ae9e894d61",
+      "user_id": "user_33929709",
+      "trigger_type": "time",
+      "time_spec": "15:00",
+      "days_of_week": null,
+      "message_template": "该跑步啦！",
+      "is_active": true,
+      "last_triggered": null,
+      "adaptive": true,
+      "created_at": "2026-06-01T08:02:28.484794+00:00"
+    }
+  ],
+  "crud_test": [],
+  "user_40afdc73": [],
+  "user_1959ae7a": []
+}

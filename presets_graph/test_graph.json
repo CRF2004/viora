@@ -1,0 +1,14 @@
+{
+  "nodes": [
+    {
+      "id": "n1",
+      "label": [
+        "test"
+      ],
+      "properties": {
+        "name": "Test Node"
+      }
+    }
+  ],
+  "relationships": []
+}

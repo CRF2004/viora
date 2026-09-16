@@ -1,0 +1,3199 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viora - 你的身体故事</title>
+    <style>
+        /* ========== Reset & Base ========== */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
+                         'Hiragino Sans GB', 'Microsoft YaHei', Roboto, Arial, sans-serif;
+            background: #f5efe8;
+            color: #3d3530;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+
+        /* ========== Color Palette ========== */
+        :root {
+            --bg-primary: #f5efe8;
+            --bg-white: #ffffff;
+            --bg-warm-light: #faf6f1;
+            --bg-chat-user: #c9a882;
+            --bg-chat-ai: #ffffff;
+            --accent-peach: #e8a87c;
+            --accent-rose: #d4a5a5;
+            --accent-sage: #a8b5a0;
+            --accent-gold: #d4b86a;
+            --text-primary: #3d3530;
+            --text-secondary: #7a716a;
+            --text-light: #a89f97;
+            --border-light: #e8e0d6;
+            --border-medium: #d6cdc3;
+            --shadow-soft: 0 2px 12px rgba(61, 53, 48, 0.08);
+            --shadow-medium: 0 4px 20px rgba(61, 53, 48, 0.12);
+            --radius-sm: 8px;
+            --radius-md: 12px;
+            --radius-lg: 16px;
+            --radius-xl: 20px;
+            --nav-height: 56px;
+            --chat-input-height: 72px;
+        }
+
+        /* ========== Layout ========== */
+        .app-container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        /* ========== Top Navigation ========== */
+        .top-nav {
+            height: var(--nav-height);
+            background: var(--bg-white);
+            border-bottom: 1px solid var(--border-light);
+            display: flex;
+            align-items: center;
+            padding: 0 24px;
+            flex-shrink: 0;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+            z-index: 100;
+        }
+
+        .nav-brand {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--accent-peach);
+            margin-right: 32px;
+            letter-spacing: -0.5px;
+        }
+
+        .nav-tabs {
+            display: flex;
+            gap: 4px;
+            height: 100%;
+            align-items: center;
+        }
+
+        .nav-tab {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 18px;
+            border-radius: 20px;
+            border: none;
+            background: transparent;
+            color: var(--text-secondary);
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            white-space: nowrap;
+        }
+
+        .nav-tab:hover {
+            background: var(--bg-warm-light);
+            color: var(--text-primary);
+        }
+
+        .nav-tab.active {
+            background: var(--accent-peach);
+            color: #fff;
+        }
+
+        .nav-tab .tab-icon {
+            font-size: 16px;
+        }
+
+        .nav-spacer { flex: 1; }
+
+        .nav-toggle-graph {
+            display: none;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 16px;
+            border-radius: 20px;
+            border: 1px solid var(--border-light);
+            background: var(--bg-white);
+            color: var(--text-secondary);
+            font-size: 13px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .nav-toggle-graph:hover {
+            border-color: var(--accent-peach);
+            color: var(--accent-peach);
+        }
+
+        .chat-view .nav-toggle-graph,
+        .graph-view .nav-toggle-graph {
+            display: flex;
+        }
+
+        /* ========== Persona Selector ========== */
+        .persona-selector {
+            position: relative;
+            margin-right: 12px;
+        }
+
+        .persona-btn {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 14px;
+            border-radius: 20px;
+            border: 1px solid var(--border-light);
+            background: var(--bg-white);
+            color: var(--text-secondary);
+            font-size: 13px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .persona-btn:hover {
+            border-color: var(--accent-peach);
+            color: var(--accent-peach);
+        }
+
+        .persona-arrow {
+            font-size: 10px;
+            transition: transform 0.2s;
+        }
+
+        .persona-selector.open .persona-arrow {
+            transform: rotate(180deg);
+        }
+
+        .persona-menu {
+            display: none;
+            position: absolute;
+            top: calc(100% + 8px);
+            right: 0;
+            background: var(--bg-white);
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-medium);
+            border: 1px solid var(--border-light);
+            min-width: 240px;
+            z-index: 200;
+            overflow: hidden;
+        }
+
+        .persona-selector.open .persona-menu {
+            display: block;
+        }
+
+        .persona-option {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            padding: 12px 16px;
+            cursor: pointer;
+            transition: background 0.2s;
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .persona-option:last-child {
+            border-bottom: none;
+        }
+
+        .persona-option:hover {
+            background: var(--bg-warm-light);
+        }
+
+        .persona-option.active {
+            background: rgba(232, 168, 124, 0.1);
+        }
+
+        .persona-option-icon {
+            font-size: 20px;
+            flex-shrink: 0;
+        }
+
+        .persona-option-info {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .persona-option-name {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .persona-option-desc {
+            font-size: 11px;
+            color: var(--text-light);
+            margin-top: 2px;
+            line-height: 1.4;
+        }
+
+        .persona-check {
+            color: var(--accent-peach);
+            font-size: 16px;
+            flex-shrink: 0;
+            align-self: center;
+        }
+
+        /* ========== Weather Indicator ========== */
+        .weather-indicator {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            padding: 8px 12px;
+            border-radius: 20px;
+            border: 1px solid var(--border-light);
+            background: var(--bg-white);
+            color: var(--text-secondary);
+            font-size: 12px;
+            cursor: pointer;
+            transition: all 0.2s;
+            margin-right: 8px;
+        }
+
+        .weather-indicator:hover {
+            border-color: var(--accent-sage);
+            color: var(--accent-sage);
+        }
+
+        /* ========== Location Dialog ========== */
+        .location-dialog {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: var(--bg-white);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-medium);
+            padding: 24px;
+            z-index: 500;
+            min-width: 320px;
+        }
+
+        .location-dialog.open {
+            display: block;
+        }
+
+        .location-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.3);
+            z-index: 499;
+        }
+
+        .location-overlay.open {
+            display: block;
+        }
+
+        .location-dialog h3 {
+            font-size: 16px;
+            color: var(--text-primary);
+            margin-bottom: 16px;
+        }
+
+        .location-field {
+            margin-bottom: 12px;
+        }
+
+        .location-field label {
+            display: block;
+            font-size: 12px;
+            color: var(--text-secondary);
+            margin-bottom: 4px;
+        }
+
+        .location-field input {
+            width: 100%;
+            padding: 8px 12px;
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-sm);
+            font-size: 13px;
+            color: var(--text-primary);
+            background: var(--bg-warm-light);
+            outline: none;
+        }
+
+        .location-field input:focus {
+            border-color: var(--accent-peach);
+        }
+
+        .location-actions {
+            display: flex;
+            gap: 8px;
+            margin-top: 16px;
+        }
+
+        .location-actions button {
+            flex: 1;
+            padding: 8px 16px;
+            border-radius: var(--radius-sm);
+            border: 1px solid var(--border-light);
+            font-size: 13px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .location-save-btn {
+            background: var(--accent-peach);
+            color: #fff;
+            border-color: var(--accent-peach);
+        }
+
+        .location-save-btn:hover {
+            background: #d9966d;
+        }
+
+        .location-cancel-btn {
+            background: var(--bg-white);
+            color: var(--text-secondary);
+        }
+
+        .location-auto-btn {
+            background: var(--bg-warm-light);
+            color: var(--text-secondary);
+            border: 1px solid var(--border-light);
+            width: 100%;
+            padding: 8px;
+            font-size: 12px;
+            cursor: pointer;
+            border-radius: var(--radius-sm);
+            margin-bottom: 16px;
+        }
+
+        .location-auto-btn:hover {
+            border-color: var(--accent-sage);
+            color: var(--accent-sage);
+        }
+
+        /* ========== Proactive Toggle ========== */
+        .proactive-toggle {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            padding: 4px 10px;
+            border-radius: 12px;
+            border: 1px solid var(--border-light);
+            background: var(--bg-warm-light);
+            color: var(--text-secondary);
+            font-size: 11px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .proactive-toggle:hover {
+            border-color: var(--accent-peach);
+        }
+
+        .proactive-toggle.silent {
+            background: rgba(168, 181, 160, 0.2);
+            border-color: var(--accent-sage);
+            color: var(--accent-sage);
+        }
+
+        .proactive-test {
+            border-radius: 8px;
+            border: 1px solid var(--border-light);
+            background: transparent;
+            color: var(--text-light);
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .proactive-test:hover {
+            border-color: var(--accent-gold);
+            color: var(--accent-gold);
+        }
+
+        /* ========== Main Content Area ========== */
+        .main-content {
+            flex: 1;
+            display: flex;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .view-panel {
+            display: none;
+            flex: 1;
+            overflow: hidden;
+        }
+
+        .view-panel.active {
+            display: flex;
+        }
+
+        /* ========== Chat View Layout ========== */
+        .chat-layout {
+            display: flex;
+            width: 100%;
+            height: 100%;
+        }
+
+        .chat-main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            min-width: 0;
+        }
+
+        .graph-sidebar {
+            width: 0;
+            overflow: hidden;
+            transition: width 0.3s ease;
+            border-left: 1px solid var(--border-light);
+            background: var(--bg-warm-light);
+        }
+
+        .graph-sidebar.open {
+            width: 45%;
+            min-width: 400px;
+        }
+
+        /* ========== Chat Panel ========== */
+        .chat-header {
+            padding: 16px 24px;
+            border-bottom: 1px solid var(--border-light);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            background: var(--bg-white);
+        }
+
+        .chat-header-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--accent-peach), var(--accent-rose));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 18px;
+        }
+
+        .chat-header-info h3 {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .chat-header-info p {
+            font-size: 12px;
+            color: var(--text-light);
+            margin-top: 1px;
+        }
+
+        .chat-messages {
+            flex: 1;
+            overflow-y: auto;
+            padding: 20px 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            background: var(--bg-primary);
+            scroll-behavior: smooth;
+        }
+
+        .chat-messages::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .chat-messages::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        .chat-messages::-webkit-scrollbar-thumb {
+            background: var(--border-medium);
+            border-radius: 3px;
+        }
+
+        /* ========== Message Bubbles ========== */
+        .message-row {
+            display: flex;
+            gap: 10px;
+            max-width: 75%;
+            animation: messageIn 0.3s ease;
+        }
+
+        @keyframes messageIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .message-row.user {
+            align-self: flex-end;
+            flex-direction: row-reverse;
+        }
+
+        .message-row.ai {
+            align-self: flex-start;
+        }
+
+        .msg-avatar {
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+        }
+
+        .message-row.ai .msg-avatar {
+            background: linear-gradient(135deg, var(--accent-peach), var(--accent-rose));
+            color: #fff;
+        }
+
+        .message-row.user .msg-avatar {
+            background: var(--accent-sage);
+            color: #fff;
+        }
+
+        .msg-content {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .msg-bubble {
+            padding: 12px 16px;
+            border-radius: var(--radius-lg);
+            font-size: 14px;
+            line-height: 1.6;
+            word-break: break-word;
+        }
+
+        .message-row.ai .msg-bubble {
+            background: var(--bg-chat-ai);
+            color: var(--text-primary);
+            border: 1px solid var(--border-light);
+            border-top-left-radius: 4px;
+        }
+
+        .message-row.user .msg-bubble {
+            background: var(--bg-chat-user);
+            color: #fff;
+            border-top-right-radius: 4px;
+        }
+
+        .msg-time {
+            font-size: 11px;
+            color: var(--text-light);
+            padding: 0 4px;
+        }
+
+        .message-row.user .msg-time {
+            text-align: right;
+        }
+
+        /* ========== Typing Indicator ========== */
+        .typing-indicator {
+            display: none;
+            align-self: flex-start;
+            gap: 10px;
+            max-width: 75%;
+        }
+
+        .typing-indicator.show {
+            display: flex;
+        }
+
+        .typing-dots {
+            background: var(--bg-chat-ai);
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-lg);
+            border-top-left-radius: 4px;
+            padding: 14px 20px;
+            display: flex;
+            gap: 5px;
+            align-items: center;
+        }
+
+        .typing-dots span {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: var(--text-light);
+            animation: typingBounce 1.4s infinite;
+        }
+
+        .typing-dots span:nth-child(2) { animation-delay: 0.2s; }
+        .typing-dots span:nth-child(3) { animation-delay: 0.4s; }
+
+        @keyframes typingBounce {
+            0%, 60%, 100% { transform: translateY(0); opacity: 0.4; }
+            30% { transform: translateY(-6px); opacity: 1; }
+        }
+
+        /* ========== Chat Input ========== */
+        .chat-input-area {
+            padding: 16px 24px;
+            background: var(--bg-white);
+            border-top: 1px solid var(--border-light);
+            display: flex;
+            gap: 12px;
+            align-items: flex-end;
+        }
+
+        .chat-input-wrapper {
+            flex: 1;
+            position: relative;
+        }
+
+        #chat-input {
+            width: 100%;
+            min-height: 44px;
+            max-height: 120px;
+            padding: 12px 16px;
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-md);
+            font-size: 14px;
+            font-family: inherit;
+            color: var(--text-primary);
+            background: var(--bg-warm-light);
+            resize: none;
+            outline: none;
+            transition: border-color 0.2s, box-shadow 0.2s;
+            line-height: 1.5;
+        }
+
+        #chat-input:focus {
+            border-color: var(--accent-peach);
+            box-shadow: 0 0 0 3px rgba(232, 168, 124, 0.15);
+        }
+
+        #chat-input::placeholder {
+            color: var(--text-light);
+        }
+
+        .send-btn {
+            width: 44px;
+            height: 44px;
+            border-radius: var(--radius-md);
+            border: none;
+            background: var(--accent-peach);
+            color: #fff;
+            font-size: 18px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s;
+            flex-shrink: 0;
+        }
+
+        .send-btn:hover {
+            background: #d9966d;
+            transform: translateY(-1px);
+        }
+
+        .send-btn:active {
+            transform: translateY(0);
+        }
+
+        .send-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        /* ========== Story View ========== */
+        .story-view {
+            flex-direction: column;
+            background: var(--bg-primary);
+        }
+
+        .story-header {
+            padding: 24px 32px 0;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .story-back-btn {
+            display: none;
+            padding: 8px 16px;
+            border: 1px solid var(--border-light);
+            border-radius: 20px;
+            background: var(--bg-white);
+            color: var(--text-secondary);
+            font-size: 13px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .story-back-btn:hover {
+            border-color: var(--accent-peach);
+            color: var(--accent-peach);
+        }
+
+        .story-period-toggle {
+            display: flex;
+            background: var(--bg-white);
+            border-radius: 20px;
+            padding: 3px;
+            border: 1px solid var(--border-light);
+        }
+
+        .period-btn {
+            padding: 8px 20px;
+            border: none;
+            border-radius: 17px;
+            background: transparent;
+            color: var(--text-secondary);
+            font-size: 13px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .period-btn.active {
+            background: var(--accent-peach);
+            color: #fff;
+        }
+
+        .period-btn:hover:not(.active) {
+            color: var(--text-primary);
+        }
+
+        .story-content {
+            flex: 1;
+            overflow-y: auto;
+            padding: 32px;
+        }
+
+        .story-content::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .story-content::-webkit-scrollbar-thumb {
+            background: var(--border-medium);
+            border-radius: 3px;
+        }
+
+        /* ── Story Title Block ── */
+        .story-title-block {
+            max-width: 680px;
+            margin: 0 auto 24px;
+            text-align: center;
+        }
+
+        .story-title-emoji {
+            font-size: 40px;
+            display: block;
+            margin-bottom: 12px;
+        }
+
+        .story-title-text {
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--text-primary);
+            line-height: 1.4;
+        }
+
+        /* ── Story Stats (数据速览) ── */
+        .story-stats {
+            max-width: 680px;
+            margin: 0 auto 32px;
+            background: linear-gradient(135deg, rgba(232,168,124,0.08), rgba(212,165,165,0.08));
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-lg);
+            padding: 20px 24px;
+        }
+
+        .story-stats h4 {
+            font-size: 13px;
+            color: var(--text-light);
+            margin-bottom: 12px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .story-stats-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 0;
+            font-size: 14px;
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        .story-stats-item .stat-emoji {
+            font-size: 16px;
+            flex-shrink: 0;
+        }
+
+        /* ── Story Narrative Body ── */
+        .story-narrative {
+            max-width: 680px;
+            margin: 0 auto 32px;
+        }
+
+        .story-body {
+            font-size: 16px;
+            line-height: 1.9;
+            color: var(--text-primary);
+        }
+
+        .story-body p {
+            margin-bottom: 16px;
+        }
+
+        .story-body .highlight {
+            color: var(--accent-peach);
+            font-weight: 600;
+        }
+
+        /* ── Story Timeline ── */
+        .story-timeline {
+            max-width: 680px;
+            margin: 0 auto 32px;
+            position: relative;
+            padding-left: 28px;
+        }
+
+        .story-timeline::before {
+            content: '';
+            position: absolute;
+            left: 8px;
+            top: 4px;
+            bottom: 4px;
+            width: 2px;
+            background: linear-gradient(to bottom, var(--accent-peach), var(--accent-rose));
+            border-radius: 1px;
+            opacity: 0.3;
+        }
+
+        .story-timeline h4 {
+            font-size: 13px;
+            color: var(--text-light);
+            margin-bottom: 16px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-left: -4px;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 16px;
+            padding-left: 12px;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -24px;
+            top: 6px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: var(--accent-peach);
+            border: 2px solid var(--bg-primary);
+            box-shadow: 0 0 0 2px var(--accent-peach);
+            opacity: 0.7;
+        }
+
+        .timeline-date {
+            font-size: 11px;
+            color: var(--text-light);
+            margin-bottom: 2px;
+            font-weight: 500;
+        }
+
+        .timeline-content {
+            font-size: 13px;
+            color: var(--text-primary);
+            line-height: 1.5;
+            background: var(--bg-white);
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-sm);
+            padding: 8px 12px;
+        }
+
+        .timeline-content .dim-tag {
+            display: inline-block;
+            padding: 1px 8px;
+            border-radius: 10px;
+            font-size: 10px;
+            font-weight: 600;
+            margin-right: 6px;
+            vertical-align: middle;
+        }
+
+        .dim-tag.sleep { background: rgba(168,181,160,0.2); color: #7a9470; }
+        .dim-tag.energy { background: rgba(212,184,106,0.2); color: #9a8540; }
+        .dim-tag.mood { background: rgba(212,165,165,0.2); color: #b07a7a; }
+        .dim-tag.exercise { background: rgba(155,142,196,0.2); color: #7a6ea0; }
+        .dim-tag.digestion { background: rgba(126,181,166,0.2); color: #5a8a7a; }
+        .dim-tag.diet { background: rgba(232,168,124,0.2); color: #b07a5a; }
+
+        /* ── Story Tips (小贴士) ── */
+        .story-tips {
+            max-width: 680px;
+            margin: 0 auto 32px;
+        }
+
+        .story-tips h4 {
+            font-size: 13px;
+            color: var(--text-light);
+            margin-bottom: 12px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .tip-card {
+            background: var(--bg-white);
+            border: 1px solid var(--border-light);
+            border-left: 3px solid var(--accent-sage);
+            border-radius: 0 var(--radius-md) var(--radius-md) 0;
+            padding: 14px 18px;
+            margin-bottom: 10px;
+            font-size: 14px;
+            color: var(--text-primary);
+            line-height: 1.6;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .tip-card:hover {
+            transform: translateX(4px);
+            box-shadow: var(--shadow-soft);
+        }
+
+        /* ── Story Insights ── */
+        .story-insights {
+            max-width: 680px;
+            margin: 0 auto 32px;
+            background: var(--bg-white);
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border-light);
+            padding: 20px 24px;
+        }
+
+        .story-insights h4 {
+            font-size: 13px;
+            color: var(--text-light);
+            margin-bottom: 12px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .insight-item {
+            padding: 10px 0;
+            border-bottom: 1px solid var(--border-light);
+            font-size: 13px;
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        .insight-item:last-child {
+            border-bottom: none;
+        }
+
+        .insight-confidence {
+            display: inline-block;
+            padding: 1px 8px;
+            border-radius: 10px;
+            font-size: 10px;
+            font-weight: 600;
+            margin-left: 8px;
+        }
+
+        .insight-confidence.high { background: rgba(168,181,160,0.2); color: #7a9470; }
+        .insight-confidence.medium { background: rgba(212,184,106,0.2); color: #9a8540; }
+        .insight-confidence.low { background: rgba(212,165,165,0.15); color: #b07a7a; }
+
+        .story-data-cards {
+            max-width: 680px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 16px;
+        }
+
+        .data-card {
+            background: var(--bg-white);
+            border-radius: var(--radius-md);
+            padding: 20px;
+            border: 1px solid var(--border-light);
+            box-shadow: var(--shadow-soft);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .data-card:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-medium);
+        }
+
+        .data-card-label {
+            font-size: 12px;
+            color: var(--text-light);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
+
+        .data-card-value {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        .data-card-unit {
+            font-size: 13px;
+            color: var(--text-secondary);
+            font-weight: 400;
+            margin-left: 4px;
+        }
+
+        .data-card-detail {
+            font-size: 12px;
+            color: var(--text-light);
+            margin-top: 8px;
+        }
+
+        .data-card-trend {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 11px;
+            font-weight: 600;
+            margin-top: 6px;
+        }
+
+        .data-card-trend.up {
+            background: rgba(168, 181, 160, 0.2);
+            color: #7a9470;
+        }
+
+        .data-card-trend.down {
+            background: rgba(212, 165, 165, 0.2);
+            color: #b07a7a;
+        }
+
+        .data-card-trend.stable {
+            background: rgba(212, 184, 106, 0.2);
+            color: #9a8540;
+        }
+
+        /* ========== Graph View ========== */
+        .graph-view {
+            flex-direction: column;
+        }
+
+        .graph-container {
+            flex: 1;
+            position: relative;
+            background: #fafafa;
+        }
+
+        #graph-svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        .graph-controls {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            display: flex;
+            gap: 8px;
+            background: var(--bg-white);
+            padding: 8px;
+            border-radius: var(--radius-sm);
+            box-shadow: var(--shadow-soft);
+            z-index: 10;
+        }
+
+        .graph-controls button {
+            padding: 8px 14px;
+            border: 1px solid var(--border-light);
+            border-radius: 6px;
+            background: var(--bg-white);
+            color: var(--text-secondary);
+            font-size: 13px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .graph-controls button:hover {
+            border-color: var(--accent-peach);
+            color: var(--accent-peach);
+        }
+
+        .graph-mode-btn {
+            padding: 8px 14px;
+            border: 1px solid var(--border-light);
+            border-radius: 6px;
+            background: var(--bg-white);
+            color: var(--text-secondary);
+            font-size: 13px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .graph-mode-btn:hover {
+            border-color: var(--accent-peach);
+            color: var(--accent-peach);
+        }
+
+        .graph-mode-btn.active {
+            background: var(--accent-peach);
+            color: #fff;
+            border-color: var(--accent-peach);
+        }
+
+        #node-info {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            background: var(--bg-white);
+            padding: 20px;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-medium);
+            max-width: 360px;
+            max-height: 280px;
+            overflow-y: auto;
+            display: none;
+            border: 1px solid var(--border-light);
+            animation: slideUp 0.3s ease;
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        #node-info h3 {
+            margin-bottom: 12px;
+            color: var(--text-primary);
+            font-size: 16px;
+            border-bottom: 2px solid var(--border-light);
+            padding-bottom: 8px;
+        }
+
+        #node-info .info-item {
+            margin: 8px 0;
+            color: var(--text-secondary);
+            font-size: 13px;
+            line-height: 1.5;
+        }
+
+        #node-info .info-item strong {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        /* ========== Graph Node/Link Styles ========== */
+        .node { cursor: pointer; transition: all 0.2s ease; }
+        .node circle {
+            stroke-width: 3px;
+            transition: all 0.2s ease;
+            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.08));
+        }
+        .node:hover circle {
+            stroke-width: 5px;
+            filter: brightness(1.1) drop-shadow(0 4px 8px rgba(0,0,0,0.15));
+        }
+        .node text {
+            font-size: 11px;
+            pointer-events: none;
+            user-select: none;
+            fill: #3d3530;
+            font-weight: 500;
+        }
+        .link {
+            fill: none;
+            stroke: #c9c0b6;
+            stroke-width: 1.5px;
+            opacity: 0.5;
+            transition: all 0.2s ease;
+        }
+        .link:hover { stroke: var(--accent-peach); stroke-width: 2.5px; opacity: 0.9; }
+        .link-label {
+            font-size: 9px;
+            fill: #a89f97;
+            font-weight: 500;
+        }
+
+        /* ========== Tooltip ========== */
+        .tooltip {
+            position: absolute;
+            background: rgba(61, 53, 48, 0.9);
+            color: #fff;
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-size: 12px;
+            pointer-events: none;
+            z-index: 1000;
+            display: none;
+        }
+
+        /* ========== Welcome Message ========== */
+        .welcome-message {
+            text-align: center;
+            padding: 40px 20px;
+            max-width: 480px;
+            margin: 0 auto;
+        }
+
+        .welcome-icon {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--accent-peach), var(--accent-rose));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            margin: 0 auto 16px;
+            color: #fff;
+        }
+
+        .welcome-message h2 {
+            font-size: 18px;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+
+        .welcome-message p {
+            font-size: 14px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        /* ========== Suggestion Chips ========== */
+        .suggestion-chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .suggestion-chip {
+            padding: 8px 16px;
+            border: 1px solid var(--border-light);
+            border-radius: 20px;
+            background: var(--bg-white);
+            color: var(--text-secondary);
+            font-size: 13px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .suggestion-chip:hover {
+            border-color: var(--accent-peach);
+            color: var(--accent-peach);
+            background: rgba(232, 168, 124, 0.05);
+        }
+
+        /* ========== Empty State ========== */
+        .empty-state {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            color: var(--text-light);
+            text-align: center;
+            padding: 40px;
+        }
+
+        .empty-state-icon {
+            font-size: 48px;
+            margin-bottom: 16px;
+            opacity: 0.5;
+        }
+
+        .empty-state p {
+            font-size: 14px;
+        }
+
+        /* ========== Responsive ========== */
+        @media (max-width: 768px) {
+            .app-container { max-width: 100%; }
+            .top-nav { padding: 0 12px; }
+            .nav-brand { font-size: 17px; margin-right: 16px; }
+            .nav-tab { padding: 6px 12px; font-size: 13px; }
+            .nav-tab .tab-text { display: none; }
+            .chat-messages { padding: 16px; }
+            .message-row { max-width: 88%; }
+            .chat-input-area { padding: 12px 16px; }
+            .graph-sidebar.open { width: 100%; min-width: unset; }
+            .story-content { padding: 20px 16px; }
+            .story-header { padding: 16px 16px 0; }
+        }
+
+        @media (max-width: 480px) {
+            .nav-brand { margin-right: 8px; }
+            .story-data-cards { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="app-container chat-view" id="app">
+        <!-- ===== Top Navigation ===== -->
+        <nav class="top-nav">
+            <div class="nav-brand">Viora</div>
+            <div class="nav-tabs">
+                <button class="nav-tab active" data-view="chat" onclick="switchView('chat')">
+                    <span class="tab-icon">&#x1F4AC;</span>
+                    <span class="tab-text">聊天</span>
+                </button>
+                <button class="nav-tab" data-view="story" onclick="switchView('story')">
+                    <span class="tab-icon">&#x1F4D6;</span>
+                    <span class="tab-text">身体故事</span>
+                </button>
+                <button class="nav-tab" data-view="graph" onclick="switchView('graph')">
+                    <span class="tab-icon">&#x1F4CA;</span>
+                    <span class="tab-text">图谱</span>
+                </button>
+            </div>
+            <div class="nav-spacer"></div>
+            <!-- Persona Selector -->
+            <div class="persona-selector" id="persona-selector">
+                <button class="persona-btn" onclick="togglePersonaMenu()" id="persona-btn">
+                    <span id="persona-icon">🌿</span>
+                    <span id="persona-name">温暖好友</span>
+                    <span class="persona-arrow">&#9660;</span>
+                </button>
+                <div class="persona-menu" id="persona-menu">
+                    <!-- Populated by JS -->
+                </div>
+            </div>
+            <!-- Weather indicator -->
+            <div class="weather-indicator" id="weather-indicator" onclick="toggleLocationDialog()" title="设置位置">
+                <span id="weather-icon">📍</span>
+                <span id="weather-text">设置位置</span>
+            </div>
+            <button class="nav-toggle-graph" onclick="toggleGraphSidebar()">
+                <span>&#x1F4CA;</span>
+                <span id="graph-toggle-text">显示图谱</span>
+            </button>
+        </nav>
+
+        <!-- ===== Main Content ===== -->
+        <div class="main-content">
+
+            <!-- Chat View -->
+            <div class="view-panel active" id="chat-view">
+                <div class="chat-layout">
+                    <div class="chat-main">
+                        <div class="chat-header">
+                            <div class="chat-header-avatar">&#x1F33F;</div>
+                            <div class="chat-header-info">
+                                <h3>Viora 健康助手</h3>
+                                <p>随时记录，倾听你身体的声音</p>
+                                <p id="routine-status" style="font-size:11px;color:var(--accent-sage);margin-top:2px;display:none;"></p>
+                                <div style="display:flex;gap:8px;margin-top:4px;align-items:center;">
+                                    <button class="proactive-toggle" id="proactive-toggle" onclick="toggleSilentMode()" title="主动关心开关">
+                                        <span id="proactive-icon">🌙</span>
+                                        <span id="proactive-label">主动关心中</span>
+                                    </button>
+                                    <button class="proactive-test" onclick="triggerProactiveCheck()" title="测试主动关心" style="font-size:11px;padding:2px 8px;">
+                                        🧪 测试
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="chat-messages" id="chat-messages">
+                            <!-- Messages will be dynamically inserted -->
+                        </div>
+
+                        <div class="typing-indicator" id="typing-indicator">
+                            <div class="msg-avatar" style="background: linear-gradient(135deg, #e8a87c, #d4a5a5); color: #fff; font-size: 14px;">&#x1F33F;</div>
+                            <div class="typing-dots">
+                                <span></span><span></span><span></span>
+                            </div>
+                        </div>
+
+                        <div class="chat-input-area">
+                            <div class="chat-input-wrapper">
+                                <textarea id="chat-input" placeholder="说说你今天身体感觉怎么样..." rows="1"></textarea>
+                            </div>
+                            <button class="send-btn" id="send-btn" onclick="sendMessage()" disabled>
+                                &#x27A4;
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="graph-sidebar" id="graph-sidebar">
+                        <div class="graph-container" id="sidebar-graph-container">
+                            <svg id="sidebar-graph-svg"></svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Story View -->
+            <div class="view-panel" id="story-view">
+                <div class="story-view">
+                    <div class="story-header">
+                        <button class="story-back-btn" id="story-back-btn" onclick="switchView('chat')">
+                            &#x2190; 返回聊天
+                        </button>
+                        <div class="story-period-toggle">
+                            <button class="period-btn active" data-period="week" onclick="switchPeriod('week')">本周</button>
+                            <button class="period-btn" data-period="month" onclick="switchPeriod('month')">本月</button>
+                        </div>
+                    </div>
+                    <div class="story-content" id="story-content">
+                        <!-- Story content dynamically loaded -->
+                        <div class="welcome-message">
+                            <div class="welcome-icon">&#x1F4D6;</div>
+                            <h2>你的身体故事</h2>
+                            <p>在这里，你会看到自己身体的每周/每月变化趋势，用温暖的方式讲述你的健康故事。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Graph View -->
+            <div class="view-panel" id="graph-view">
+                <div class="graph-container" id="graph-view-container">
+                    <svg id="graph-view-svg"></svg>
+                    <div class="graph-controls">
+                        <div style="display:flex;gap:4px;align-items:center;">
+                            <button id="graph-mode-preset" class="graph-mode-btn active" onclick="switchGraphMode('preset')">知识图谱</button>
+                            <button id="graph-mode-health" class="graph-mode-btn" onclick="switchGraphMode('health')">健康关联</button>
+                        </div>
+                        <select id="preset-select" onchange="loadPreset()" style="
+                            padding: 8px 12px;
+                            border: 1px solid var(--border-light);
+                            border-radius: 6px;
+                            background: var(--bg-white);
+                            color: var(--text-secondary);
+                            font-size: 13px;
+                            cursor: pointer;
+                            outline: none;
+                        ">
+                            <option value="">加载预设...</option>
+                        </select>
+                        <select id="health-period-select" onchange="loadHealthGraph()" style="
+                            padding: 8px 12px;
+                            border: 1px solid var(--border-light);
+                            border-radius: 6px;
+                            background: var(--bg-white);
+                            color: var(--text-secondary);
+                            font-size: 13px;
+                            cursor: pointer;
+                            outline: none;
+                            display: none;
+                        ">
+                            <option value="day">今天</option>
+                            <option value="week" selected>本周</option>
+                            <option value="month">本月</option>
+                        </select>
+                        <button onclick="zoomIn()">放大</button>
+                        <button onclick="zoomOut()">缩小</button>
+                        <button onclick="resetZoom()">重置</button>
+                    </div>
+                    <div id="node-info"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tooltip" id="tooltip"></div>
+
+    <!-- Location Dialog -->
+    <div class="location-overlay" id="location-overlay" onclick="toggleLocationDialog()"></div>
+    <div class="location-dialog" id="location-dialog">
+        <h3>📍 设置您的位置</h3>
+        <button class="location-auto-btn" onclick="autoDetectLocation()">自动获取当前位置</button>
+        <div class="location-field">
+            <label>城市名（可选）</label>
+            <input type="text" id="location-city" placeholder="如：上海、北京、深圳">
+        </div>
+        <div class="location-field">
+            <label>纬度</label>
+            <input type="number" step="0.01" id="location-lat" placeholder="如：31.23">
+        </div>
+        <div class="location-field">
+            <label>经度</label>
+            <input type="number" step="0.01" id="location-lon" placeholder="如：121.47">
+        </div>
+        <div class="location-actions">
+            <button class="location-cancel-btn" onclick="toggleLocationDialog()">取消</button>
+            <button class="location-save-btn" onclick="saveLocation()">保存</button>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+    <script>
+    /* ============================================================
+       Viora Phase 1 Frontend - Single-file Prototype
+       ============================================================ */
+
+    /* ============================================================
+       SECTION 1: Navigation & View Management
+       ============================================================ */
+
+    let currentView = 'chat';
+    let graphSidebarOpen = false;
+
+    function switchView(view) {
+        currentView = view;
+        if (view !== 'graph') {
+            selectedNodeId = null;
+        }
+
+        // Update tab states
+        document.querySelectorAll('.nav-tab').forEach(tab => {
+            tab.classList.toggle('active', tab.dataset.view === view);
+        });
+
+        // Update view panels
+        document.querySelectorAll('.view-panel').forEach(panel => {
+            panel.classList.remove('active');
+        });
+        document.getElementById(view + '-view').classList.add('active');
+
+        // Update app container class for conditional nav display
+        const app = document.getElementById('app');
+        app.className = 'app-container ' + view + '-view';
+
+        // Show/hide story back button
+        const backBtn = document.getElementById('story-back-btn');
+        if (backBtn) {
+            backBtn.style.display = (view === 'story') ? 'block' : 'none';
+        }
+
+        // Initialize story if switching to story view
+        if (view === 'story' && document.getElementById('story-content').innerHTML.includes('welcome-message')) {
+            loadStory(currentPeriod);
+        }
+
+        // Initialize graph if switching to graph view
+        if (view === 'graph') {
+            if (graphMode === 'health') {
+                if (!graphData) loadHealthGraph();
+            } else {
+                if (!graphData) loadPresetList();
+            }
+        }
+
+        // Resize graph containers
+        setTimeout(() => {
+            if (view === 'graph' && graphData) {
+                initGraphForContainer('graph-view');
+            }
+            if (graphSidebarOpen && graphData) {
+                initGraphForContainer('sidebar');
+            }
+        }, 350);
+    }
+
+    function toggleGraphSidebar() {
+        const sidebar = document.getElementById('graph-sidebar');
+        const text = document.getElementById('graph-toggle-text');
+        graphSidebarOpen = !graphSidebarOpen;
+
+        sidebar.classList.toggle('open', graphSidebarOpen);
+        text.textContent = graphSidebarOpen ? '隐藏图谱' : '显示图谱';
+
+        if (graphSidebarOpen) {
+            if (!graphData) {
+                loadPresetList();
+            } else {
+                setTimeout(() => initGraphForContainer('sidebar'), 350);
+            }
+        }
+    }
+
+    /* ============================================================
+       SECTION 2: Chat Interface
+       ============================================================ */
+
+    let messageHistory = [];
+    let isSending = false;
+
+    // Initialize chat
+    function initChat() {
+        loadMessageHistory();
+        setupChatInput();
+    }
+
+    function setupChatInput() {
+        const input = document.getElementById('chat-input');
+        const sendBtn = document.getElementById('send-btn');
+
+        // Auto-resize textarea
+        input.addEventListener('input', function() {
+            this.style.height = 'auto';
+            this.style.height = Math.min(this.scrollHeight, 120) + 'px';
+            sendBtn.disabled = !this.value.trim();
+        });
+
+        // Send on Enter (Shift+Enter for newline)
+        input.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault();
+                if (this.value.trim()) sendMessage();
+            }
+        });
+    }
+
+    async function loadMessageHistory() {
+        try {
+            const response = await fetch('/api/messages');
+            if (response.ok) {
+                messageHistory = await response.json();
+                renderMessages(messageHistory);
+                return;
+            }
+        } catch (e) {
+            // API not available yet -- use demo messages
+            console.log('Messages API not available, using demo mode');
+        }
+
+        // Demo welcome message
+        renderDemoWelcome();
+    }
+
+    function renderDemoWelcome() {
+        const messages = [
+            {
+                role: 'ai',
+                content: '你好呀！我是 Viora，你的健康助手。说说你今天感觉怎么样？可以告诉我你的睡眠、饮食、运动或者任何身体感受。',
+                timestamp: new Date().toISOString()
+            }
+        ];
+        renderMessages(messages);
+    }
+
+    function renderMessages(messages) {
+        const container = document.getElementById('chat-messages');
+        container.innerHTML = '';
+
+        messages.forEach(msg => appendMessageBubble(msg, false));
+
+        // Show suggestion chips after welcome
+        if (messages.length <= 1) {
+            showSuggestionChips();
+        }
+
+        scrollToBottom();
+    }
+
+    function appendMessageBubble(msg, animate = true) {
+        const container = document.getElementById('chat-messages');
+        const row = document.createElement('div');
+        const isUser = msg.role === 'user';
+
+        row.className = 'message-row ' + (isUser ? 'user' : 'ai');
+        if (!animate) row.style.animation = 'none';
+
+        const time = formatTime(msg.timestamp || new Date());
+
+        row.innerHTML = `
+            <div class="msg-avatar">${isUser ? '&#x1F464;' : '&#x1F33F;'}</div>
+            <div class="msg-content">
+                <div class="msg-bubble">${escapeHtml(msg.content)}</div>
+                <div class="msg-time">${time}</div>
+            </div>
+        `;
+
+        container.appendChild(row);
+    }
+
+    function showSuggestionChips() {
+        const container = document.getElementById('chat-messages');
+        const chips = document.createElement('div');
+        chips.className = 'suggestion-chips';
+        chips.innerHTML = `
+            <button class="suggestion-chip" onclick="useSuggestion('今天睡得很好，精神不错')">今天睡得很好</button>
+            <button class="suggestion-chip" onclick="useSuggestion('最近有点累，运动量少了不少')">最近有点累</button>
+            <button class="suggestion-chip" onclick="useSuggestion('胃口不太好，吃饭没胃口')">胃口不太好</button>
+            <button class="suggestion-chip" onclick="useSuggestion('这周坚持运动了三次')">坚持运动了</button>
+        `;
+        container.appendChild(chips);
+    }
+
+    function useSuggestion(text) {
+        document.getElementById('chat-input').value = text;
+        document.getElementById('send-btn').disabled = false;
+        sendMessage();
+    }
+
+    async function sendMessage() {
+        if (isSending) return;
+
+        const input = document.getElementById('chat-input');
+        const text = input.value.trim();
+        if (!text) return;
+
+        isSending = true;
+        input.value = '';
+        input.style.height = 'auto';
+        document.getElementById('send-btn').disabled = true;
+
+        // Remove suggestion chips
+        const chips = document.querySelector('.suggestion-chips');
+        if (chips) chips.remove();
+
+        // Add user message
+        const userMsg = { role: 'user', content: text, timestamp: new Date().toISOString() };
+        messageHistory.push(userMsg);
+        appendMessageBubble(userMsg);
+        scrollToBottom();
+
+        try {
+            const response = await fetch('/api/chat', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ message: text, persona_id: activePersonaId })
+            });
+
+            if (response.ok) {
+                const data = await response.json();
+                const aiMsg = {
+                    role: 'ai',
+                    content: data.reply || data.response || '收到你的记录了！继续加油哦。',
+                    timestamp: new Date().toISOString()
+                };
+                messageHistory.push(aiMsg);
+                appendMessageBubble(aiMsg);
+            } else {
+                // API error - show friendly fallback
+                const aiMsg = {
+                    role: 'ai',
+                    content: generateDemoReply(text),
+                    timestamp: new Date().toISOString()
+                };
+                messageHistory.push(aiMsg);
+                appendMessageBubble(aiMsg);
+            }
+        } catch (e) {
+            // No backend -- demo mode
+            const aiMsg = {
+                role: 'ai',
+                content: generateDemoReply(text),
+                timestamp: new Date().toISOString()
+            };
+            messageHistory.push(aiMsg);
+            appendMessageBubble(aiMsg);
+        }
+
+        scrollToBottom();
+        isSending = false;
+    }
+
+    function generateDemoReply(userText) {
+        const lower = userText.toLowerCase();
+
+        if (lower.includes('睡') || lower.includes('睡眠') || lower.includes(' insomnia')) {
+            const replies = [
+                '睡眠是身体修复的黄金时间。你一般几点睡？如果觉得最近睡眠质量不太好，我们可以一起看看调整方案。',
+                '睡得好不好，身体最知道。你今天精神怎么样？',
+                '听起来你的身体在告诉你它需要更多休息。别着急，慢慢来。'
+            ];
+            return replies[Math.floor(Math.random() * replies.length)];
+        }
+
+        if (lower.includes('运动') || lower.includes('跑') || lower.includes('锻炼') || lower.includes('健身')) {
+            const replies = [
+                '运动后的身体像是被重新启动了！你今天做的什么运动呀？',
+                '动起来的感觉很棒吧？身体的每个细胞都在感谢你。',
+                '不需要追求完美，只要动起来了就已经很棒了。'
+            ];
+            return replies[Math.floor(Math.random() * replies.length)];
+        }
+
+        if (lower.includes('吃') || lower.includes('饭') || lower.includes('胃口') || lower.includes('饿')) {
+            const replies = [
+                '胃口是身体的晴雨表。今天吃了些什么？有没有什么特别想吃的？',
+                '好好吃饭是对身体最基本的温柔。你今天的饮食搭配怎么样？',
+                '觉得胃口不好的时候，可能就是身体在提醒你该放慢节奏了。'
+            ];
+            return replies[Math.floor(Math.random() * replies.length)];
+        }
+
+        if (lower.includes('累') || lower.includes('疲惫') || lower.includes('困')) {
+            const replies = [
+                '累了就说明身体在向你发出信号了。这周是不是太忙了？给自己放个小假也没关系的。',
+                '有时候身体说"我累了"，其实是在说"我需要被关注"。你今天有好好照顾自己吗？',
+                '疲惫感是身体在提醒你该慢下来了。不需要硬撑，慢慢调整就好。'
+            ];
+            return replies[Math.floor(Math.random() * replies.length)];
+        }
+
+        if (lower.includes('开心') || lower.includes('好') || lower.includes('不错') || lower.includes('棒')) {
+            const replies = [
+                '听到你这么说真开心！保持这种感觉，你的身体也在为你高兴呢。',
+                '状态不错的时候，身体就像一首轻快的歌。继续保持！',
+                '好状态是需要被记录的。能说说是什么让你感觉这么好吗？'
+            ];
+            return replies[Math.floor(Math.random() * replies.length)];
+        }
+
+        const defaults = [
+            '谢谢你和我分享这些。身体的每一个信号都值得被认真对待。还有其他想说的吗？',
+            '你的感受我都记下了。身体就像一本日记，每天写下不同的故事。',
+            '收到！我会帮你留意这些变化。你觉得最近整体状态怎么样？',
+            '好的，这些记录会帮助我更好地了解你的身体模式。继续加油！'
+        ];
+        return defaults[Math.floor(Math.random() * defaults.length)];
+    }
+
+    function scrollToBottom() {
+        const container = document.getElementById('chat-messages');
+        requestAnimationFrame(() => {
+            container.scrollTop = container.scrollHeight;
+        });
+    }
+
+    function formatTime(dateStr) {
+        const d = new Date(dateStr);
+        const h = d.getHours().toString().padStart(2, '0');
+        const m = d.getMinutes().toString().padStart(2, '0');
+        return h + ':' + m;
+    }
+
+    function escapeHtml(text) {
+        const div = document.createElement('div');
+        div.textContent = text;
+        return div.innerHTML.replace(/\n/g, '<br>');
+    }
+
+    /* ============================================================
+       SECTION 3: Story Timeline View
+       ============================================================ */
+
+    let currentPeriod = 'week';
+
+    function switchPeriod(period) {
+        currentPeriod = period;
+
+        document.querySelectorAll('.period-btn').forEach(btn => {
+            btn.classList.toggle('active', btn.dataset.period === period);
+        });
+
+        loadStory(period);
+    }
+
+    async function loadStory(period) {
+        const container = document.getElementById('story-content');
+        container.innerHTML = '<div class="welcome-message"><div class="welcome-icon">&#x23F3;</div><h2>正在生成身体故事...</h2><p>AI 正在阅读你的记录，请稍候</p></div>';
+
+        try {
+            const response = await fetch(`/api/story?period=${period}`);
+            if (response.ok) {
+                const data = await response.json();
+                renderStory(data);
+                return;
+            }
+        } catch (e) {
+            console.log('Story API not available, using demo data');
+        }
+
+        // Demo story content
+        renderDemoStory(period);
+    }
+
+    function renderDemoStory(period) {
+        const container = document.getElementById('story-content');
+        const isWeek = period === 'week';
+
+        const title = isWeek ? '⚡ 本周电量不太够' : '🌿 身体在悄悄变好';
+        const statsHtml = isWeek
+            ? `<div class="story-stats-item"><span class="stat-emoji">🛏</span> 日均睡眠 7.2 小时</div>
+               <div class="story-stats-item"><span class="stat-emoji">🏃</span> 运动打卡 3 天，累计 120 分钟</div>
+               <div class="story-stats-item"><span class="stat-emoji">😊</span> 情绪峰值出现在周三</div>
+               <div class="story-stats-item"><span class="stat-emoji">💧</span> 饮水日均 1.6L，略有下降</div>`
+            : `<div class="story-stats-item"><span class="stat-emoji">🛏</span> 月均睡眠 6.8 小时，比上月 +0.4h</div>
+               <div class="story-stats-item"><span class="stat-emoji">🏃</span> 运动共计 11 次，稳步增长</div>
+               <div class="story-stats-item"><span class="stat-emoji">😊</span> 情绪指数 7.2/10，趋势向好</div>
+               <div class="story-stats-item"><span class="stat-emoji">📅</span> 4 天完整休息，每周约 1 天</div>`;
+
+        const storyText = isWeek
+            ? `<p>这周你的身体像一部<span class="highlight">开了省电模式的手机</span>——电量总在 20% 到 80% 之间徘徊。</p>
+               <p>周一到周三，你像是充了满格电，运动打卡三天，连饮食都格外健康。但到了周四，身体开始轻声提醒你："我有点累了。"</p>
+               <p>于是你减少了运动，多睡了一个小时。这个选择很聪明——<span class="highlight">身体知道什么时候该停</span>。</p>
+               <p>周末这两天，你的睡眠变得规律了一些，入睡时间从平均 12:30 提前到了 11:45。这是个小小的进步，但身体会记住的。</p>`
+            : `<p>这个月你的身体经历了<span class="highlight">一次小小的"季节更替"</span>。</p>
+               <p>月初的时候状态低迷，像冬天还没过去；月中开始回暖，运动量逐步增加；到了月底，你已经能找到一些稳定的节奏了。</p>
+               <p>最值得骄傲的是你的睡眠改善——整月平均入睡时间提前了 40 分钟。这不是靠意志力，而是你开始<span class="highlight">认真地对待自己的疲惫</span>。</p>
+               <p>下个月，继续保持这种"听懂身体说话"的能力。</p>`;
+
+        const tipsHtml = isWeek
+            ? `<div class="tip-card">✨ 周三那天你睡 8 小时后精力很好，试试把睡觉时间提前半小时？</div>
+               <div class="tip-card">✨ 连续几天下雨没出门？在客厅跟着音乐扭 10 分钟也行呀</div>`
+            : `<div class="tip-card">✨ 你的睡眠正在稳步改善，保持这个节奏</div>
+               <div class="tip-card">✨ 运动天数分布均匀，考虑增加一种新的运动类型来激活不同肌群</div>`;
+
+        const timelineHtml = isWeek
+            ? `<div class="timeline-item">
+                   <div class="timeline-date">周一</div>
+                   <div class="timeline-content"><span class="dim-tag energy">精力</span> <span class="dim-tag exercise">运动</span> 精神饱满，运动 30 分钟</div>
+               </div>
+               <div class="timeline-item">
+                   <div class="timeline-date">周三</div>
+                   <div class="timeline-content"><span class="dim-tag energy">精力</span> <span class="dim-tag sleep">睡眠</span> 状态下滑，选择休息而非硬撑</div>
+               </div>
+               <div class="timeline-item">
+                   <div class="timeline-date">周四</div>
+                   <div class="timeline-content"><span class="dim-tag mood">情绪</span> <span class="dim-tag digestion">消化</span> 下午犯困，胃有点不舒服</div>
+               </div>
+               <div class="timeline-item">
+                   <div class="timeline-date">周末</div>
+                   <div class="timeline-content"><span class="dim-tag sleep">睡眠</span> 入睡时间提前 40 分钟，节奏好转</div>
+               </div>`
+            : `<div class="timeline-item">
+                   <div class="timeline-date">月初</div>
+                   <div class="timeline-content"><span class="dim-tag energy">精力</span> <span class="dim-tag mood">情绪</span> 状态低迷，精力情绪双低</div>
+               </div>
+               <div class="timeline-item">
+                   <div class="timeline-date">月中</div>
+                   <div class="timeline-content"><span class="dim-tag exercise">运动</span> <span class="dim-tag energy">精力</span> 运动量逐步恢复，精力回暖</div>
+               </div>
+               <div class="timeline-item">
+                   <div class="timeline-date">月底</div>
+                   <div class="timeline-content"><span class="dim-tag sleep">睡眠</span> <span class="dim-tag mood">情绪</span> 睡眠改善，情绪趋于稳定</div>
+               </div>`;
+
+        const cards = isWeek
+            ? [
+                { label: '平均睡眠', value: '7.2', unit: '小时', trend: 'up', trendText: '+0.5h', detail: '比上周改善' },
+                { label: '运动次数', value: '3', unit: '次', trend: 'stable', trendText: '持平', detail: '步行+瑜伽' },
+                { label: '水分摄入', value: '1.6', unit: '升/天', trend: 'down', trendText: '-0.2L', detail: '略低于目标' },
+                { label: '情绪指数', value: '7.5', unit: '/ 10', trend: 'up', trendText: '+0.8', detail: '整体积极' }
+              ]
+            : [
+                { label: '平均睡眠', value: '6.8', unit: '小时', trend: 'up', trendText: '+0.4h', detail: '月环比改善' },
+                { label: '运动次数', value: '11', unit: '次', trend: 'up', trendText: '+3', detail: '稳步增长' },
+                { label: '休息日', value: '4', unit: '天', trend: 'stable', trendText: '合理', detail: '每周约1天' },
+                { label: '情绪指数', value: '7.2', unit: '/ 10', trend: 'up', trendText: '+0.5', detail: '趋势向好' }
+              ];
+
+        let cardsHtml = cards.map(c => `
+            <div class="data-card">
+                <div class="data-card-label">${c.label}</div>
+                <div class="data-card-value">${c.value}<span class="data-card-unit">${c.unit}</span></div>
+                <span class="data-card-trend ${c.trend}">${c.trendText}</span>
+                <div class="data-card-detail">${c.detail}</div>
+            </div>
+        `).join('');
+
+        container.innerHTML = buildStoryHTML(title, statsHtml, storyText, tipsHtml,
+            `<div class="story-timeline"><h4>⏳ 时间线</h4>${timelineHtml}</div>`,
+            '', cardsHtml);
+    }
+
+    function buildStoryHTML(title, statsHtml, storyText, tipsHtml, timelineHtml, insightsHtml, cardsHtml) {
+        let html = '';
+
+        // 1. Title
+        if (title) {
+            const emojiMatch = title.match(/^([\p{Emoji}\u200d]+)\s*/u);
+            const emoji = emojiMatch ? emojiMatch[1] : '';
+            const titleText = emoji ? title.slice(emoji.length).trim() : title;
+            html += `<div class="story-title-block">`;
+            if (emoji) html += `<span class="story-title-emoji">${emoji}</span>`;
+            html += `<div class="story-title-text">${escapeHtml(titleText)}</div>`;
+            html += `</div>`;
+        }
+
+        // 2. Data Overview (stats)
+        if (statsHtml) {
+            html += `<div class="story-stats">`;
+            html += `<h4>📊 数据速览</h4>`;
+            html += statsHtml;
+            html += `</div>`;
+        }
+
+        // 3. Main Narrative
+        if (storyText) {
+            html += `<div class="story-narrative">`;
+            html += `<div class="story-body">${storyText}</div>`;
+            html += `</div>`;
+        }
+
+        // 4. Timeline
+        if (timelineHtml) {
+            html += timelineHtml;
+        }
+
+        // 5. Insights
+        if (insightsHtml) {
+            html += insightsHtml;
+        }
+
+        // 6. Tips
+        if (tipsHtml) {
+            html += `<div class="story-tips">`;
+            html += `<h4>💡 小贴士</h4>`;
+            html += tipsHtml;
+            html += `</div>`;
+        }
+
+        // 7. Data Cards (supplemental)
+        if (cardsHtml) {
+            html += `<div class="story-data-cards">${cardsHtml}</div>`;
+        }
+
+        return html;
+    }
+
+    function renderStory(data) {
+        const container = document.getElementById('story-content');
+
+        // ── Parse structured story from API response ──
+        const title = data.title || '';
+        const statsText = data.stats || '';
+        const storyTextRaw = data.story_text || data.narrative || '';
+        const tipsText = data.tips || '';
+
+        // ── Build stats HTML ──
+        let statsHtml = '';
+        if (statsText) {
+            const statLines = statsText.split('\n').filter(l => l.trim());
+            statsHtml = statLines.map(line => {
+                const cleaned = line.replace(/^[-•*]\s*/, '').trim();
+                // Extract emoji if present at start
+                let emoji = '';
+                const emojiMatch = cleaned.match(/^([\p{Emoji}\u200d]+)\s*/u);
+                if (emojiMatch) {
+                    emoji = emojiMatch[1];
+                }
+                return `<div class="story-stats-item"><span class="stat-emoji">${emoji || '•'}</span> ${escapeHtml(cleaned)}</div>`;
+            }).join('');
+        }
+
+        // ── Build narrative HTML ──
+        const paragraphs = storyTextRaw.split('\n').filter(p => p && p.trim());
+        let storyTextHtml = paragraphs.length > 0
+            ? paragraphs.map(p => `<p>${escapeHtml(p)}</p>`).join('')
+            : '<p>暂无记录</p>';
+
+        // ── Build tips HTML ──
+        let tipsHtml = '';
+        if (tipsText) {
+            const tipLines = tipsText.split('\n').filter(l => l.trim());
+            tipsHtml = tipLines.map(line => {
+                const cleaned = line.replace(/^[-•*]\s*/, '').trim();
+                return `<div class="tip-card">${escapeHtml(cleaned)}</div>`;
+            }).join('');
+        }
+
+        // ── Build timeline from dim_sources ──
+        let timelineHtml = '';
+        const dimSources = data.dim_sources || {};
+        if (Object.values(dimSources).some(arr => arr && arr.length > 0)) {
+            // Flatten all dimension events into a unified timeline
+            const dimLabels = {
+                sleep: '睡眠', energy: '精力', mood: '情绪',
+                exercise: '运动', digestion: '消化', diet: '饮食'
+            };
+            const allEvents = [];
+            for (const [dim, items] of Object.entries(dimSources)) {
+                if (!items || items.length === 0) continue;
+                const label = dimLabels[dim] || dim;
+                for (const item of items) {
+                    allEvents.push({
+                        ts: item.ts || '',
+                        content: item.content || '',
+                        value: item.value,
+                        dim: dim,
+                        dimLabel: label,
+                        label: item.label || '',
+                    });
+                }
+            }
+            // Sort by timestamp
+            allEvents.sort((a, b) => (a.ts || '').localeCompare(b.ts || ''));
+
+            if (allEvents.length > 0) {
+                // Group by day for cleaner display
+                const dayGroups = {};
+                allEvents.forEach(ev => {
+                    const day = ev.ts ? ev.ts.slice(0, 10) : '未知日期';
+                    if (!dayGroups[day]) dayGroups[day] = [];
+                    dayGroups[day].push(ev);
+                });
+
+                timelineHtml = '<div class="story-timeline"><h4>⏳ 时间线</h4>';
+                for (const [day, events] of Object.entries(dayGroups)) {
+                    const dateLabel = formatTimelineDate(day);
+                    const eventTags = events.map(ev => {
+                        let valStr = ev.label ? ` ${ev.value}` : '';
+                        if (ev.value !== undefined && ev.value !== null && !ev.label) {
+                            valStr = typeof ev.value === 'number' ? ` ${ev.value}` : ` ${ev.value}`;
+                        }
+                        return `<span class="dim-tag ${ev.dim}">${ev.dimLabel}${valStr}</span>`;
+                    }).join(' ');
+
+                    const contentPreview = events[0].content || '';
+                    const displayContent = contentPreview.length > 80
+                        ? contentPreview.slice(0, 80) + '...'
+                        : contentPreview;
+
+                    timelineHtml += `<div class="timeline-item">
+                        <div class="timeline-date">${escapeHtml(dateLabel)}</div>
+                        <div class="timeline-content">${eventTags} ${escapeHtml(displayContent)}</div>
+                    </div>`;
+                }
+                timelineHtml += '</div>';
+            }
+        }
+
+        // ── Build insights HTML ──
+        let insightsHtml = '';
+        if (data.insights && data.insights.length > 0) {
+            insightsHtml = '<div class="story-insights"><h4>🔍 发现的关联与趋势</h4>';
+            data.insights.forEach(ins => {
+                const text = ins.text || ins.description || '';
+                if (!text) return;
+                const conf = ins.confidence === 'high' ? '高' : ins.confidence === 'medium' ? '中' : '低';
+                const confClass = ins.confidence === 'high' ? 'high' : ins.confidence === 'medium' ? 'medium' : 'low';
+                insightsHtml += `<div class="insight-item">
+                    ${escapeHtml(text)}
+                    <span class="insight-confidence ${confClass}">置信度: ${conf}</span>
+                </div>`;
+            });
+            insightsHtml += '</div>';
+        }
+
+        // ── Build data cards ──
+        let cardsHtml = '';
+        if (data.data_points && data.data_points.length > 0) {
+            const agg = { sleepQ: [], sleepH: [], energy: [], mood: [], exercise: 0 };
+            data.data_points.forEach(dp => {
+                const ed = dp.extracted || {};
+                if (ed.sleep && ed.sleep.quality) agg.sleepQ.push(ed.sleep.quality);
+                if (ed.sleep && ed.sleep.duration_hours) agg.sleepH.push(ed.sleep.duration_hours);
+                if (ed.energy) agg.energy.push(ed.energy);
+                if (ed.mood) agg.mood.push(ed.mood);
+                if (ed.exercise && ed.exercise.type) agg.exercise++;
+            });
+
+            const avg = arr => arr.length ? (arr.reduce((a, b) => a + b, 0) / arr.length).toFixed(1) : '-';
+            const cards = [
+                { label: '睡眠评分', value: avg(agg.sleepQ), unit: '/ 5', detail: `${agg.sleepQ.length} 条记录` },
+                { label: '睡眠时长', value: avg(agg.sleepH), unit: '小时', detail: `${agg.sleepH.length} 条记录` },
+                { label: '精力评分', value: avg(agg.energy), unit: '/ 5', detail: `${agg.energy.length} 条记录` },
+                { label: '情绪评分', value: avg(agg.mood), unit: '/ 5', detail: `${agg.mood.length} 条记录` },
+                { label: '运动次数', value: agg.exercise, unit: '次', detail: `共 ${data.data_points.length} 条记录` },
+            ];
+
+            cardsHtml = cards.map(c => `
+                <div class="data-card">
+                    <div class="data-card-label">${c.label}</div>
+                    <div class="data-card-value">${c.value}<span class="data-card-unit">${c.unit}</span></div>
+                    <div class="data-card-detail">${c.detail}</div>
+                </div>
+            `).join('');
+        }
+
+        // ── Assemble ──
+        container.innerHTML = buildStoryHTML(title, statsHtml, storyTextHtml, tipsHtml,
+            timelineHtml, insightsHtml, cardsHtml);
+    }
+
+    function formatTimelineDate(dateStr) {
+        if (!dateStr || dateStr === '未知日期') return dateStr;
+        try {
+            const d = new Date(dateStr);
+            if (isNaN(d.getTime())) return dateStr;
+            const weekdays = ['周日', '周一', '周二', '周三', '周四', '周五', '周六'];
+            const month = d.getMonth() + 1;
+            const day = d.getDate();
+            const wd = weekdays[d.getDay()];
+            return `${month}月${day}日 ${wd}`;
+        } catch (e) {
+            return dateStr;
+        }
+    }
+
+    /* ============================================================
+       SECTION 4: D3.js Graph Visualization (Preserved + Adapted)
+       ============================================================ */
+
+    let graphMode = 'preset'; // 'preset' or 'health'
+
+    function switchGraphMode(mode) {
+        graphMode = mode;
+
+        document.getElementById('graph-mode-preset').classList.toggle('active', mode === 'preset');
+        document.getElementById('graph-mode-health').classList.toggle('active', mode === 'health');
+        document.getElementById('preset-select').style.display = mode === 'preset' ? '' : 'none';
+        document.getElementById('health-period-select').style.display = mode === 'health' ? '' : 'none';
+
+        if (mode === 'health') {
+            loadHealthGraph();
+        } else {
+            if (graphData) {
+                initGraphForContainer('graph-view');
+            } else {
+                loadPresetList();
+            }
+        }
+    }
+
+    async function loadHealthGraph() {
+        currentGraphContainerId = 'graph-view';
+        const period = document.getElementById('health-period-select').value;
+
+        try {
+            const resp = await fetch(`/api/health-graph?period=${period}`);
+            if (!resp.ok) throw new Error('API error');
+            const data = await resp.json();
+
+            graphData = data;
+            useLayerColors = false;
+            selectedNodeId = null;
+            initializeVisibleNodes();
+
+            // Show all nodes for health graph (no expand/collapse, it's small)
+            visibleNodes.clear();
+            visibleLinks.clear();
+            data.nodes.forEach(n => visibleNodes.add(n.id));
+            data.relationships.forEach(r => visibleLinks.add(r));
+
+            initGraphForContainer('graph-view');
+        } catch (e) {
+            console.error('加载健康关联图谱失败:', e);
+        }
+    }
+
+    let graphData = null;
+    let simulation = null;
+    let svg = null;
+    let g = null;
+    let visibleNodes = new Set();
+    let baseVisibleNodes = new Set();
+    let visibleLinks = new Set();
+    let expandedNodes = new Set();
+    let selectedNodeId = null;
+    let currentGraphContainerId = 'graph-view';
+    let currentZoom = d3.zoomIdentity;
+    let useLayerColors = false;
+    let nodeLayers = new Map();
+
+    const colorMap = {
+        '个人': '#e8a87c',
+        '事件': '#d4a5a5',
+        '地点': '#a8b5a0',
+        '时间': '#d4b86a',
+        '组织': '#9b8ec4',
+        '物品': '#7eb5a6',
+        '概念': '#7a716a'
+    };
+
+    const layerColors = [
+        '#d4a5a5',  // 第一层 - 柔玫瑰
+        '#a8b5a0',  // 第二层 - 鼠尾绿
+        '#d4b86a',  // 第三层 - 暖金
+        '#9b8ec4',  // 第四层 - 薰衣草
+        '#7a716a'   // 第五层及以上 - 深灰棕
+    ];
+
+    function calculateNodeLayers() {
+        nodeLayers.clear();
+        if (!graphData) return;
+
+        const centerNode = findCenterNode(graphData.nodes);
+        if (!centerNode) return;
+
+        const queue = [{id: centerNode.id, layer: 0}];
+        const visited = new Set([centerNode.id]);
+        nodeLayers.set(centerNode.id, 0);
+
+        while (queue.length > 0) {
+            const {id, layer} = queue.shift();
+            const neighbors = getNeighbors(id);
+
+            neighbors.forEach(neighborId => {
+                if (!visited.has(neighborId)) {
+                    visited.add(neighborId);
+                    nodeLayers.set(neighborId, layer + 1);
+                    queue.push({id: neighborId, layer: layer + 1});
+                }
+            });
+        }
+    }
+
+    function getNodeColor(node) {
+        // Health graph nodes have a direct 'color' property
+        if (node.color) return node.color;
+
+        if (node.label && node.label.some(l => l.includes('个人'))) {
+            return colorMap['个人'];
+        }
+        if (useLayerColors) {
+            const layer = nodeLayers.get(node.id);
+            if (layer !== undefined && layer > 0) {
+                const colorIndex = Math.min(layer - 1, layerColors.length - 1);
+                return layerColors[colorIndex];
+            }
+        }
+        if (!node.label || node.label.length === 0) return '#c9c0b6';
+        for (let label of node.label) {
+            if (colorMap[label]) return colorMap[label];
+        }
+        return '#c9c0b6';
+    }
+
+    function getNodeRadius(node, centerNodeId = null) {
+        if (node.id === 'center') return 25;
+        if (node.icon && node.label) return 22;
+        if (node.properties && node.properties.name && /^个人\d+$/.test(node.properties.name)) return 25;
+        if (centerNodeId && node.id === centerNodeId) return 25;
+        return 20;
+    }
+
+    function toggleLayerColor() {
+        const toggle = document.getElementById('layer-color-toggle');
+        const legend = document.getElementById('layer-legend');
+        if (!toggle || !legend) return;
+
+        useLayerColors = toggle.checked;
+        if (useLayerColors) {
+            legend.classList.add('active');
+            calculateNodeLayers();
+        } else {
+            legend.classList.remove('active');
+        }
+        if (graphData && g) {
+            g.selectAll('.node circle')
+                .transition().duration(500)
+                .attr('fill', d => getNodeColor(d));
+        }
+    }
+
+    // Initialize graph for a specific container
+    function initGraphForContainer(containerId) {
+        currentGraphContainerId = containerId;
+        let container, svgEl;
+
+        if (containerId === 'sidebar') {
+            container = document.getElementById('sidebar-graph-container');
+            svgEl = document.getElementById('sidebar-graph-svg');
+        } else if (containerId === 'graph-view') {
+            container = document.getElementById('graph-view-container');
+            svgEl = document.getElementById('graph-view-svg');
+        } else {
+            return;
+        }
+
+        if (!container || !graphData) return;
+
+        const width = container.clientWidth;
+        const height = container.clientHeight;
+
+        // Clear previous
+        d3.select(svgEl).selectAll('*').remove();
+
+        svg = d3.select(svgEl)
+            .attr('width', width)
+            .attr('height', height);
+
+        // Arrow marker
+        svg.append('defs').append('marker')
+            .attr('id', containerId === 'sidebar' ? 'arrowhead-sb' : 'arrowhead')
+            .attr('viewBox', '-0 -5 10 10')
+            .attr('refX', 20)
+            .attr('refY', 0)
+            .attr('orient', 'auto')
+            .attr('markerWidth', 8)
+            .attr('markerHeight', 8)
+            .append('svg:path')
+            .attr('d', 'M 0,-5 L 10,0 L 0,5')
+            .attr('fill', '#c9c0b6');
+
+        // Zoom group
+        g = svg.append('g');
+
+        const zoom = d3.zoom()
+            .scaleExtent([0.1, 4])
+            .on('zoom', (event) => {
+                currentZoom = event.transform;
+                g.attr('transform', event.transform);
+            });
+
+        svg.call(zoom);
+
+        renderGraph(containerId);
+    }
+
+    function findCenterNode(nodes) {
+        // Health graph: node with id === 'center'
+        let center = nodes.find(node => node.id === 'center');
+        if (center) return center;
+
+        // Strategy 1: Match pattern "个人1", "个人2", etc.
+        center = nodes.find(node => {
+            if (node.properties && node.properties.name) {
+                return /^个人\d+$/.test(node.properties.name);
+            }
+            return false;
+        });
+        if (center) return center;
+
+        // Strategy 2: Match nodes with label containing "个人"
+        center = nodes.find(node => {
+            if (node.label && node.label.some(l => l.includes('个人'))) return true;
+            return false;
+        });
+        if (center) return center;
+
+        // Strategy 3: Pick node with most connections
+        if (nodes.length > 0) {
+            let maxDegree = -1;
+            center = nodes[0];
+            nodes.forEach(n => {
+                const degree = getNeighbors(n.id).size;
+                if (degree > maxDegree) {
+                    maxDegree = degree;
+                    center = n;
+                }
+            });
+            return center;
+        }
+
+        return null;
+    }
+
+    function getNeighbors(nodeId) {
+        const neighbors = new Set();
+        graphData.relationships.forEach(rel => {
+            const src = typeof rel.source === 'object' ? rel.source.id : rel.source;
+            const tgt = typeof rel.target === 'object' ? rel.target.id : rel.target;
+            if (src === nodeId) neighbors.add(tgt);
+            if (tgt === nodeId) neighbors.add(src);
+        });
+        return neighbors;
+    }
+
+    function initializeVisibleNodes() {
+        visibleNodes.clear();
+        baseVisibleNodes.clear();
+        visibleLinks.clear();
+        expandedNodes.clear();
+
+        const centerNode = findCenterNode(graphData.nodes);
+        if (!centerNode) {
+            console.warn('未找到中心节点，显示全部节点');
+            graphData.nodes.forEach(n => {
+                visibleNodes.add(n.id);
+                baseVisibleNodes.add(n.id);
+            });
+            rebuildVisibleLinks();
+            return;
+        }
+
+        visibleNodes.add(centerNode.id);
+        baseVisibleNodes.add(centerNode.id);
+        expandedNodes.add(centerNode.id);
+
+        const neighbors = getNeighbors(centerNode.id);
+        neighbors.forEach(neighborId => {
+            visibleNodes.add(neighborId);
+            baseVisibleNodes.add(neighborId);
+        });
+
+        rebuildVisibleLinks();
+    }
+
+    function rebuildVisibleLinks() {
+        visibleLinks.clear();
+        if (!graphData) return;
+        graphData.relationships.forEach(rel => {
+            const src = typeof rel.source === 'object' ? rel.source.id : rel.source;
+            const tgt = typeof rel.target === 'object' ? rel.target.id : rel.target;
+            if (visibleNodes.has(src) && visibleNodes.has(tgt)) {
+                visibleLinks.add(rel);
+            }
+        });
+    }
+
+    function renderGraph(containerId) {
+        if (!graphData || !g) return;
+
+        if (useLayerColors && nodeLayers.size === 0) {
+            calculateNodeLayers();
+        }
+
+        const container = containerId === 'sidebar'
+            ? document.getElementById('sidebar-graph-container')
+            : document.getElementById('graph-view-container');
+
+        const width = container.clientWidth;
+        const height = container.clientHeight;
+
+        const nodesToRender = graphData.nodes.filter(n => visibleNodes.has(n.id));
+        const selectedNodeData = selectedNodeId ? graphData.nodes.find(n => n.id === selectedNodeId) : null;
+        if (selectedNodeData && !nodesToRender.some(n => n.id === selectedNodeData.id)) {
+            nodesToRender.push(selectedNodeData);
+            visibleNodes.add(selectedNodeData.id);
+        }
+        const linksToRender = Array.from(visibleLinks);
+
+        const centerNode = findCenterNode(graphData.nodes);
+        const centerNodeId = centerNode ? centerNode.id : null;
+        const centerNodeData = centerNodeId ? nodesToRender.find(n => n.id === centerNodeId) : null;
+
+        if (centerNodeData) {
+            centerNodeData.fx = width / 2;
+            centerNodeData.fy = height / 2;
+        }
+
+        simulation = d3.forceSimulation(nodesToRender)
+            .force('link', d3.forceLink(linksToRender)
+                .id(d => d.id)
+                .distance(d => {
+                    const sourceIsCenter = centerNodeId && (d.source.id === centerNodeId || d.source === centerNodeId);
+                    const targetIsCenter = centerNodeId && (d.target.id === centerNodeId || d.target === centerNodeId);
+                    return (sourceIsCenter || targetIsCenter) ? 150 : 120;
+                })
+                .strength(1))
+            .force('charge', d3.forceManyBody()
+                .strength(d => d.id === centerNodeId ? -1500 : -800)
+                .distanceMax(300))
+            .force('center', d3.forceCenter(width / 2, height / 2).strength(0.05))
+            .force('collision', d3.forceCollide()
+                .radius(d => {
+                    if (d.id === 'center') return 40;
+                    if (d.icon && d.label) return 38;
+                    if (d.id === centerNodeId) return 40;
+                    return 35;
+                })
+                .strength(0.8))
+            .force('x', d3.forceX(width / 2).strength(0.02))
+            .force('y', d3.forceY(height / 2).strength(0.02))
+            .alphaDecay(0.02)
+            .velocityDecay(0.4);
+
+        const linkGroup = g.append('g').attr('class', 'links');
+        const link = linkGroup.selectAll('.link')
+            .data(linksToRender)
+            .enter().append('line')
+            .attr('class', 'link')
+            .style('stroke-dasharray', d => d.type === '包含' ? '5,5' : 'none')
+            .style('stroke-width', d => d.weight || 1.5)
+            .style('stroke', d => d.color || '#c9c0b6')
+            .style('opacity', d => d.type === '包含' ? 0.3 : (d.strength > 0 ? 0.6 + d.strength * 0.4 : 0.5));
+
+        const linkLabelGroup = g.append('g').attr('class', 'link-labels');
+        const linkLabel = linkLabelGroup.selectAll('.link-label')
+            .data(linksToRender)
+            .enter().append('text')
+            .attr('class', 'link-label')
+            .attr('text-anchor', 'middle')
+            .text(d => d.type);
+
+        const nodeGroup = g.append('g').attr('class', 'nodes');
+        const node = nodeGroup.selectAll('.node')
+            .data(nodesToRender)
+            .enter().append('g')
+            .attr('class', 'node')
+            .call(d3.drag()
+                .on('start', dragstarted)
+                .on('drag', dragged)
+                .on('end', dragended));
+
+        node.append('circle')
+            .attr('r', d => {
+                // Health graph center node
+                if (d.id === 'center') return 25;
+                // Health graph dimension nodes
+                if (d.icon && d.label) return 22;
+                if (d.properties && d.properties.name && /^个人\d+$/.test(d.properties.name)) return 25;
+                return 20;
+            })
+            .attr('fill', d => getNodeColor(d))
+            .attr('stroke', '#fff')
+            .attr('stroke-width', d => (d.id === centerNodeId || d.id === 'center') ? 4 : 3);
+
+        node.append('text')
+            .attr('dy', 35)
+            .attr('text-anchor', 'middle')
+            .text(d => {
+                // Health graph: show icon + label
+                if (d.icon && d.label) return d.icon + ' ' + d.label;
+                if (d.properties && d.properties.name && /^个人\d+$/.test(d.properties.name)) return d.properties.name;
+                if (d.properties && d.properties.name) return d.properties.name;
+                if (d.label) return d.label;
+                if (d.properties && d.properties.value) return d.properties.value;
+                return d.id.substring(0, 8);
+            })
+            .style('font-weight', d => d.id === centerNodeId ? 'bold' : 'normal')
+            .style('font-size', d => (d.icon && d.label) ? '13px' : '11px');
+
+        node.on('click', function(event, d) {
+            event.stopPropagation();
+            selectedNodeId = d.id;
+            if (containerId === 'graph-view') {
+                showNodeInfo(d);
+            }
+            updateSelectedNodeStyles();
+        });
+
+        node.on('dblclick', function(event, d) {
+            event.stopPropagation();
+            selectedNodeId = d.id;
+            toggleNodeExpansion(d);
+        });
+
+        simulation.on('tick', () => ticked(link, linkLabel, node, width, height, centerNode));
+
+        simulation.alpha(1).restart();
+
+        if (centerNodeData) {
+            setTimeout(() => {
+                centerNodeData.fx = null;
+                centerNodeData.fy = null;
+            }, 2000);
+        }
+
+        updateSelectedNodeStyles();
+    }
+
+    function ticked(link, linkLabel, node, width, height, centerNode) {
+        link
+            .attr('x1', d => d.source.x)
+            .attr('y1', d => d.source.y)
+            .attr('x2', d => d.target.x)
+            .attr('y2', d => d.target.y);
+
+        linkLabel
+            .attr('x', d => (d.source.x + d.target.x) / 2)
+            .attr('y', d => (d.source.y + d.target.y) / 2);
+
+        node.attr('transform', d => {
+            d.x = Math.max(30, Math.min(width - 30, d.x));
+            d.y = Math.max(30, Math.min(height - 30, d.y));
+            return `translate(${d.x},${d.y})`;
+        });
+    }
+
+    function toggleNodeExpansion(node) {
+        if (graphMode === 'health') {
+            return;
+        }
+
+        const nodeId = node.id;
+        selectedNodeId = nodeId;
+
+        const centerNode = graphData ? findCenterNode(graphData.nodes) : null;
+        const baseRadius = getNodeRadius(node, centerNode ? centerNode.id : null);
+        const clickedNode = g.selectAll('.node')
+            .filter(d => d.id === nodeId)
+            .select('circle');
+
+        clickedNode
+            .transition().duration(200)
+            .attr('r', baseRadius * 1.15)
+            .transition().duration(200)
+            .attr('r', baseRadius);
+
+        if (expandedNodes.has(nodeId)) {
+            collapseNode(nodeId);
+        } else {
+            expandNode(nodeId);
+        }
+
+        if (useLayerColors) calculateNodeLayers();
+
+        // Keep the clicked anchor node visible even when the visible set is rebuilt.
+        visibleNodes.add(nodeId);
+        rebuildVisibleLinks();
+
+        renderGraph(currentGraphContainerId || 'graph-view');
+        updateSelectedNodeStyles();
+    }
+
+    function expandNode(nodeId) {
+        expandedNodes.add(nodeId);
+        visibleNodes.add(nodeId);
+        const neighbors = getNeighbors(nodeId);
+
+        neighbors.forEach(neighborId => {
+            visibleNodes.add(neighborId);
+        });
+
+        rebuildVisibleLinks();
+    }
+
+    function collapseNode(nodeId) {
+        expandedNodes.delete(nodeId);
+        visibleNodes = new Set(baseVisibleNodes);
+        expandedNodes.forEach(expandedId => {
+            visibleNodes.add(expandedId);
+            getNeighbors(expandedId).forEach(neighborId => visibleNodes.add(neighborId));
+        });
+        rebuildVisibleLinks();
+    }
+
+    function showNodeInfo(node) {
+        const infoDiv = document.getElementById('node-info');
+        let title = (node.icon ? node.icon + ' ' : '') + (node.label || (node.properties && node.properties.name) || node.id);
+        let html = `<h3>${title}</h3>`;
+
+        // Health graph dimension info
+        if (node.icon && node.properties) {
+            if (node.properties.avg_score !== null && node.properties.avg_score !== undefined) {
+                html += `<div class="info-item"><strong>平均评分：</strong>${node.properties.avg_score} / 5</div>`;
+            }
+            if (node.properties.data_points) {
+                html += `<div class="info-item"><strong>数据点：</strong>${node.properties.data_points} 条</div>`;
+            }
+        }
+
+        if (node.label && typeof node.label !== 'string' && node.label.length > 0) {
+            html += `<div class="info-item"><strong>类型：</strong>${node.label.join(', ')}</div>`;
+        } else if (node.type) {
+            html += `<div class="info-item"><strong>类型：</strong>${node.type}</div>`;
+        }
+
+        if (useLayerColors && nodeLayers.has(node.id)) {
+            html += `<div class="info-item"><strong>层级：</strong>第 ${nodeLayers.get(node.id)} 层</div>`;
+        }
+
+        if (node.properties) {
+            for (let [key, value] of Object.entries(node.properties)) {
+                if (key !== 'name' && key !== 'avg_score' && key !== 'data_points') {
+                    html += `<div class="info-item"><strong>${key}：</strong>${value}</div>`;
+                }
+            }
+        }
+
+        infoDiv.innerHTML = html;
+        infoDiv.style.display = 'block';
+    }
+
+    function updateSelectedNodeStyles() {
+        if (!g) return;
+
+        g.selectAll('.node circle')
+            .attr('stroke', d => {
+                if (selectedNodeId && d.id === selectedNodeId) return '#8b5e3c';
+                return '#fff';
+            })
+            .attr('stroke-width', d => {
+                const centerNode = graphData ? findCenterNode(graphData.nodes) : null;
+                const isCenter = centerNode && d.id === centerNode.id;
+                if (selectedNodeId && d.id === selectedNodeId) return isCenter ? 6 : 5;
+                return isCenter ? 4 : 3;
+            });
+    }
+
+    function highlightNode(nodeId) {
+        selectedNodeId = nodeId;
+        updateSelectedNodeStyles();
+    }
+
+    function dragstarted(event, d) {
+        if (!event.active) simulation.alphaTarget(0.3).restart();
+        d.fx = d.x;
+        d.fy = d.y;
+        const centerNode = findCenterNode(graphData.nodes);
+        const isCenter = d.id === (centerNode ? centerNode.id : '');
+        d3.select(this).select('circle').transition().duration(100).attr('stroke-width', isCenter ? 6 : 5);
+    }
+
+    function dragged(event, d) {
+        d.fx = event.x;
+        d.fy = event.y;
+        d.x = event.x;
+        d.y = event.y;
+
+        const nodeId = d.id;
+        g.selectAll('.link')
+            .filter(link => link.source.id === nodeId || link.target.id === nodeId)
+            .attr('x1', link => link.source.x)
+            .attr('y1', link => link.source.y)
+            .attr('x2', link => link.target.x)
+            .attr('y2', link => link.target.y);
+
+        g.selectAll('.link-label')
+            .filter(link => link.source.id === nodeId || link.target.id === nodeId)
+            .attr('x', link => (link.source.x + link.target.x) / 2)
+            .attr('y', link => (link.source.y + link.target.y) / 2);
+
+        d3.select(this).attr('transform', `translate(${event.x},${event.y})`);
+    }
+
+    function dragended(event, d) {
+        if (!event.active) simulation.alphaTarget(0);
+        d.fx = d.x;
+        d.fy = d.y;
+        updateSelectedNodeStyles();
+    }
+
+    // Zoom controls
+    function zoomIn() {
+        svg.transition().duration(300).call(
+            d3.zoom().transform,
+            d3.zoomIdentity.translate(currentZoom.x, currentZoom.y).scale(currentZoom.k * 1.3)
+        );
+    }
+
+    function zoomOut() {
+        svg.transition().duration(300).call(
+            d3.zoom().transform,
+            d3.zoomIdentity.translate(currentZoom.x, currentZoom.y).scale(currentZoom.k * 0.7)
+        );
+    }
+
+    function resetZoom() {
+        svg.transition().duration(300).call(d3.zoom().transform, d3.zoomIdentity);
+    }
+
+    // Preset management
+    async function loadPresetList() {
+        try {
+            const response = await fetch('/api/presets');
+            const presets = await response.json();
+
+            const select = document.getElementById('preset-select');
+            if (!select) return;
+
+            select.innerHTML = '<option value="">请选择...</option>';
+            presets.forEach(preset => {
+                const option = document.createElement('option');
+                option.value = preset;
+                option.textContent = preset;
+                select.appendChild(option);
+            });
+            // Auto-select and load the first preset
+            if (presets.length > 0) {
+                select.value = presets[0];
+                loadPreset();
+            }
+        } catch (error) {
+            console.error('加载预设列表失败:', error);
+        }
+    }
+
+    async function loadPreset() {
+        currentGraphContainerId = 'graph-view';
+        const select = document.getElementById('preset-select');
+        const filename = select ? select.value : 'sample.json';
+
+        try {
+            const response = await fetch(`/api/graph/${filename}`);
+            graphData = await response.json();
+
+            initializeVisibleNodes();
+            if (useLayerColors) calculateNodeLayers();
+
+            // Determine which container to render to
+            if (currentView === 'graph') {
+                initGraphForContainer('graph-view');
+            } else if (graphSidebarOpen) {
+                initGraphForContainer('sidebar');
+            }
+        } catch (error) {
+            console.error('加载图谱数据失败:', error);
+        }
+    }
+
+    /* ============================================================
+       SECTION 5: Persona Management
+       ============================================================ */
+
+    let activePersonaId = 'default';
+
+    async function loadPersonas() {
+        try {
+            const resp = await fetch('/api/personas');
+            if (resp.ok) {
+                const data = await resp.json();
+                activePersonaId = data.active_id || 'default';
+                renderPersonaMenu(data.personas, activePersonaId);
+                updatePersonaBtn(data.personas.find(p => p.id === activePersonaId));
+            }
+        } catch (e) {
+            console.log('Persona API not available');
+        }
+    }
+
+    function renderPersonaMenu(personas, activeId) {
+        const menu = document.getElementById('persona-menu');
+        menu.innerHTML = personas.map(p => `
+            <div class="persona-option ${p.id === activeId ? 'active' : ''}" onclick="selectPersona('${p.id}')">
+                <span class="persona-option-icon">${p.icon}</span>
+                <div class="persona-option-info">
+                    <div class="persona-option-name">${p.name}</div>
+                    <div class="persona-option-desc">${p.description}</div>
+                </div>
+                ${p.id === activeId ? '<span class="persona-check">✓</span>' : ''}
+            </div>
+        `).join('');
+    }
+
+    function updatePersonaBtn(persona) {
+        if (!persona) return;
+        document.getElementById('persona-icon').textContent = persona.icon;
+        document.getElementById('persona-name').textContent = persona.name;
+    }
+
+    function togglePersonaMenu() {
+        document.getElementById('persona-selector').classList.toggle('open');
+    }
+
+    async function selectPersona(personaId) {
+        try {
+            const resp = await fetch('/api/persona', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ persona_id: personaId })
+            });
+            if (resp.ok) {
+                const data = await resp.json();
+                activePersonaId = personaId;
+                const personas = await (await fetch('/api/personas')).json();
+                renderPersonaMenu(personas.personas, personaId);
+                updatePersonaBtn(data);
+                document.getElementById('persona-selector').classList.remove('open');
+            }
+        } catch (e) {
+            console.error('Failed to set persona:', e);
+        }
+    }
+
+    // Close persona menu when clicking outside
+    document.addEventListener('click', (e) => {
+        const selector = document.getElementById('persona-selector');
+        if (selector && !selector.contains(e.target)) {
+            selector.classList.remove('open');
+        }
+    });
+
+    /* ============================================================
+       SECTION 6: Initialization
+       ============================================================ */
+
+    // Auto-open story view for testing
+const urlParams = new URLSearchParams(window.location.search);
+const autoView = urlParams.get('view');
+window.addEventListener('load', () => {
+        initChat();
+        loadPresetList();
+        if (autoView === 'story') { setTimeout(() => switchView('story'), 500); }
+        // Init graph mode UI state
+        document.getElementById('graph-mode-preset').classList.toggle('active', graphMode === 'preset');
+        document.getElementById('graph-mode-health').classList.toggle('active', graphMode === 'health');
+        document.getElementById('preset-select').style.display = graphMode === 'preset' ? '' : 'none';
+        document.getElementById('health-period-select').style.display = graphMode === 'health' ? '' : 'none';
+        loadStory('week');
+        loadRoutineStatus();
+        loadPersonas();
+        loadWeatherStatus();
+        loadSchedulerStatus();
+    });
+
+    /* ============================================================
+       SECTION 7: Weather & Location
+       ============================================================ */
+
+    async function loadWeatherStatus() {
+        try {
+            const resp = await fetch('/api/location');
+            if (resp.ok) {
+                const data = await resp.json();
+                if (data.location) {
+                    const loc = data.location;
+                    const icon = document.getElementById('weather-icon');
+                    const text = document.getElementById('weather-text');
+                    icon.textContent = '🌤️';
+                    text.textContent = loc.city || `${loc.lat.toFixed(1)},${loc.lon.toFixed(1)}`;
+                }
+            }
+        } catch (e) {
+            console.log('Weather status not available');
+        }
+    }
+
+    function toggleLocationDialog() {
+        document.getElementById('location-dialog').classList.toggle('open');
+        document.getElementById('location-overlay').classList.toggle('open');
+    }
+
+    async function autoDetectLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(async (pos) => {
+                document.getElementById('location-lat').value = pos.coords.latitude.toFixed(4);
+                document.getElementById('location-lon').value = pos.coords.longitude.toFixed(4);
+                // Reverse geocode using Open-Meteo's geography (limited)
+                // For city name, user can fill manually
+                document.getElementById('location-city').placeholder = '请手动输入城市名';
+            }, (err) => {
+                alert('无法获取位置，请手动输入经纬度');
+            });
+        } else {
+            alert('浏览器不支持地理定位');
+        }
+    }
+
+    async function saveLocation() {
+        const lat = parseFloat(document.getElementById('location-lat').value);
+        const lon = parseFloat(document.getElementById('location-lon').value);
+        const city = document.getElementById('location-city').value;
+
+        if (isNaN(lat) || isNaN(lon)) {
+            alert('请输入有效的经纬度');
+            return;
+        }
+
+        try {
+            const resp = await fetch('/api/location', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ lat, lon, city })
+            });
+            if (resp.ok) {
+                toggleLocationDialog();
+                loadWeatherStatus();
+            }
+        } catch (e) {
+            alert('保存失败: ' + e.message);
+        }
+    }
+
+    async function loadRoutineStatus() {
+        try {
+            const resp = await fetch('/api/routine');
+            if (resp.ok) {
+                const data = await resp.json();
+                const el = document.getElementById('routine-status');
+                if (data.status === 'active' && el) {
+                    const dp = data.data_points;
+                    const conf = data.confidence || 'very_low';
+                    const confText = conf === 'high' ? '模型成熟' : conf === 'medium' ? '学习中' : '数据较少';
+                    el.textContent = `routine 模型: ${confText} | 睡眠${dp.sleep}次 运动${dp.exercise}次 情绪${dp.mood}次`;
+                    el.style.display = 'block';
+                }
+            }
+        } catch (e) {
+            console.log('Routine status not available');
+        }
+    }
+
+    window.addEventListener('resize', () => {
+        if (graphData) {
+            if (currentView === 'graph') {
+                initGraphForContainer('graph-view');
+            } else if (graphSidebarOpen) {
+                initGraphForContainer('sidebar');
+            }
+        }
+    });
+
+    /* ============================================================
+       SECTION 8: Proactive Scheduler
+       ============================================================ */
+
+    async function loadSchedulerStatus() {
+        try {
+            const resp = await fetch('/api/scheduler');
+            if (resp.ok) {
+                const data = await resp.json();
+                const icon = document.getElementById('proactive-icon');
+                const label = document.getElementById('proactive-label');
+                const btn = document.getElementById('proactive-toggle');
+
+                if (data.silent_mode) {
+                    icon.textContent = '🔇';
+                    label.textContent = '安静模式';
+                    btn.classList.add('silent');
+                } else {
+                    icon.textContent = '🌙';
+                    label.textContent = '主动关心中';
+                    btn.classList.remove('silent');
+                }
+            }
+        } catch (e) {
+            console.log('Scheduler status not available');
+        }
+    }
+
+    async function toggleSilentMode() {
+        try {
+            const resp = await fetch('/api/scheduler', {
+                method: 'GET'
+            });
+            const status = await resp.json();
+
+            const newResp = await fetch('/api/scheduler/silent', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    enable: !status.silent_mode,
+                    hours: status.silent_mode ? 0 : 24
+                })
+            });
+
+            if (newResp.ok) {
+                loadSchedulerStatus();
+            }
+        } catch (e) {
+            console.error('Failed to toggle silent mode:', e);
+        }
+    }
+
+    async function triggerProactiveCheck() {
+        try {
+            const resp = await fetch('/api/scheduler/check', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ force: true })
+            });
+            if (resp.ok) {
+                const data = await resp.json();
+                if (data.proactive && data.message) {
+                    const proactiveMessages = Array.isArray(data.message)
+                        ? data.message.filter(Boolean).map(String)
+                        : [String(data.message)];
+                    if (proactiveMessages.length > 1) {
+                        proactiveMessages.forEach((text, index) => {
+                            setTimeout(() => {
+                                const proactiveMsg = {
+                                    role: 'ai',
+                                    content: text,
+                                    timestamp: new Date().toISOString()
+                                };
+                                messageHistory.push(proactiveMsg);
+                                appendMessageBubble(proactiveMsg);
+                                scrollToBottom();
+                            }, index * 350);
+                        });
+                    } else {
+                        const proactiveMsg = {
+                            role: 'ai',
+                            content: proactiveMessages[0],
+                            timestamp: new Date().toISOString()
+                        };
+                        messageHistory.push(proactiveMsg);
+                        appendMessageBubble(proactiveMsg);
+                        scrollToBottom();
+                    }
+                } else {
+                    alert(`主动检查: ${data.reason || '无可触发'}`);
+                }
+            }
+        } catch (e) {
+            alert('主动检查失败: ' + e.message);
+        }
+    }
+    </script>
+</body>
+</html>

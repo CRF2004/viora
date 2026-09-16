@@ -1,0 +1,64 @@
+{
+  "nodes": [
+    {
+      "id": "person-001",
+      "label": [
+        "受检人",
+        "个人"
+      ],
+      "properties": {
+        "name": "个人001",
+        "age": 35
+      }
+    },
+    {
+      "id": "event-001",
+      "label": [
+        "健康报告",
+        "事件"
+      ],
+      "properties": {
+        "name": "2025年度体检",
+        "time": "2025-01-15"
+      }
+    },
+    {
+      "id": "event-002",
+      "label": [
+        "就诊记录",
+        "事件"
+      ],
+      "properties": {
+        "name": "门诊就诊",
+        "time": "2025-01-20"
+      }
+    },
+    {
+      "id": "detail-001",
+      "label": [
+        "检查项目"
+      ],
+      "properties": {
+        "name": "血常规",
+        "result": "正常"
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "source": "person-001",
+      "target": "event-001",
+      "type": "拥有"
+    },
+    {
+      "source": "person-001",
+      "target": "event-002",
+      "type": "拥有"
+    },
+    {
+      "source": "event-001",
+      "target": "detail-001",
+      "type": "包含"
+    }
+  ]
+}

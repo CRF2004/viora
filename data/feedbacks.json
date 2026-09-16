@@ -1,0 +1,65 @@
+[
+  {
+    "id": "bffcc6c2-669d-43d7-b19b-0ac9d1e1c784",
+    "user_id": "user_8b514f5e",
+    "type": "bug",
+    "description": "页面加载很慢，白屏时间超过5秒",
+    "completed": false,
+    "created_at": "2026-05-26T13:25:20.079429+00:00",
+    "updated_at": "2026-05-26T13:25:20.079429+00:00"
+  },
+  {
+    "id": "bd329425-adcc-46d6-879d-deb3bad2a7fe",
+    "user_id": "user_1959ae7a",
+    "type": "bug",
+    "description": "我很久没登录了，却显示0天未活跃",
+    "completed": true,
+    "created_at": "2026-05-26T14:35:24.867259+00:00",
+    "updated_at": "2026-05-26T14:54:08.622329+00:00"
+  },
+  {
+    "id": "32669552-134b-4e90-b7ba-71f00b2952c0",
+    "user_id": "user_1959ae7a",
+    "type": "ux",
+    "description": "上下文依旧有问题，模型完全\"不记得\"昨天和它说的话，然后话题又聊到昨天吃了什么",
+    "completed": true,
+    "created_at": "2026-06-03T06:51:45.902379+00:00",
+    "updated_at": "2026-06-05T14:00:00+00:00"
+  },
+  {
+    "id": "71c377c7-55ef-4122-89e0-086e802d9db7",
+    "user_id": "user_1959ae7a",
+    "type": "ux",
+    "description": "还是上下文问题？\"吃了 在复习 19:30 🌿 嗯，吃完就好～ 😊 19:30 🌿 复习辛苦，晚餐营养跟上哦～红肉配甜椒不错👍\"，我都说吃过了还给我推荐食物",
+    "completed": true,
+    "created_at": "2026-06-03T11:39:00.878286+00:00",
+    "updated_at": "2026-06-05T14:00:00+00:00"
+  },
+  {
+    "id": "9ee73633-9170-43fa-827e-cc8d8b24b51e",
+    "user_id": "user_1959ae7a",
+    "type": "ux",
+    "description": "多次提及天气，即使话题内容与天气无关",
+    "completed": true,
+    "created_at": "2026-06-06T07:49:41.431849+00:00",
+    "updated_at": "2026-06-15T12:07:24.877537+00:00"
+  },
+  {
+    "id": "d88130a8-0618-42d7-8de3-427fd65080a5",
+    "user_id": "user_1959ae7a",
+    "type": "bug",
+    "description": "每月身体故事的机制仍然有bug，每次打开都会重新生成",
+    "completed": true,
+    "created_at": "2026-06-08T01:57:00.626031+00:00",
+    "updated_at": "2026-06-15T12:07:19.330863+00:00"
+  },
+  {
+    "id": "7ce42d59-fd89-4004-a2cc-d818b499722f",
+    "user_id": "user_1959ae7a",
+    "type": "bug",
+    "description": "上下文依旧有问题，\"🕐 2026/7/1 11:53:47 📋 chat/system/base → chat/user/burst deepseek-v4-flash ⏱ 4388ms\" 这里的回复很奇怪",
+    "completed": false,
+    "created_at": "2026-07-01T03:55:07.971624+00:00",
+    "updated_at": "2026-07-01T03:55:07.971624+00:00"
+  }
+]

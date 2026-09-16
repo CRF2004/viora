@@ -1,0 +1,38 @@
+[
+  {
+    "id": "bffcc6c2-669d-43d7-b19b-0ac9d1e1c784",
+    "user_id": "user_8b514f5e",
+    "type": "bug",
+    "description": "页面加载很慢，白屏时间超过5秒",
+    "completed": false,
+    "created_at": "2026-05-26T13:25:20.079429+00:00",
+    "updated_at": "2026-05-26T13:25:20.079429+00:00"
+  },
+  {
+    "id": "bd329425-adcc-46d6-879d-deb3bad2a7fe",
+    "user_id": "user_1959ae7a",
+    "type": "bug",
+    "description": "我很久没登录了，却显示0天未活跃",
+    "completed": true,
+    "created_at": "2026-05-26T14:35:24.867259+00:00",
+    "updated_at": "2026-05-26T14:54:08.622329+00:00"
+  },
+  {
+    “id”: “32669552-134b-4e90-b7ba-71f00b2952c0”,
+    “user_id”: “user_1959ae7a”,
+    “type”: “ux”,
+    “description”: “上下文依旧有问题，模型完全”不记得”昨天和它说的话，然后话题又聊到昨天吃了什么”,
+    “completed”: true,
+    “created_at”: “2026-06-03T06:51:45.902379+00:00”,
+    “updated_at”: “2026-06-05T14:00:00+00:00”
+  },
+  {
+    “id”: “71c377c7-55ef-4122-89e0-086e802d9db7”,
+    “user_id”: “user_1959ae7a”,
+    “type”: “ux”,
+    “description”: “还是上下文问题？”吃了 在复习 19:30 🌿 嗯，吃完就好～ 😊 19:30 🌿 复习辛苦，晚餐营养跟上哦～红肉配甜椒不错👍”，我都说吃过了还给我推荐食物”,
+    “completed”: true,
+    “created_at”: “2026-06-03T11:39:00.878286+00:00”,
+    “updated_at”: “2026-06-05T14:00:00+00:00”
+  }
+]

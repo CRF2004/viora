@@ -1,0 +1,449 @@
+{
+  "user_1959ae7a": {
+    "user_id": "user_1959ae7a",
+    "persona_id": "default",
+    "display_name": "JW",
+    "anomaly_level": "low",
+    "sleep_baseline": 3.33,
+    "energy_baseline": 2.27,
+    "mood_baseline": 3.26,
+    "recent_mood_trend": null,
+    "recent_energy_trend": null,
+    "recent_sleep_trend": null,
+    "interaction_count": 106,
+    "avg_reply_length": 22.6,
+    "last_message_at": "2026-07-01T04:01:18.541016+00:00",
+    "last_updated_at": "2026-07-01T04:01:18.541021+00:00",
+    "user_preferences": {
+      "last_reply_length": 17
+    },
+    "routine_summary": {
+      "status": "active",
+      "data_points": {
+        "sleep": 1,
+        "exercise": 2,
+        "mood": 0,
+        "energy": 0,
+        "total_messages": 15
+      },
+      "patterns": {
+        "exercise_count": 2,
+        "primary_exercise_type": "运动",
+        "avg_interaction_hour": 8.0,
+        "interaction_count": 15
+      },
+      "confidence": "very_low"
+    },
+    "profile_notes": "{\n  \"profile_notes\": \"用户是一名在广州就读的学生，正处于期末考试的最后阶段（明天下午考最后一门）。最近因复习过度感到困倦和疲惫，起床困难，经常赖床到九点，但晚上睡得较晚（约十二点半后），睡眠质量较高（睡得踏实、有梦）。性格上既有自我要求（坚持复习）又有松懈倾向（起不来床会抱怨），对话风格比较轻松，能接受使用表情和口语化交流。健康方面，此前有轻微感冒症状（流鼻涕、咽喉发热、鼻塞）和脱发问题，已复用米诺地尔；有饮酒习惯但近期未提及。生活上处于学业压力中，但对最后一门考试心态相对放松（‘看不完就看不完’），家庭支持较好。\"\n}"
+  },
+  "user_d9044adb": {
+    "user_id": "user_d9044adb",
+    "persona_id": "default",
+    "display_name": "Fix Test",
+    "anomaly_level": "low",
+    "sleep_baseline": 5.0,
+    "energy_baseline": null,
+    "mood_baseline": null,
+    "recent_mood_trend": null,
+    "recent_energy_trend": null,
+    "recent_sleep_trend": null,
+    "interaction_count": 8,
+    "avg_reply_length": 16.37,
+    "last_message_at": "2026-05-21T04:55:26.147462+00:00",
+    "last_updated_at": "2026-05-21T04:55:26.147469+00:00",
+    "user_preferences": {
+      "last_reply_length": 25
+    },
+    "routine_summary": {
+      "status": "active",
+      "data_points": {
+        "sleep": 0,
+        "exercise": 0,
+        "mood": 0,
+        "energy": 0,
+        "total_messages": 2
+      },
+      "patterns": {
+        "avg_interaction_hour": 4.0,
+        "interaction_count": 2
+      },
+      "confidence": "very_low"
+    }
+  },
+  "user_ae7a1bc8": {
+    "user_id": "user_ae7a1bc8",
+    "persona_id": "default",
+    "display_name": "诊断测试",
+    "anomaly_level": "low",
+    "sleep_baseline": 2.0,
+    "energy_baseline": null,
+    "mood_baseline": null,
+    "recent_mood_trend": null,
+    "recent_energy_trend": null,
+    "recent_sleep_trend": "stable",
+    "interaction_count": 1,
+    "avg_reply_length": 14.0,
+    "last_message_at": "2026-05-26T13:31:36.550883+00:00",
+    "last_updated_at": "2026-05-26T13:31:36.550888+00:00",
+    "user_preferences": {
+      "last_reply_length": 14
+    },
+    "routine_summary": {
+      "status": "data_insufficient",
+      "message": "还需要更多交互数据才能建立作息模型"
+    }
+  },
+  "profile_test_user": {
+    "user_id": "profile_test_user",
+    "persona_id": "default",
+    "display_name": null,
+    "anomaly_level": "low",
+    "sleep_baseline": null,
+    "energy_baseline": null,
+    "mood_baseline": null,
+    "recent_mood_trend": null,
+    "recent_energy_trend": null,
+    "recent_sleep_trend": null,
+    "interaction_count": 0,
+    "avg_reply_length": 0.0,
+    "last_message_at": null,
+    "last_updated_at": "2026-05-27T13:00:26.624350+00:00",
+    "user_preferences": {},
+    "routine_summary": {},
+    "profile_notes": "头发干油交替；正在写毕业论文"
+  },
+  "user_8c0beeef": {
+    "user_id": "user_8c0beeef",
+    "persona_id": "default",
+    "display_name": "聊天测试",
+    "anomaly_level": "low",
+    "sleep_baseline": 2.0,
+    "energy_baseline": null,
+    "mood_baseline": null,
+    "recent_mood_trend": null,
+    "recent_energy_trend": null,
+    "recent_sleep_trend": "stable",
+    "interaction_count": 2,
+    "avg_reply_length": 14.5,
+    "last_message_at": "2026-06-01T07:58:34.360638+00:00",
+    "last_updated_at": "2026-06-01T07:58:34.360644+00:00",
+    "user_preferences": {
+      "last_reply_length": 12
+    },
+    "routine_summary": {
+      "status": "data_insufficient",
+      "message": "还需要更多交互数据才能建立作息模型"
+    },
+    "profile_notes": ""
+  },
+  "user_f8e231b3": {
+    "user_id": "user_f8e231b3",
+    "persona_id": "default",
+    "display_name": "修复测试",
+    "anomaly_level": "low",
+    "sleep_baseline": null,
+    "energy_baseline": null,
+    "mood_baseline": null,
+    "recent_mood_trend": null,
+    "recent_energy_trend": null,
+    "recent_sleep_trend": null,
+    "interaction_count": 1,
+    "avg_reply_length": 17.0,
+    "last_message_at": "2026-06-01T07:59:09.943527+00:00",
+    "last_updated_at": "2026-06-01T07:59:09.943530+00:00",
+    "user_preferences": {
+      "last_reply_length": 17
+    },
+    "routine_summary": {
+      "status": "data_insufficient",
+      "message": "还需要更多交互数据才能建立作息模型"
+    },
+    "profile_notes": ""
+  },
+  "user_33929709": {
+    "user_id": "user_33929709",
+    "persona_id": "default",
+    "display_name": "最终测试",
+    "anomaly_level": "low",
+    "sleep_baseline": 2.0,
+    "energy_baseline": null,
+    "mood_baseline": null,
+    "recent_mood_trend": null,
+    "recent_energy_trend": null,
+    "recent_sleep_trend": "stable",
+    "interaction_count": 2,
+    "avg_reply_length": 14.5,
+    "last_message_at": "2026-06-01T08:02:28.442187+00:00",
+    "last_updated_at": "2026-06-01T08:02:28.442194+00:00",
+    "user_preferences": {
+      "last_reply_length": 12
+    },
+    "routine_summary": {
+      "status": "active",
+      "data_points": {
+        "sleep": 0,
+        "exercise": 0,
+        "mood": 0,
+        "energy": 0,
+        "total_messages": 2
+      },
+      "patterns": {
+        "avg_interaction_hour": 8.0,
+        "interaction_count": 2
+      },
+      "confidence": "very_low"
+    },
+    "profile_notes": ""
+  },
+  "user_815ee654": {
+    "user_id": "user_815ee654",
+    "persona_id": "default",
+    "display_name": "test_user",
+    "anomaly_level": "low",
+    "sleep_baseline": null,
+    "energy_baseline": null,
+    "mood_baseline": null,
+    "recent_mood_trend": null,
+    "recent_energy_trend": null,
+    "recent_sleep_trend": null,
+    "interaction_count": 1,
+    "avg_reply_length": 17.0,
+    "last_message_at": "2026-06-01T08:13:44.871655+00:00",
+    "last_updated_at": "2026-06-01T08:13:44.871658+00:00",
+    "user_preferences": {
+      "last_reply_length": 17
+    },
+    "routine_summary": {
+      "status": "data_insufficient",
+      "message": "还需要更多交互数据才能建立作息模型"
+    },
+    "profile_notes": ""
+  },
+  "user_74e9dcc5": {
+    "user_id": "user_74e9dcc5",
+    "persona_id": "default",
+    "display_name": "plan_test4",
+    "anomaly_level": "low",
+    "sleep_baseline": null,
+    "energy_baseline": null,
+    "mood_baseline": null,
+    "recent_mood_trend": null,
+    "recent_energy_trend": null,
+    "recent_sleep_trend": null,
+    "interaction_count": 2,
+    "avg_reply_length": 17.0,
+    "last_message_at": "2026-06-01T08:15:30.016940+00:00",
+    "last_updated_at": "2026-06-01T08:15:30.016946+00:00",
+    "user_preferences": {
+      "last_reply_length": 17
+    },
+    "routine_summary": {
+      "status": "data_insufficient",
+      "message": "还需要更多交互数据才能建立作息模型"
+    },
+    "profile_notes": ""
+  },
+  "user_aa307595": {
+    "user_id": "user_aa307595",
+    "persona_id": "default",
+    "display_name": "user_36439",
+    "anomaly_level": "low",
+    "sleep_baseline": 1.0,
+    "energy_baseline": 2.0,
+    "mood_baseline": null,
+    "recent_mood_trend": null,
+    "recent_energy_trend": null,
+    "recent_sleep_trend": null,
+    "interaction_count": 4,
+    "avg_reply_length": 15.0,
+    "last_message_at": "2026-06-01T08:16:24.971894+00:00",
+    "last_updated_at": "2026-06-01T08:16:24.971900+00:00",
+    "user_preferences": {
+      "last_reply_length": 17
+    },
+    "routine_summary": {
+      "status": "active",
+      "data_points": {
+        "sleep": 1,
+        "exercise": 1,
+        "mood": 0,
+        "energy": 0,
+        "total_messages": 3
+      },
+      "patterns": {
+        "exercise_count": 1,
+        "primary_exercise_type": "步行",
+        "avg_interaction_hour": 8.0,
+        "interaction_count": 3
+      },
+      "confidence": "very_low"
+    },
+    "profile_notes": ""
+  },
+  "user_86da0482": {
+    "user_id": "user_86da0482",
+    "persona_id": "default",
+    "display_name": "testui_70966",
+    "anomaly_level": "low",
+    "sleep_baseline": null,
+    "energy_baseline": null,
+    "mood_baseline": null,
+    "recent_mood_trend": null,
+    "recent_energy_trend": null,
+    "recent_sleep_trend": null,
+    "interaction_count": 1,
+    "avg_reply_length": 17.0,
+    "last_message_at": "2026-06-01T08:23:40.382097+00:00",
+    "last_updated_at": "2026-06-01T08:23:40.382100+00:00",
+    "user_preferences": {
+      "last_reply_length": 17
+    },
+    "routine_summary": {
+      "status": "data_insufficient",
+      "message": "还需要更多交互数据才能建立作息模型"
+    },
+    "profile_notes": ""
+  },
+  "user_d6aa79d5": {
+    "user_id": "user_d6aa79d5",
+    "persona_id": "default",
+    "display_name": "grid_51944",
+    "anomaly_level": "low",
+    "sleep_baseline": null,
+    "energy_baseline": null,
+    "mood_baseline": null,
+    "recent_mood_trend": null,
+    "recent_energy_trend": null,
+    "recent_sleep_trend": null,
+    "interaction_count": 1,
+    "avg_reply_length": 17.0,
+    "last_message_at": "2026-06-01T08:32:03.013555+00:00",
+    "last_updated_at": "2026-06-01T08:32:03.013559+00:00",
+    "user_preferences": {
+      "last_reply_length": 17
+    },
+    "routine_summary": {
+      "status": "data_insufficient",
+      "message": "还需要更多交互数据才能建立作息模型"
+    },
+    "profile_notes": ""
+  },
+  "user_af62deb3": {
+    "user_id": "user_af62deb3",
+    "persona_id": "default",
+    "display_name": "grid_69551",
+    "anomaly_level": "low",
+    "sleep_baseline": null,
+    "energy_baseline": null,
+    "mood_baseline": null,
+    "recent_mood_trend": null,
+    "recent_energy_trend": null,
+    "recent_sleep_trend": null,
+    "interaction_count": 1,
+    "avg_reply_length": 17.0,
+    "last_message_at": "2026-06-01T08:32:34.141911+00:00",
+    "last_updated_at": "2026-06-01T08:32:34.141914+00:00",
+    "user_preferences": {
+      "last_reply_length": 17
+    },
+    "routine_summary": {
+      "status": "data_insufficient",
+      "message": "还需要更多交互数据才能建立作息模型"
+    },
+    "profile_notes": ""
+  },
+  "user_93541e6a": {
+    "user_id": "user_93541e6a",
+    "persona_id": "default",
+    "display_name": "pers_35442",
+    "anomaly_level": "low",
+    "sleep_baseline": null,
+    "energy_baseline": 2.0,
+    "mood_baseline": null,
+    "recent_mood_trend": null,
+    "recent_energy_trend": null,
+    "recent_sleep_trend": null,
+    "interaction_count": 4,
+    "avg_reply_length": 15.75,
+    "last_message_at": "2026-06-01T08:39:28.436435+00:00",
+    "last_updated_at": "2026-06-01T08:39:28.436447+00:00",
+    "user_preferences": {
+      "last_reply_length": 17
+    },
+    "routine_summary": {
+      "status": "active",
+      "data_points": {
+        "sleep": 0,
+        "exercise": 0,
+        "mood": 0,
+        "energy": 0,
+        "total_messages": 3
+      },
+      "patterns": {
+        "avg_interaction_hour": 8.0,
+        "interaction_count": 3
+      },
+      "confidence": "very_low"
+    },
+    "profile_notes": ""
+  },
+  "user_2bbe2e18": {
+    "user_id": "user_2bbe2e18",
+    "persona_id": "default",
+    "display_name": "spec_13800",
+    "anomaly_level": "low",
+    "sleep_baseline": null,
+    "energy_baseline": null,
+    "mood_baseline": null,
+    "recent_mood_trend": null,
+    "recent_energy_trend": null,
+    "recent_sleep_trend": null,
+    "interaction_count": 1,
+    "avg_reply_length": 17.0,
+    "last_message_at": "2026-06-01T08:41:53.225462+00:00",
+    "last_updated_at": "2026-06-01T08:41:53.225466+00:00",
+    "user_preferences": {
+      "last_reply_length": 17
+    },
+    "routine_summary": {
+      "status": "data_insufficient",
+      "message": "还需要更多交互数据才能建立作息模型"
+    },
+    "profile_notes": ""
+  },
+  "user_260d7f5b": {
+    "user_id": "user_260d7f5b",
+    "persona_id": "default",
+    "display_name": "test_trace",
+    "anomaly_level": "low",
+    "sleep_baseline": 2.0,
+    "energy_baseline": null,
+    "mood_baseline": 4.0,
+    "recent_mood_trend": "stable",
+    "recent_energy_trend": null,
+    "recent_sleep_trend": null,
+    "interaction_count": 2,
+    "avg_reply_length": 9.0,
+    "last_message_at": "2026-06-15T13:05:08.667671+00:00",
+    "last_updated_at": "2026-06-15T13:05:08.667678+00:00",
+    "user_preferences": {
+      "last_reply_length": 6
+    },
+    "routine_summary": {
+      "status": "active",
+      "data_points": {
+        "sleep": 1,
+        "exercise": 1,
+        "mood": 0,
+        "energy": 0,
+        "total_messages": 1
+      },
+      "patterns": {
+        "exercise_count": 1,
+        "primary_exercise_type": "步行"
+      },
+      "confidence": "very_low"
+    },
+    "profile_notes": ""
+  }
+}

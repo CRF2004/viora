@@ -1,0 +1,18 @@
+{
+  "name": "viora",
+  "path": "/mnt/chengrongfeng_private/cc_dump/viora",
+  "description": "主动关心你的身体搭子 - 健康关怀 AI 应用",
+  "status": "active",
+  "customFields": {
+    "priority": "medium",
+    "currentPhase": "",
+    "currentTask": "",
+    "progress": "",
+    "blockers": [],
+    "nextAction": "继续推进项目",
+    "estimatedHours": "2",
+    "lastPushDate": "2026-09-15"
+  },
+  "createdAt": "2026-06-06T00:00:00.000Z",
+  "updatedAt": "2026-09-15T01:12:18.848Z"
+}
